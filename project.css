@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    height: 695px;
+    width: 100%;
+    background-image: url(img/bg8.jpg);
+    background-size: cover;
+    
+}
+.dv{
+    color: white;
+    height: 70px;
+    width: 70px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+.dv:hover{
+    background-color: rgba(156, 161, 156, 0.989);
+    border-radius: 10px;
+    /* transition: 0.3s; */
+    /* border: 4px solid #3498db; */
+    border: 4px solid white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    color:transparent;
+    background-image: url(img/ii.jpg);
+    background-size: cover;
+   
+}
+.toggle-box {
+    color: white;
+    display: none;
+    position:fixed;
+    
+    border: 2px solid black;
+    background-color:rgb(103, 64, 121);
+    padding: 15px;
+    border-radius: 10px;
+    width: 350px;
+    height: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    
+    text-wrap: wrap;
+  }
+.content{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.col{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c1{
+    height: 500px;
+}
+.c2{
+    height: 428px;
+    margin-left:72px ;
+    margin-top:72px ;
+}
+.sd{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.div1{
+    height: 288px;
+    width: 740px;
+    margin-left:150px;
+    margin-top: 215px;
+}
+.div2{
+    height: 432px;
+    width: 432px;
+    margin-left:897px;
+    margin-top: 72px;
+}
+#he{
+    margin-left:1259px ;
+}
+.div3{
+    height: 145px;
+    width: 1100px;
+    margin-left:150px;
+    margin-top: 445px;
+}
+.dv h6{
+  text-align: center;
+}
+.dv h2{
+  text-align: center;
+}
+.dv h5{
+    text-align: center;
+}
+
+.tm{
+    background-color: rgba(102, 51, 153, 0.765);
+}
+.u{
+    background-color: #090f57d0;
+}
+.am{
+    background-color: rgba(81, 59, 89, 0.742)
+}
+.aem{
+    background-color: rgba(89, 45, 60, 0.82);
+}
+.ng{
+    background-color: #454d9fd0;
+}
+.nm{
+    background-color: rgba(37, 96, 132, 0.715)
+}
+.m{
+    background-color: rgba(0, 0, 255, 0.518);
+}
+.ptm{
+    background-color: #4c3163a1;
+}
+.l{
+    background-color: rgba(139, 0, 139, 0.447);}
+.a{
+    background-color:rgba(71, 61, 139, 0.397);
+}
+.characterisitcs{
+    margin-left: 500px;
+    color: white;
+    font-size: 16px;
+}
+.characterisitcs ul{
+    display: flex;
+    align-items: center;
+}
+.mch{
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 255, 0.518);
+    border: 2px solid white;
+}
+.l:hover{
+    background-image: url();
+    background-size: cover;
+}
+.a:hover{
+    background-image: url();
+    background-size: cover;
+}
+.e1:hover{
+    background-image: url(img/i1.jpg);
+    background-size: cover;
+}
+.e2:hover{
+    background-image: url(img/i2.jpg);
+    background-size: cover;
+}
+.e3:hover{
+    background-image: url(img/i3.jpg);
+    background-size: cover;
+}   
+.e4:hover{
+    background-image: url(img/i4.jpg);
+    background-size: cover;
+}
+.e5:hover{
+    background-image: url(img/i5.jpg);
+    background-size: cover;
+}
+.e6:hover{
+    background-image: url(img/i6.jpg);
+    background-size: cover;
+}       
+.e7:hover{
+    background-image: url(img/i7.jpg);
+    background-size: cover;
+}
+.e8:hover{
+    background-image: url(img/i8.jpg);
+    background-size: cover;
+}
+.e9:hover{
+    background-image: url(img/i9.jpg);
+    background-size: cover;
+}
+.e10:hover{
+    background-image: url(img/i10.jpg);
+    background-size: cover;
+}
+.e11:hover{
+    background-image: url(img/i11.jpg);
+    background-size: cover;
+}
+.e12:hover{
+    background-image: url(img/i12.jpg);
+    background-size: cover;
+}
+.e13:hover{
+    background-image: url(img/i13.jpg);
+    background-size: cover;
+}
+.e14:hover{
+    background-image: url(img/i14.jpg);
+    background-size: cover;
+}
+.e15:hover{
+    background-image: url(img/i15.jpg);
+    background-size: cover;
+}
+.e16:hover{
+    background-image: url(img/i16.jpg);
+    background-size: cover;
+}
+.e17:hover{
+    background-image: url(img/i17.jpg);
+    background-size: cover;
+}
+.e18:hover{
+    background-image: url(img/i18.jpg);
+    background-size: cover;
+}
+.e19:hover{
+    background-image: url(img/i19.jpg);
+    background-size: cover;
+}
+.e20:hover{
+    background-image: url(img/i20.jpg);
+    background-size: cover;
+}
+.e21:hover{
+    background-image: url(img/i21.jpg);
+    background-size: cover;
+}
+.e22:hover{
+    background-image: url(img/i22.jpg);
+    background-size: cover;
+}
+.e23:hover{
+    background-image: url(img/i23.jpg);
+    background-size: cover;
+}
+.e24:hover{
+    background-image: url(img/i24.jpg);
+    background-size: cover;
+}
+.e25:hover{
+    background-image: url(img/i25.jpg);
+    background-size: cover;
+}
+.e26:hover{
+    background-image: url(img/i26.jpg);
+    background-size: cover;
+}
+.e27:hover{
+    background-image: url(img/i27.jpg);
+    background-size: cover;
+}
+.e28:hover{
+    background-image: url(img/i28.jpg);
+    background-size: cover;
+}
+.e29:hover{
+    background-image: url(img/i29.jpg);
+    background-size: cover;
+}
+.e30:hover {
+    background-image: url(img/i30.jpg);
+    background-size: cover;
+}
+.e31:hover {
+    background-image: url(img/i31.jpg);
+    background-size: cover;
+}
+.e32:hover {
+    background-image: url(img/i32.jpg);
+    background-size: cover;
+}
+.e33:hover {
+    background-image: url(img/i33.jpg);
+    background-size: cover;
+}
+.e34:hover {
+    background-image: url(img/i34.jpg);
+    background-size: cover;
+}
+.e35:hover {
+    background-image: url(img/i35.jpg);
+    background-size: cover;
+}
+.e36:hover {
+    background-image: url(img/i36.jpg);
+    background-size: cover;
+}
+.e37:hover {
+    background-image: url(img/i37.jpg);
+    background-size: cover;
+}
+.e38:hover {
+    background-image: url(img/i38.jpg);
+    background-size: cover;
+}
+.e39:hover {
+    background-image: url(img/i39.jpg);
+    background-size: cover;
+}
+.e40:hover {
+    background-image: url(img/i40.jpg);
+    background-size: cover;
+}
+.e41:hover {
+    background-image: url(img/i41.jpg);
+    background-size: cover;
+}
+.e42:hover {
+    background-image: url(img/i42.jpg);
+    background-size: cover;
+}
+.e43:hover {
+    background-image: url(img/i43.jpg);
+    background-size: cover;
+}
+.e44:hover {
+    background-image: url(img/i44.jpg);
+    background-size: cover;
+}
+.e45:hover {
+    background-image: url(img/i45.jpg);
+    background-size: cover;
+}
+.e46:hover {
+    background-image: url(img/i46.jpg);
+    background-size: cover;
+}
+.e47:hover {
+    background-image: url(img/i47.jpg);
+    background-size: cover;
+}
+.e48:hover {
+    background-image: url(img/i48.jpg);
+    background-size: cover;
+}
+.e49:hover {
+    background-image: url(img/i49.jpg);
+    background-size: cover;
+}
+.e50:hover {
+    background-image: url(img/i50.jpg);
+    background-size: cover;
+}
+.e51:hover {
+    background-image: url(img/i51.jpg);
+    background-size: cover;
+}
+.e52:hover {
+    background-image: url(img/i52.jpg);
+    background-size: cover;
+}
+.e53:hover {
+    background-image: url(img/i53.jpg);
+    background-size: cover;
+}
+.e54:hover {
+    background-image: url(img/i54.jpg);
+    background-size: cover;
+}
+.e55:hover {
+    background-image: url(img/i55.jpg);
+    background-size: cover;
+}
+.e56:hover {
+    background-image: url(img/i56.jpg);
+    background-size: cover;
+}
+.e57:hover {
+    background-image: url(img/i57.jpg);
+    background-size: cover;
+}
+.e58:hover {
+    background-image: url(img/i58.jpg);
+    background-size: cover;
+}
+.e59:hover {
+    background-image: url(img/i59.jpg);
+    background-size: cover;
+}
+.e60:hover {
+    background-image: url(img/i60.jpg);
+    background-size: cover;
+}
+.e61:hover {
+    background-image: url(img/i61.jpg);
+    background-size: cover;
+}
+.e62:hover {
+    background-image: url(img/i62.jpg);
+    background-size: cover;
+}
+.e63:hover {
+    background-image: url(img/i63.jpg);
+    background-size: cover;
+}
+.e64:hover {
+    background-image: url(img/i64.jpg);
+    background-size: cover;
+}
+.e65:hover {
+    background-image: url(img/i65.jpg);
+    background-size: cover;
+}
+.e66:hover {
+    background-image: url(img/i66.jpg);
+    background-size: cover;
+}
+.e67:hover {
+    background-image: url(img/i67.jpg);
+    background-size: cover;
+}
+.e68:hover {
+    background-image: url(img/i68.jpg);
+    background-size: cover;
+}
+.e69:hover {
+    background-image: url(img/i69.jpg);
+    background-size: cover;
+}
+.e70:hover {
+    background-image: url(img/i70.jpg);
+    background-size: cover;
+}
+.e71:hover {
+    background-image: url(img/i71.jpg);
+    background-size: cover;
+}
+.e72:hover {
+    background-image: url(img/i72.jpg);
+    background-size: cover;
+}
+.e73:hover {
+    background-image: url(img/i73.jpg);
+    background-size: cover;
+}
+.e74:hover {
+    background-image: url(img/i74.jpg);
+    background-size: cover;
+}
+.e75:hover {
+    background-image: url(img/i75.jpg);
+    background-size: cover;
+}
+.e76:hover {
+    background-image: url(img/i76.jpg);
+    background-size: cover;
+}
+.e77:hover {
+    background-image: url(img/i77.jpg);
+    background-size: cover;
+}
+.e78:hover {
+    background-image: url(img/i78.jpg);
+    background-size: cover;
+}
+.e79:hover {
+    background-image: url(img/i79.jpg);
+    background-size: cover;
+}
+.e80:hover {
+    background-image: url(img/i80.jpg);
+    background-size: cover;
+}
+.e81:hover {
+    background-image: url(img/i81.jpg);
+    background-size: cover;
+}
+.e82:hover {
+    background-image: url(img/i82.jpg);
+    background-size: cover;
+}
+.e83:hover {
+    background-image: url(img/i83.jpg);
+    background-size: cover;
+}
+.e84:hover {
+    background-image: url(img/i84.jpg);
+    background-size: cover;
+}
+.e85:hover {
+    background-image: url(img/i85.jpg);
+    background-size: cover;
+}
+.e86:hover {
+    background-image: url(img/i86.jpg);
+    background-size: cover;
+}
+.e87:hover {
+    background-image: url(img/i87.jpg);
+    background-size: cover;
+}
+.e88:hover {
+    background-image: url(img/i88.jpg);
+    background-size: cover;
+}
+.e89:hover {
+    background-image: url(img/i89.jpg);
+    background-size: cover;
+}
+.e90:hover {
+    background-image: url(img/i90.jpg);
+    background-size: cover;
+}
+.e91:hover {
+    background-image: url(img/i91.jpg);
+    background-size: cover;
+}
+.e92:hover {
+    background-image: url(img/i92.jpg);
+    background-size: cover;
+}
+.e93:hover {
+    background-image: url(img/i93.jpg);
+    background-size: cover;
+}
+.e94:hover {
+    background-image: url(img/i94.jpg);
+    background-size: cover;
+}
+.e95:hover {
+    background-image: url(img/i95.jpg);
+    background-size: cover;
+}
+.e96:hover {
+    background-image: url(img/i96.jpg);
+    background-size: cover;
+}
+.e97:hover {
+    background-image: url(img/i97.jpg);
+    background-size: cover;
+}
+.e98:hover {
+    background-image: url(img/i98.jpg);
+    background-size: cover;
+}
+.e99:hover {
+    background-image: url(img/i99.jpg);
+    background-size: cover;
+}
+.e100:hover {
+    background-image: url(img/i100.jpg);
+    background-size: cover;
+}
+.e101:hover {
+    background-image: url(img/i101.jpg);
+    background-size: cover;
+}
+.e102:hover {
+    background-image: url(img/i102.jpg);
+    background-size: cover;
+}
+.e103:hover {
+    background-image: url(img/i103.jpg);
+    background-size: cover;
+}
+.e104:hover {
+    background-image: url(img/i104.jpg);
+    background-size: cover;
+}
+.e105:hover {
+    background-image: url(img/i105.jpg);
+    background-size: cover;
+}
+.e106:hover {
+    background-image: url(img/i106.jpg);
+    background-size: cover;
+}
+.e107:hover {
+    background-image: url(img/i107.jpg);
+    background-size: cover;
+}
+.e108:hover {
+    background-image: url(img/i108.jpg);
+    background-size: cover;
+}
