@@ -1,56 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+}
 .bg{
-    height: 695px;
+    height: 100%;
     width: 100%;
     background-image: url(img/bg8.jpg);
     background-size: cover;
+     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.content{
+    position: absolute;
+    margin-top: 2%;
+    /* margin-left: 5.625rem; /* 90px / 16px */
+    /* margin-top: 1.875rem; 30px / 16px */ 
     
 }
 .dv{
     color: white;
-    height: 70px;
-    width: 70px;
-    border: 3px solid white;
+    height: 4.375rem; /* 70px / 16px */
+    width: 4.375rem; /* 70px / 16px */
+    border: 0.1875rem solid white; /* 3px / 16px */
     cursor: pointer;
 }
 .dv:hover{
     background-color: rgba(156, 161, 156, 0.989);
-    border-radius: 10px;
+    border-radius: 0.625rem; /* 10px / 16px */
     /* transition: 0.3s; */
     /* border: 4px solid #3498db; */
-    border: 4px solid white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 0.25rem solid white; /* 4px / 16px */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* 0 8px 16px / 16px */
     transition: 0.3s;
     color:transparent;
     background-image: url(img/ii.jpg);
     background-size: cover;
-   
 }
 .toggle-box {
     color: white;
     display: none;
     position:fixed;
-    
-    border: 2px solid black;
+    border: 0.125rem solid black; /* 2px / 16px */
     background-color:rgb(103, 64, 121);
-    padding: 15px;
-    border-radius: 10px;
-    width: 350px;
-    height: 300px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 0.9375rem; /* 15px / 16px */
+    border-radius: 0.625rem; /* 10px / 16px */
+    width: 21.875rem; /* 350px / 16px */
+    height: 18.75rem; /* 300px / 16px */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); /* 0 8px 16px / 16px */
     z-index: 999;
-    
     text-wrap: wrap;
-  }
-.content{
-    position: absolute;
-    margin-left: 90px;
-    margin-top: 30px;
 }
+
 .col{
     position: absolute;
     display: flex;
@@ -58,12 +65,12 @@
     justify-content: space-between;
 }
 .c1{
-    height: 500px;
+    height: 31.25rem; /* 500px / 16px */
 }
 .c2{
-    height: 428px;
-    margin-left:72px ;
-    margin-top:72px ;
+    height: 26.75rem; /* 428px / 16px */
+    margin-left:4.5rem ; /* 72px / 16px */
+    margin-top:4.5rem ; /* 72px / 16px */
 }
 .sd{
     position: absolute;
@@ -73,31 +80,31 @@
     justify-content: space-between;
 }
 .div1{
-    height: 288px;
-    width: 740px;
-    margin-left:150px;
-    margin-top: 215px;
+    height: 18rem; /* 288px / 16px */
+    width: 46.25rem; /* 740px / 16px */
+    margin-left:9.375rem; /* 150px / 16px */
+    margin-top: 13.4375rem; /* 215px / 16px */
 }
 .div2{
-    height: 432px;
-    width: 432px;
-    margin-left:897px;
-    margin-top: 72px;
+    height: 27rem; /* 432px / 16px */
+    width: 27rem; /* 432px / 16px */
+    margin-left:56.0625rem; /* 897px / 16px */
+    margin-top: 4.5rem; /* 72px / 16px */
 }
 #he{
-    margin-left:1259px ;
+    margin-left:78.6875rem ; /* 1259px / 16px */
 }
 .div3{
-    height: 145px;
-    width: 1100px;
-    margin-left:150px;
-    margin-top: 445px;
+    height: 9.0625rem; /* 145px / 16px */
+    width: 68.75rem; /* 1100px / 16px */
+    margin-left:9.375rem; /* 150px / 16px */
+    margin-top: 27.8125rem; /* 445px / 16px */
 }
 .dv h6{
-  text-align: center;
+    text-align: center;
 }
 .dv h2{
-  text-align: center;
+    text-align: center;
 }
 .dv h5{
     text-align: center;
@@ -133,19 +140,19 @@
     background-color:rgba(71, 61, 139, 0.397);
 }
 .characterisitcs{
-    margin-left: 500px;
+    margin-left: 31.25rem; /* 500px / 16px */
     color: white;
-    font-size: 16px;
+    font-size: 1rem; /* 16px / 16px */
 }
 .characterisitcs ul{
     display: flex;
     align-items: center;
 }
 .mch{
-    height: 15px;
-    width: 15px;
+    height: 0.9375rem; /* 15px / 16px */
+    width: 0.9375rem; /* 15px / 16px */
     background-color: rgba(0, 0, 255, 0.518);
-    border: 2px solid white;
+    border: 0.125rem solid white; /* 2px / 16px */
 }
 .l:hover{
     background-image: url();
@@ -166,7 +173,7 @@
 .e3:hover{
     background-image: url(img/i3.jpg);
     background-size: cover;
-}   
+}
 .e4:hover{
     background-image: url(img/i4.jpg);
     background-size: cover;
@@ -178,7 +185,7 @@
 .e6:hover{
     background-image: url(img/i6.jpg);
     background-size: cover;
-}       
+}
 .e7:hover{
     background-image: url(img/i7.jpg);
     background-size: cover;
