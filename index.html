@@ -8,889 +8,939 @@
 </head>
 <body>
      <div class="bg">
+        <ul class="elementType">
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(178, 116, 199)' ? 'white' : 'rgb(178, 116, 199)');
+            const elements1 = document.querySelectorAll('.tm, .am, .l, .a, .ptm, .e109, .e110, .e111, .e112, .metal');
+             elements1.forEach(el1 => el1.classList.toggle('metalClicked'));    
+             heading.style.color='blue'   ;    
+            " >Metal</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(109, 2, 123)' ? 'white' : 'rgb(109, 2, 123)');
+            const elements2 = document.querySelectorAll('.nm, .ng');
+             elements2.forEach(el2 => el2.classList.toggle('NonMetalClicked'));
+            ">Non-Metal</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(67, 148, 154)' ? 'white' : 'rgb(67, 148, 154)');
+            const elements3 = document.querySelectorAll('.m');
+            elements3.forEach(el3 => el3.classList.toggle('metalloid'));
+            " >Metalloid</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(183, 182, 182)' ? 'white' : 'rgb(183, 182, 182)');
+            const elements4 = document.querySelectorAll('.e113, .e114, .e115, .e116, .e117, .e118');
+            elements4.forEach(el4 => el4.classList.toggle('unknown'));
+            " >Unknown</li>
+        </ul>
+        
+        <ul class="block">
+            <p>Blocks</p>
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(193, 117, 114)' ? 'white' : 'rgb(193, 117, 114)');
+            const elementsS = document.querySelectorAll('.e1, .am, .e2');
+            elementsS.forEach(elS => elS.classList.toggle('blockS'));
+            " >s</li>
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(141, 115, 114)' ? 'white' : 'rgb(141, 115, 114)');
+            const elementsP = document.querySelectorAll('.m, .ptm, .e10, .e18, .e36, .e54, .e86, .e113, .e114, .e115, .e116, .e117, .e118 ,.e6, .e7, .e8, .e9, .e15, .e16, .e17, .e35, .e53, .e85, .e34');
+            elementsP.forEach(elP => elP.classList.toggle('blockP'));
+            " >p</li>
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(74, 52, 34)' ? 'white' : 'rgb(74, 52, 34)');
+            const elementsD = document.querySelectorAll('.tm, .e109, .e110, .e111, .e112');
+            elementsD.forEach(elD => elD.classList.toggle('blockD'));
+            " >d</li>
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(61, 59, 58)' ? 'white' : 'rgb(61, 59, 58)');
+            const elementsF = document.querySelectorAll('.l, .a');
+            elementsF.forEach(elF => elF.classList.toggle('blockF'));
+            " >f</li>
+        </ul>
+
         <div class="content">
-         <div class="col c1">
+    <div class="col c1">
+        <div class="dv nm e1" onclick="toggleBox(event, 'H')">
+            <h6>1</h6>
+            <h2>H</h2>
+            <h6>Hydrogen</h6>
+            <h6>1.0079</h6>
+        </div>
+        <div class="dv am e3" onclick="toggleBox(event, 'Li')">
+            <h6>3</h6>
+            <h2>Li</h2>
+            <h6>Lithium</h6>
+            <h6>6.941</h6>
+        </div>
+        <div class="dv am e11" onclick="toggleBox(event, 'Na')">
+            <h6>11</h6>
+            <h2>Na</h2>
+            <h6>Sodium</h6>
+            <h6>22.990</h6>
+        </div>
+        <div class="dv am e19" onclick="toggleBox(event, 'K')">
+            <h6>19</h6>
+            <h2>K</h2>
+            <h6>Potassium</h6>
+            <h6>39.098</h6>
+        </div>
+        <div class="dv am e37" onclick="toggleBox(event, 'Rb')">
+            <h6>37</h6>
+            <h2>Rb</h2>
+            <h6>Rubidium</h6>
+            <h6>85.468</h6>
+        </div>
+        <div class="dv am e55" onclick="toggleBox(event, 'Cs')">
+            <h6>55</h6>
+            <h2>Cs</h2>
+            <h6>Caesium</h6>
+            <h6>132.91</h6>
+        </div>
+        <div class="dv am e87" onclick="toggleBox(event, 'Fr')">
+            <h6>87</h6>
+            <h2>Fr</h2>
+            <h6>Francium</h6>
+            <h6>223</h6>
+        </div>
+    </div>
+    <div class="col c2">
+        <div class="dv am e4" onclick="toggleBox(event, 'Be')">
+            <h6>4</h6>
+            <h2>Be</h2>
+            <h6>Beryllium</h6>
+            <h6>9.0122</h6>
+        </div>
+        <div class="dv am e12" onclick="toggleBox(event, 'Mg')">
+            <h6>12</h6>
+            <h2>Mg</h2>
+            <h6>Magnesium</h6>
+            <h6>24.305</h6>
+        </div>
+        <div class="dv am e20" onclick="toggleBox(event, 'Ca')">
+            <h6>20</h6>
+            <h2>Ca</h2>
+            <h6>Calcium</h6>
+            <h6>40.078</h6>
+        </div>
+        <div class="dv am e38" onclick="toggleBox(event, 'Sr')">
+            <h6>38</h6>
+            <h2>Sr</h2>
+            <h6>Strontium</h6>
+            <h6>87.62</h6>
+        </div>
+        <div class="dv am e56" onclick="toggleBox(event, 'Ba')">
+            <h6>56</h6>
+            <h2>Ba</h2>
+            <h6>Barium</h6>
+            <h6>137.33</h6>
+        </div>
+        <div class="dv am e88" onclick="toggleBox(event, 'Ra')">
+            <h6>88</h6>
+            <h2>Ra</h2>
+            <h6>Radium</h6>
+            <h6></h6>
+        </div>
+    </div>
+    <div class="div1 sd">
+        <div class="dv tm e21" onclick="toggleBox(event, 'Sc')">
+            <h6>21</h6>
+            <h2>Sc</h2>
+            <h6>Scandium</h6>
+            <h6>44.956</h6>
+        </div>
+        <div class="dv tm e22" onclick="toggleBox(event, 'Ti')">
+            <h6>22</h6>
+            <h2>Ti</h2>
+            <h6>Titanium</h6>
+            <h6>47.867</h6>
+        </div>
+        <div class="dv tm e23" onclick="toggleBox(event, 'V')">
+            <h6>23</h6>
+            <h2>V</h2>
+            <h6>Vanadium</h6>
+            <h6>50.942</h6>
+        </div>
+        <div class="dv tm e24" onclick="toggleBox(event, 'Cr')">
+            <h6>24</h6>
+            <h2>Cr</h2>
+            <h6>Chromium</h6>
+            <h6>51.996</h6>
+        </div>
+        <div class="dv tm e25" onclick="toggleBox(event, 'Mn')">
+            <h6>25</h6>
+            <h2>Mn</h2>
+            <h6>Manganese</h6>
+            <h6>54.938</h6>
+        </div>
+        <div class="dv tm e26" onclick="toggleBox(event, 'Fe')">
+            <h6>26</h6>
+            <h2>Fe</h2>
+            <h6>Iron</h6>
+            <h6>55.845</h6>
+        </div>
+        <div class="dv tm e27" onclick="toggleBox(event, 'Co')">
+            <h6>27</h6>
+            <h2>Co</h2>
+            <h6>Cobalt</h6>
+            <h6>58.933</h6>
+        </div>
+        <div class="dv tm e28" onclick="toggleBox(event, 'Ni')">
+            <h6>28</h6>
+            <h2>Ni</h2>
+            <h6>Nickel</h6>
+            <h6>58.693</h6>
+        </div>
+        <div class="dv tm e29" onclick="toggleBox(event, 'Cu')">
+            <h6>29</h6>
+            <h2>Cu</h2>
+            <h6>Copper</h6>
+            <h6>63.546</h6>
+        </div>
+        <div class="dv tm e30" onclick="toggleBox(event, 'Zn')">
+            <h6>30</h6>
+            <h2>Zn</h2>
+            <h6>Zinc</h6>
+            <h6>65.38</h6>
+        </div>
+        <div class="dv tm e39" onclick="toggleBox(event, 'Y')">
+            <h6>39</h6>
+            <h2>Y</h2>
+            <h6>Yttrium</h6>
+            <h6>88.906</h6>
+        </div>
+        <div class="dv tm e40" onclick="toggleBox(event, 'Zr')">
+            <h6>40</h6>
+            <h2>Zr</h2>
+            <h6>Zirconium</h6>
+            <h6>91.224</h6>
+        </div>
+        <div class="dv tm e41" onclick="toggleBox(event, 'Nb')">
+            <h6>41</h6>
+            <h2>Nb</h2>
+            <h6>Niobium</h6>
+            <h6>92.906</h6>
+        </div>
+        <div class="dv tm e42" onclick="toggleBox(event, 'Mo')">
+            <h6>42</h6>
+            <h2>Mo</h2>
+            <h6>Molybdenum</h6>
+            <h6>95.95</h6>
+        </div>
+        <div class="dv tm e43" onclick="toggleBox(event, 'Tc')">
+            <h6>43</h6>
+            <h2>Tc</h2>
+            <h6>Technetium</h6>
+            <h6>98</h6>
+        </div>
+        <div class="dv tm e44" onclick="toggleBox(event, 'Ru')">
+            <h6>44</h6>
+            <h2>Ru</h2>
+            <h6>Ruthenium</h6>
+            <h6>101.07</h6>
+        </div>
+        <div class="dv tm e45" onclick="toggleBox(event, 'Rh')">
+            <h6>45</h6>
+            <h2>Rh</h2>
+            <h6>Rhodium</h6>
+            <h6>102.91</h6>
+        </div>
+        <div class="dv tm e46" onclick="toggleBox(event, 'Pd')">
+            <h6>46</h6>
+            <h2>Pd</h2>
+            <h6>Palladium</h6>
+            <h6>106.42</h6>
+        </div>
+        <div class="dv tm e47" onclick="toggleBox(event, 'Ag')">
+            <h6>47</h6>
+            <h2>Ag</h2>
+            <h6>Silver</h6>
+            <h6>107.87</h6>
+        </div>
+        <div class="dv tm e48" onclick="toggleBox(event, 'Cd')">
+            <h6>48</h6>
+            <h2>Cd</h2>
+            <h6>Cadmium</h6>
+            <h6>112.41</h6>
+        </div>
+        <div class="dv l">
+            <h5>57-71</h5>
+            <h6>Lanthanides</h6>
+        </div>
+        <div class="dv tm e72" onclick="toggleBox(event, 'Hf')">
+            <h6>72</h6>
+            <h2>Hf</h2>
+            <h6>Hafnium</h6>
+            <h6>178.49</h6>
+        </div>
+        <div class="dv tm e73" onclick="toggleBox(event, 'Ta')">
+            <h6>73</h6>
+            <h2>Ta</h2>
+            <h6>Tantalum</h6>
+            <h6>180.84</h6>
+        </div>
+        <div class="dv tm e74" onclick="toggleBox(event, 'W')">
+            <h6>74</h6>
+            <h2>W</h2>
+            <h6>Tungsten</h6>
+            <h6>183.84</h6>
+        </div>
+        <div class="dv tm e75" onclick="toggleBox(event, 'Re')">
+            <h6>75</h6>
+            <h2>Re</h2>
+            <h6>Rhenium</h6>
+            <h6>186.21</h6>
+        </div>
+        <div class="dv tm e76" onclick="toggleBox(event, 'Os')">
+            <h6>76</h6>
+            <h2>Os</h2>
+            <h6>Osmium</h6>
+            <h6>190.23</h6>
+        </div>
+        <div class="dv tm e77" onclick="toggleBox(event, 'Ir')">
+            <h6>77</h6>
+            <h2>Ir</h2>
+            <h6>Iridium</h6>
+            <h6>192.22</h6>
+        </div>
+        <div class="dv tm e78" onclick="toggleBox(event, 'Pt')">
+            <h6>78</h6>
+            <h2>Pt</h2>
+            <h6>Platinum</h6>
+            <h6>195.08</h6>
+        </div>
+        <div class="dv tm e79" onclick="toggleBox(event, 'Au')">
+            <h6>79</h6>
+            <h2>Au</h2>
+            <h6>Gold</h6>
+            <h6>196.97</h6>
+        </div>
+        <div class="dv tm e80" onclick="toggleBox(event, 'Hg')">
+            <h6>80</h6>
+            <h2>Hg</h2>
+            <h6>Mercury</h6>
+            <h6>200.59</h6>
+        </div>
+        <div class="dv a">
+            <h5>57-71</h5>
+            <h6>Actinides</h6>
+        </div>
+        <div class="dv tm e104" onclick="toggleBox(event, 'Rf')">
+            <h6>104</h6>
+            <h2>Rf</h2>
+            <h6>Rutherfordium</h6>
+            <h6>267</h6>
+        </div>
+        <div class="dv tm e105" onclick="toggleBox(event, 'Db')">
+            <h6>105</h6>
+            <h2>Db</h2>
+            <h6>Dubnium</h6>
+            <h6>268</h6>
+        </div>
+        <div class="dv tm e106" onclick="toggleBox(event, 'Sg')">
+            <h6>106</h6>
+            <h2>Sg</h2>
+            <h6>Seaborgium</h6>
+            <h6>269</h6>
+        </div>
+        <div class="dv tm e107" onclick="toggleBox(event, 'Bh')">
+            <h6>107</h6>
+            <h2>Bh</h2>
+            <h6>Bohrium</h6>
+            <h6>270</h6>
+        </div>
+        <div class="dv tm e108" onclick="toggleBox(event, 'Hs')">
+            <h6>108</h6>
+            <h2>Hs</h2>
+            <h6>Hassium</h6>
+            <h6>277</h6>
+        </div>
+        <div class="dv u e109" onclick="toggleBox(event, 'Mt')">
+            <h6>109</h6>
+            <h2>Mt</h2>
+            <h6>Meitnerium</h6>
+            <h6>278</h6>
+        </div>
+        <div class="dv u e110" onclick="toggleBox(event, 'Ds')">
+            <h6>110</h6>
+            <h2>Ds</h2>
+            <h6>Darmstadium</h6>
+            <h6>281</h6>
+        </div>
+        <div class="dv u e111" onclick="toggleBox(event, 'Rg')">
+            <h6>111</h6>
+            <h2>Rg</h2>
+            <h6>Roentgenium</h6>
+            <h6>282</h6>
+        </div>
+        <div class="dv u e112" onclick="toggleBox(event, 'Cn')">
+            <h6>112</h6>
+            <h2>Cn</h2>
+            <h6>Copernicium</h6>
+            <h6>285</h6>
+        </div>
+    </div>
+    <div class="div2 sd">
+        <div class="dv m e5" onclick="toggleBox(event, 'B')">
+            <h6>5</h6>
+            <h2>B</h2>
+            <h6>Boron</h6>
+            <h6>10.81</h6>
+        </div>
+        <div class="dv nm e6" onclick="toggleBox(event, 'C')">
+            <h6>6</h6>
+            <h2>C</h2>
+            <h6>Carbon</h6>
+            <h6>12.011</h6>
+        </div>
+        <div class="dv nm e7" onclick="toggleBox(event, 'N')">
+            <h6>7</h6>
+            <h2>N</h2>
+            <h6>Nitrogen</h6>
+            <h6>14.007</h6>
+        </div>
+        <div class="dv nm e8" onclick="toggleBox(event, 'O')">
+            <h6>8</h6>
+            <h2>O</h2>
+            <h6>Oxygen</h6>
+            <h6>15.999</h6>
+        </div>
+        <div class="dv nm e9" onclick="toggleBox(event, 'F')">
+            <h6>9</h6>
+            <h2>F</h2>
+            <h6>Fluorine</h6>
+            <h6>18.998</h6>
+        </div>
+        <div class="dv ng e10" onclick="toggleBox(event, 'Ne')">
+            <h6>10</h6>
+            <h2>Ne</h2>
+            <h6>Neon</h6>
+            <h6>20.180</h6>
+        </div>
+        <div class="dv ptm e13" onclick="toggleBox(event, 'Al')">
+            <h6>13</h6>
+            <h2>Al</h2>
+            <h6>Aluminium</h6>
+            <h6>26.982</h6>
+        </div>
+        <div class="dv m e14" onclick="toggleBox(event, 'Si')">
+            <h6>14</h6>
+            <h2>Si</h2>
+            <h6>Silicon</h6>
+            <h6>28.085</h6>
+        </div>
+        <div class="dv nm e15" onclick="toggleBox(event, 'P')">
+            <h6>15</h6>
+            <h2>P</h2>
+            <h6>Phosphorus</h6>
+            <h6>30.974</h6>
+        </div>
+        <div class="dv nm e16" onclick="toggleBox(event, 'S')">
+            <h6>16</h6>
+            <h2>S</h2>
+            <h6>Sulfur</h6>
+            <h6>32.06</h6>
+        </div>
+        <div class="dv nm e17" onclick="toggleBox(event, 'Cl')">
+            <h6>17</h6>
+            <h2>Cl</h2>
+            <h6>Chlorine</h6>
+            <h6>35.45</h6>
+        </div>
+        <div class="dv ng e18" onclick="toggleBox(event, 'Ar')">
+            <h6>18</h6>
+            <h2>Ar</h2>
+            <h6>Argon</h6>
+            <h6>39.948</h6>
+        </div>
+        <div class="dv ptm e31" onclick="toggleBox(event, 'Ga')">
+            <h6>31</h6>
+            <h2>Ga</h2>
+            <h6>Gallium</h6>
+            <h6>69.723</h6>
+        </div>
+        <div class="dv m e32" onclick="toggleBox(event, 'Ge')">
+            <h6>32</h6>
+            <h2>Ge</h2>
+            <h6>Germanium</h6>
+            <h6>72.630</h6>
+        </div>
+        <div class="dv m e33" onclick="toggleBox(event, 'As')">
+            <h6>33</h6>
+            <h2>As</h2>
+            <h6>Arsenic</h6>
+            <h6>74.922</h6>
+        </div>
+        <div class="dv nm e34" onclick="toggleBox(event, 'Se')">
+            <h6>34</h6>
+            <h2>Se</h2>
+            <h6>Selenium</h6>
+            <h6>78.971</h6>
+        </div>
+        <div class="dv nm e35" onclick="toggleBox(event, 'Br')">
+            <h6>35</h6>
+            <h2>Br</h2>
+            <h6>Bromine</h6>
+            <h6>79.904</h6>
+        </div>
+        <div class="dv ng e36" onclick="toggleBox(event, 'Kr')">
+            <h6>36</h6>
+            <h2>Kr</h2>
+            <h6>Krypton</h6>
+            <h6>83.798</h6>
+        </div>
+        <div class="dv ptm e49" onclick="toggleBox(event, 'In')">
+            <h6>49</h6>
+            <h2>In</h2>
+            <h6>Indium</h6>
+            <h6>114.82</h6>
+        </div>
+        <div class="dv ptm e50" onclick="toggleBox(event, 'Sn')">
+            <h6>50</h6>
+            <h2>Sn</h2>
+            <h6>Tin</h6>
+            <h6>118.71</h6>
+        </div>
+        <div class="dv m e51" onclick="toggleBox(event, 'Sb')">
+            <h6>51</h6>
+            <h2>Sb</h2>
+            <h6>Antimony</h6>
+            <h6>121.76</h6>
+        </div>
+        <div class="dv m e52" onclick="toggleBox(event, 'Te')">
+            <h6>52</h6>
+            <h2>Te</h2>
+            <h6>Tellurium</h6>
+            <h6>127.60</h6>
+        </div>
+        <div class="dv nm e53" onclick="toggleBox(event, 'I')">
+            <h6>53</h6>
+            <h2>I</h2>
+            <h6>Iodine</h6>
+            <h6>126.90</h6>
+        </div>
+        <div class="dv ng e54" onclick="toggleBox(event, 'Xe')">
+            <h6>54</h6>
+            <h2>Xe</h2>
+            <h6>Xenon</h6>
+            <h6>131.29</h6>
+        </div>
+        <div class="dv ptm e81" onclick="toggleBox(event, 'Tl')">
+            <h6>81</h6>
+            <h2>Tl</h2>
+            <h6>Thallium</h6>
+            <h6>204.38</h6>
+        </div>
+        <div class="dv ptm e82" onclick="toggleBox(event, 'Pb')">
+            <h6>82</h6>
+            <h2>Pb</h2>
+            <h6>Lead</h6>
+            <h6>207.2</h6>
+        </div>
+        <div class="dv ptm e83" onclick="toggleBox(event, 'Bi')">
+            <h6>83</h6>
+            <h2>Bi</h2>
+            <h6>Bismuth</h6>
+            <h6>208.98</h6>
+        </div>
+        <div class="dv ptm e84" onclick="toggleBox(event, 'Po')">
+            <h6>84</h6>
+            <h2>Po</h2>
+            <h6>Polonium</h6>
+            <h6>209</h6>
+        </div>
+        <div class="dv m e85" onclick="toggleBox(event, 'At')">
+            <h6>85</h6>
+            <h2>At</h2>
+            <h6>Astatine</h6>
+            <h6>210</h6>
+        </div>
+        <div class="dv ng e86" onclick="toggleBox(event, 'Rn')">
+            <h6>86</h6>
+            <h2>Rn</h2>
+            <h6>Radon</h6>
+            <h6>222</h6>
+        </div>
+        <div class="dv u e113" onclick="toggleBox(event, 'Nh')">
+            <h6>113</h6>
+            <h2>Nh</h2>
+            <h6>Nihonium</h6>
+            <h6>286</h6>
+        </div>
+        <div class="dv u e114" onclick="toggleBox(event, 'Fl')">
+            <h6>114</h6>
+            <h2>Fl</h2>
+            <h6>Flerovium</h6>
+            <h6>289</h6>
+        </div>
+        <div class="dv u e115" onclick="toggleBox(event, 'Mc')">
+            <h6>115</h6>
+            <h2>Mc</h2>
+            <h6>Moscovium</h6>
+            <h6>290</h6>
+        </div>
+        <div class="dv u e116" onclick="toggleBox(event, 'Lv')">
+            <h6>116</h6>
+            <h2>Lv</h2>
+            <h6>Livermorium</h6>
+            <h6>293</h6>
+        </div>
+        <div class="dv u e117" onclick="toggleBox(event, 'Ts')">
+            <h6>117</h6>
+            <h2>Ts</h2>
+            <h6>Tennessine</h6>
+            <h6>294</h6>
+        </div>
+        <div class="dv u e118" onclick="toggleBox(event, 'Og')">
+            <h6>118</h6>
+            <h2>Og</h2>
+            <h6>Oganesson</h6>
+            <h6>294</h6>
+        </div>
+    </div>
+    <div class="dv ng e2" id="he" onclick="toggleBox(event, 'He')">
+        <h6>2</h6>
+        <h2>He</h2>
+        <h6>Helium</h6>
+        <h6>4.0026</h6>
+    </div>
+    <div class="div3 sd">
+        <div class="dv l e57" onclick="toggleBox(event, 'La')">
+            <h6>57</h6>
+            <h2>La</h2>
+            <h6>Lanthanum</h6>
+            <h6>138.91</h6>
+        </div>
+        <div class="dv l e58" onclick="toggleBox(event, 'Ce')">
+            <h6>58</h6>
+            <h2>Ce</h2>
+            <h6>Cerium</h6>
+            <h6>140.12</h6>
+        </div>
+        <div class="dv l e59" onclick="toggleBox(event, 'Pr')">
+            <h6>59</h6>
+            <h2>Pr</h2>
+            <h6>Praseodymium</h6>
+            <h6>140.91</h6>
+        </div>
+        <div class="dv l e60" onclick="toggleBox(event, 'Nd')">
+            <h6>60</h6>
+            <h2>Nd</h2>
+            <h6>Neodymium</h6>
+            <h6>144.24</h6>
+        </div>
+        <div class="dv l e61" onclick="toggleBox(event, 'Pm')">
+            <h6>61</h6>
+            <h2>Pm</h2>
+            <h6>Promethium</h6>
+            <h6>145</h6>
+        </div>
+        <div class="dv l e62" onclick="toggleBox(event, 'Sm')">
+            <h6>62</h6>
+            <h2>Sm</h2>
+            <h6>Samarium</h6>
+            <h6>150.36</h6>
+        </div>
+        <div class="dv l e63" onclick="toggleBox(event, 'Eu')">
+            <h6>63</h6>
+            <h2>Eu</h2>
+            <h6>Europium</h6>
+            <h6>151.96</h6>
+        </div>
+        <div class="dv l e64" onclick="toggleBox(event, 'Gd')">
+            <h6>64</h6>
+            <h2>Gd</h2>
+            <h6>Gadolinium</h6>
+            <h6>157.25</h6>
+        </div>
+        <div class="dv l e65" onclick="toggleBox(event, 'Tb')">
+            <h6>65</h6>
+            <h2>Tb</h2>
+            <h6>Terbium</h6>
+            <h6>158.93</h6>
+        </div>
+        <div class="dv l e66" onclick="toggleBox(event, 'Dy')">
+            <h6>66</h6>
+            <h2>Dy</h2>
+            <h6>Dysprosium</h6>
+            <h6>162.50</h6>
+        </div>
+        <div class="dv l e67" onclick="toggleBox(event, 'Ho')">
+            <h6>67</h6>
+            <h2>Ho</h2>
+            <h6>Holmium</h6>
+            <h6>164.93</h6>
+        </div>
+        <div class="dv l e68" onclick="toggleBox(event, 'Er')">
+            <h6>68</h6>
+            <h2>Er</h2>
+            <h6>Erbium</h6>
+            <h6>167.26</h6>
+        </div>
+        <div class="dv l e69" onclick="toggleBox(event, 'Tm')">
+            <h6>69</h6>
+            <h2>Tm</h2>
+            <h6>Thulium</h6>
+            <h6>168.93</h6>
+        </div>
+        <div class="dv l e70" onclick="toggleBox(event, 'Yb')">
+            <h6>70</h6>
+            <h2>Yb</h2>
+            <h6>Ytterbium</h6>
+            <h6>173.05</h6>
+        </div>
+        <div class="dv l e71" onclick="toggleBox(event, 'Lu')">
+            <h6>71</h6>
+            <h2>Lu</h2>
+            <h6>Lutetium</h6>
+            <h6>174.97</h6>
+        </div>
+        <div class="dv a e89" onclick="toggleBox(event, 'Ac')">
+            <h6>89</h6>
+            <h2>Ac</h2>
+            <h6>Actinium</h6>
+            <h6>227</h6>
+        </div>
+        <div class="dv a e90" onclick="toggleBox(event, 'Th')">
+            <h6>90</h6>
+            <h2>Th</h2>
+            <h6>Thorium</h6>
+            <h6>232.04</h6>
+        </div>
+        <div class="dv a e91" onclick="toggleBox(event, 'Pa')">
+            <h6>91</h6>
+            <h2>Pa</h2>
+            <h6>Protactinium</h6>
+            <h6>231.04</h6>
+        </div>
+        <div class="dv a e92" onclick="toggleBox(event, 'U')">
+            <h6>92</h6>
+            <h2>U</h2>
+            <h6>Uranium</h6>
+            <h6>238.03</h6>
+        </div>
+        <div class="dv a e93" onclick="toggleBox(event, 'Np')">
+            <h6>93</h6>
+            <h2>Np</h2>
+            <h6>Neptunium</h6>
+            <h6>237</h6>
+        </div>
+        <div class="dv a e94" onclick="toggleBox(event, 'Pu')">
+            <h6>94</h6>
+            <h2>Pu</h2>
+            <h6>Plutonium</h6>
+            <h6>244</h6>
+        </div>
+        <div class="dv a e95" onclick="toggleBox(event, 'Am')">
+            <h6>95</h6>
+            <h2>Am</h2>
+            <h6>Americium</h6>
+            <h6>243</h6>
+        </div>
+        <div class="dv a e96" onclick="toggleBox(event, 'Cm')">
+            <h6>96</h6>
+            <h2>Cm</h2>
+            <h6>Curium</h6>
+            <h6>247</h6>
+        </div>
+        <div class="dv a e97" onclick="toggleBox(event, 'Bk')">
+            <h6>97</h6>
+            <h2>Bk</h2>
+            <h6>Berkelium</h6>
+            <h6>247</h6>
+        </div>
+        <div class="dv a e98" onclick="toggleBox(event, 'Cf')">
+            <h6>98</h6>
+            <h2>Cf</h2>
+            <h6>Californium</h6>
+            <h6>251</h6>
+        </div>
+        <div class="dv a e99" onclick="toggleBox(event, 'Es')">
+            <h6>99</h6>
+            <h2>Es</h2>
+            <h6>Einsteinium</h6>
+            <h6>252</h6>
+        </div>
+        <div class="dv a e100" onclick="toggleBox(event, 'Fm')">
+            <h6>100</h6>
+            <h2>Fm</h2>
+            <h6>Fermium</h6>
+            <h6>257</h6>
+        </div>
+        <div class="dv a e101" onclick="toggleBox(event, 'Md')">
+            <h6>101</h6>
+            <h2>Md</h2>
+            <h6>Mendelevium</h6>
+            <h6>258</h6>
+        </div>
+        <div class="dv a e102" onclick="toggleBox(event, 'No')">
+            <h6>102</h6>
+            <h2>No</h2>
+            <h6>Nobelium</h6>
+            <h6>259</h6>
+        </div>
+        <div class="dv a e103" onclick="toggleBox(event, 'Lr')">
+            <h6>103</h6>
+            <h2>Lr</h2>
+            <h6>Lawrencium</h6>
+            <h6>266</h6>
+        </div>
 
-            <div class="dv nm e1" onclick="toggleBox(event, 'H')">               
-               <h6>1</h6>
-                 <h2>H</h2>   
-                 <h6>Hydrogen</h6>           
-                <h6>1.0079</h6>
-            </div>
-            <div class="dv am e3" onclick="toggleBox(event, 'Li')">
-                <h6>3</h6>
-                 <h2>Li</h2>   
-                 <h6>Lithium</h6>           
-                <h6>6.941</h6>
-            </div>
-            
-            <div class="dv am e11" onclick="toggleBox(event, 'Na')">
-                <h6>11</h6>
-                 <h2>Na</h2>   
-                 <h6>Sodium</h6>           
-                <h6>22.990</h6>
-            </div>
-            <div class="dv am e19" onclick="toggleBox(event, 'K')">
-                <h6>19</h6>
-                 <h2>K</h2>   
-                 <h6>Potassium</h6>           
-                <h6>39.098</h6>
-            </div>
-            <div class="dv am e37" onclick="toggleBox(event, 'Rb')">
-                <h6>37</h6>
-                 <h2>Rb</h2>   
-                 <h6>Rubidium</h6>           
-                <h6>85.468</h6>
-            </div>
-            <div class="dv am e55" onclick="toggleBox(event, 'Cs')">
-                <h6>55</h6>
-                 <h2>Cs</h2>   
-                 <h6>Caesium</h6>           
-                <h6>132.91</h6>
-            </div>
-            <div class="dv am e87" onclick="toggleBox(event, 'Fr')">
-                <h6>87</h6>
-                 <h2>Fr</h2>   
-                 <h6>Francium</h6>           
-                <h6>223</h6>
-            </div>
-         </div>
-            <div class="col c2">
-                <div class="dv am e4" onclick="toggleBox(event, 'Be')">
-                    <h6>4</h6>
-                    <h2>Be</h2>   
-                    <h6>Beryllium</h6>           
-                    <h6>9.0122</h6>
-                </div>
-                <div class="dv am e12" onclick="toggleBox(event, 'Mg')">
-                    <h6>12</h6>
-                    <h2>Mg</h2>   
-                    <h6>Magnesium</h6>           
-                    <h6>24.305</h6>
-                </div>
-                <div class="dv am e20" onclick="toggleBox(event, 'Ca')">
-                    <h6>20</h6>
-                    <h2>Ca</h2>   
-                    <h6>Calcium</h6>           
-                    <h6>40.078</h6>
-                </div>
-                <div class="dv am e38" onclick="toggleBox(event, 'Sr')">
-                    <h6>38</h6>
-                    <h2>Sr</h2>   
-                    <h6>Strontium</h6>           
-                    <h6>87.62</h6>
-                </div>
-                <div class="dv am e56" onclick="toggleBox(event, 'Ba')">
-                    <h6>56</h6>
-                    <h2>Ba</h2>   
-                    <h6>Barium</h6>           
-                    <h6>137.33</h6>
-                </div>
-                <div class="dv am e88" onclick="toggleBox(event, 'Ra')">
-                    <h6>88</h6>
-                    <h2>Ra</h2>   
-                    <h6>Radium</h6>           
-                    <h6></h6>
-                </div>
-         </div>
-         <div class="div1 sd">
-            
-            <div class="dv tm e21" onclick="toggleBox(event, 'Sc')">
-                <h6>21</h6>
-                 <h2>Sc</h2>   
-                 <h6>Scandium</h6>           
-                <h6>44.956</h6>
-            </div>
-            <div class="dv tm e22" onclick="toggleBox(event, 'Ti')">
-                <h6>22</h6>
-                <h2>Ti</h2>   
-                <h6>Titanium</h6>           
-                <h6>47.867</h6>
-            </div>
-            <div class="dv tm e23" onclick="toggleBox(event, 'V')">
-                <h6>23</h6>
-                <h2>V</h2>   
-                <h6>Vanadium</h6>           
-                <h6>50.942</h6>
-            </div>
-            <div class="dv tm e24" onclick="toggleBox(event, 'Cr')">
-                <h6>24</h6>
-                <h2>Cr</h2>   
-                <h6>Chromium</h6>           
-                <h6>51.996</h6>
-            </div>
-            <div class="dv tm e25" onclick="toggleBox(event, 'Mn')">
-                <h6>25</h6>
-                <h2>Mn</h2>   
-                <h6>Manganese</h6>           
-                <h6>54.938</h6>
-            </div>
-            <div class="dv tm e26" onclick="toggleBox(event, 'Fe')">
-                <h6>26</h6>
-                <h2>Fe</h2>   
-                <h6>Iron</h6>           
-                <h6>55.845</h6>
-            </div>
-            <div class="dv tm e27" onclick="toggleBox(event, 'Co')">
-                <h6>27</h6>
-                <h2>Co</h2>   
-                <h6>Cobalt</h6>           
-                <h6>58.933</h6>
-            </div>
-            <div class="dv tm e28" onclick="toggleBox(event, 'Ni')">
-                <h6>28</h6>
-                <h2>Ni</h2>   
-                <h6>Nickel</h6>           
-                <h6>58.693</h6>
-            </div>
-            <div class="dv tm e29" onclick="toggleBox(event, 'Cu')">
-                <h6>29</h6>
-                <h2>Cu</h2>   
-                <h6>Copper</h6>           
-                <h6>63.546</h6>
-            </div>
-            <div class="dv tm e30" onclick="toggleBox(event, 'Zn')">
-                <h6>30</h6>
-                <h2>Zn</h2>   
-                <h6>Zinc</h6>           
-                <h6>65.38</h6>
-            </div>
-            
-            <div class="dv tm e39" onclick="toggleBox(event, 'Y')">
-                <h6>39</h6>
-                <h2>Y</h2>   
-                <h6>Yttrium</h6>           
-                <h6>88.906</h6>
-            </div>
-            <div class="dv tm e40" onclick="toggleBox(event, 'Zr')">
-                <h6>40</h6>
-                <h2>Zr</h2>   
-                <h6>Zirconium</h6>           
-                <h6>91.224</h6>
-            </div>
-            <div class="dv tm e41" onclick="toggleBox(event, 'Nb')">
-                <h6>41</h6>
-                <h2>Nb</h2>   
-                <h6>Niobium</h6>           
-                <h6>92.906</h6>
-            </div>
-            <div class="dv tm e42"  onclick="toggleBox(event, 'Mo')">
-                <h6>42</h6>
-                <h2>Mo</h2>   
-                <h6>Molybdenum</h6>           
-                <h6>95.95</h6>
-            </div>
-            <div class="dv tm e43" onclick="toggleBox(event, 'Tc')">
-                <h6>43</h6>
-                <h2>Tc</h2>   
-                <h6>Technetium</h6>           
-                <h6>98</h6>
-            </div>
-            <div class="dv tm e44" onclick="toggleBox(event, 'Ru')">
-                <h6>44</h6>
-                <h2>Ru</h2>   
-                <h6>Ruthenium</h6>           
-                <h6>101.07</h6>
-            </div>
-            <div class="dv tm e45" onclick="toggleBox(event, 'Rh')">
-                <h6>45</h6>
-                <h2>Rh</h2>   
-                <h6>Rhodium</h6>           
-                <h6>102.91</h6>
-            </div>
-            <div class="dv tm e46" onclick="toggleBox(event, 'Pd')">
-                <h6>46</h6>
-                <h2>Pd</h2>   
-                <h6>Palladium</h6>           
-                <h6>106.42</h6>
-            </div>
-            <div class="dv tm e47" onclick="toggleBox(event, 'Ag')">
-                <h6>47</h6>
-                <h2>Ag</h2>   
-                <h6>Silver</h6>           
-                <h6>107.87</h6>
-            </div>
-            <div class="dv tm e48" onclick="toggleBox(event, 'Cd')">
-                <h6>48</h6>
-                <h2>Cd</h2>   
-                <h6>Cadmium</h6>           
-                <h6>112.41</h6>
-            </div>
-            
-            <div class="dv l">
-                <h5>57-71</h5>
-                <h6>Lanthanides</h6>
-                
-            </div>
-            <div class="dv tm e72" onclick="toggleBox(event, 'Hf')">
-                <h6>72</h6>
-                <h2>Hf</h2>   
-                <h6>Hafnium</h6>           
-                <h6>178.49</h6>
-            </div>
-            <div class="dv tm e73" onclick="toggleBox(event, 'Ta')">
-                <h6>73</h6>
-                <h2>Ta</h2>   
-                <h6>Tantalum</h6>           
-                <h6>180.84</h6>
-            </div>
-            <div class="dv tm e74" onclick="toggleBox(event, 'W')">
-                <h6>74</h6>
-                <h2>W</h2>   
-                <h6>Tungsten</h6>           
-                <h6>183.84</h6>
-            </div>
-            <div class="dv tm e75"  onclick="toggleBox(event, 'Re')"> 
-                <h6>75</h6>
-                <h2>Re</h2>   
-                <h6>Rhenium</h6>           
-                <h6>186.21</h6>
-            </div>
-            <div class="dv tm e76" onclick="toggleBox(event, 'Os')">
-                <h6>76</h6>
-                <h2>Os</h2>   
-                <h6>Osmium</h6>           
-                <h6>190.23</h6>
-            </div>
-            <div class="dv tm e77" onclick="toggleBox(event, 'Ir')">
-                <h6>77</h6>
-                <h2>Ir</h2>   
-                <h6>Iridium</h6>           
-                <h6>192.22</h6>
-            </div>
-            <div class="dv tm e78"  onclick="toggleBox(event, 'Pt')">
-                <h6>78</h6>
-                <h2>Pt</h2>   
-                <h6>Platinum</h6>           
-                <h6>195.08</h6>
-            </div>
-            <div class="dv tm e79"onclick="toggleBox(event, 'Au')">
-                <h6>79</h6>
-                <h2>Au</h2>   
-                <h6>Gold</h6>           
-                <h6>196.97</h6>
-            </div>
-            <div class="dv tm e80" onclick="toggleBox(event, 'Hg')">
-                <h6>80</h6>
-                <h2>Hg</h2>   
-                <h6>Mercury</h6>           
-                <h6>200.59</h6>
-            </div>
-            <div class="dv a">
-                <h5>57-71</h5>
-                <h6>Actinides</h6>
-                
-            </div>
-            <div class="dv tm e104" onclick="toggleBox(event, 'Rf')">
-                <h6>104</h6>
-                <h2>Rf</h2>   
-                <h6>Rutherfordium</h6>           
-                <h6>267</h6>
-            </div>
-            <div class="dv tm e105" onclick="toggleBox(event, 'Db')">
-                <h6>105</h6>
-                <h2>Db</h2>   
-                <h6>Dubnium</h6>           
-                <h6>268</h6>
-            </div>
-            <div class="dv tm e106" onclick="toggleBox(event, 'Sg')">
-                <h6>106</h6>
-                <h2>Sg</h2>   
-                <h6>Seaborgium</h6>           
-                <h6>269</h6>
-            </div>
-            <div class="dv tm e107" onclick="toggleBox(event, 'Bh')">
-                <h6>107</h6>
-                <h2>Bh</h2>   
-                <h6>Bohrium</h6>           
-                <h6>270</h6>
-            </div>
-            <div class="dv tm e108" onclick="toggleBox(event, 'Hs')">
-                <h6>108</h6>
-                <h2>Hs</h2>   
-                <h6>Hassium</h6>           
-                <h6>277</h6>
-            </div>
-            <div class="dv u e109" onclick="toggleBox(event, 'Mt')">
-                <h6>109</h6>
-                <h2>Mt</h2>   
-                <h6>Meitnerium</h6>           
-                <h6>278</h6>
-            </div>
-            <div class="dv u e110" onclick="toggleBox(event, 'Ds')">
-                <h6>110</h6>
-                <h2>Ds</h2>   
-                <h6>Darmstadium</h6>           
-                <h6>281</h6>
-            </div>
-            <div class="dv u e111" onclick="toggleBox(event, 'Rg')">
-                <h6>111</h6>
-                <h2>Rg</h2>   
-                <h6>Roentgenium</h6>           
-                <h6>282</h6>
-            </div>
-            <div class="dv u e112" onclick="toggleBox(event, 'Cn')">
-                <h6>112</h6>
-                <h2>Cn</h2>   
-                <h6>Copernicium</h6>           
-                <h6>285</h6>
-            </div>
-            
-         </div>
-         <div class="div2 sd">
-            
-            <div class="dv nm e5" onclick="toggleBox(event, 'B')">
-                <h6>5</h6>
-                <h2>B</h2>   
-                <h6>Boron</h6>           
-                <h6>10.81</h6>
-            </div>
-            <div class="dv nm e6" onclick="toggleBox(event, 'C')">
-                <h6>6</h6>
-                <h2>C</h2>   
-                <h6>Carbon</h6>           
-                <h6>12.011</h6>
-            </div>
-            <div class="dv nm e7" onclick="toggleBox(event, 'N')">
-                <h6>7</h6>
-                <h2>N</h2>   
-                <h6>Nitrogen</h6>           
-                <h6>14.007</h6>
-            </div>
-            <div class="dv nm e8" onclick="toggleBox(event, 'O')">
-                <h6>8</h6>
-                <h2>O</h2>   
-                <h6>Oxygen</h6>           
-                <h6>15.999</h6>
-            </div>
-            <div class="dv nm e9" onclick="toggleBox(event, 'F')">
-                <h6>9</h6>
-                <h2>F</h2>   
-                <h6>Fluorine</h6>           
-                <h6>18.998</h6>
-            </div>
-            <div class="dv ng e10" onclick="toggleBox(event, 'Ne')">
-                <h6>10</h6>
-                <h2>Ne</h2>   
-                <h6>Neon</h6>           
-                <h6>20.180</h6>
-            </div>
-            <div class="dv ptm e13" onclick="toggleBox(event, 'Al')">
-                <h6>13</h6>
-                <h2>Al</h2>   
-                <h6>Aluminium</h6>           
-                <h6>26.982</h6>
-            </div>
-            <div class="dv m e14" onclick="toggleBox(event, 'Si')">
-                <h6>14</h6>
-                <h2>Si</h2>   
-                <h6>Silicon</h6>           
-                <h6>28.085</h6>
-            </div>
-            <div class="dv nm e15" onclick="toggleBox(event, 'P')">
-                <h6>15</h6>
-                <h2>P</h2>   
-                <h6>Phosphorus</h6>           
-                <h6>30.974</h6>
-            </div>
-            <div class="dv nm e16" onclick="toggleBox(event, 'S')">
-                <h6>16</h6>
-                <h2>S</h2>   
-                <h6>Sulfur</h6>           
-                <h6>32.06</h6>
-            </div>
-            <div class="dv nm e17" onclick="toggleBox(event, 'Cl')">
-                <h6>17</h6>
-                <h2>Cl</h2>   
-                <h6>Chlorine</h6>           
-                <h6>35.45</h6>
-            </div>
-            <div class="dv ng e18" onclick="toggleBox(event, 'Ar')">
-                <h6>18</h6>
-                <h2>Ar</h2>   
-                <h6>Argon</h6>           
-                <h6>39.948</h6>
-            </div>
-            <div class="dv ptm e31" onclick="toggleBox(event, 'Ga')">
-                <h6>31</h6>
-                <h2>Ga</h2>   
-                <h6>Gallium</h6>           
-                <h6>69.723</h6>
-            </div>
-            <div class="dv m e32" onclick="toggleBox(event, 'Ge')">
-                <h6>32</h6>
-                <h2>Ge</h2>   
-                <h6>Germanium</h6>           
-                <h6>72.630</h6>
-            </div>
-            <div class="dv m e33" onclick="toggleBox(event, 'As')">
-                <h6>33</h6>
-                <h2>As</h2>   
-                <h6>Arsenic</h6>           
-                <h6>74.922</h6>
-            </div>
-            <div class="dv nm e34" onclick="toggleBox(event, 'Se')">
-                <h6>34</h6>
-                <h2>Se</h2>   
-                <h6>Selenium</h6>           
-                <h6>78.971</h6>
-            </div>
-            <div class="dv nm e35" onclick="toggleBox(event, 'Br')">
-                <h6>35</h6>
-                <h2>Br</h2>   
-                <h6>Bromine</h6>           
-                <h6>79.904</h6>
-            </div>
-            <div class="dv ng e36" onclick="toggleBox(event, 'Kr')">
-                <h6>36</h6>
-                <h2>Kr</h2>   
-                <h6>Krypton</h6>           
-                <h6>83.798</h6>
-            </div>
-            <div class="dv ptm e49" onclick="toggleBox(event, 'In')">
-                <h6>49</h6>
-                <h2>In</h2>   
-                <h6>Indium</h6>           
-                <h6>114.82</h6>
-            </div>
-            <div class="dv ptm e50" onclick="toggleBox(event, 'Sn')">
-                <h6>50</h6>
-                <h2>Sn</h2>   
-                <h6>Tin</h6>           
-                <h6>118.71</h6>
-            </div>
-            <div class="dv m e51" onclick="toggleBox(event, 'Sb')">
-                <h6>51</h6>
-                <h2>Sb</h2>   
-                <h6>Antimony</h6>           
-                <h6>121.76</h6>
-            </div>
-            <div class="dv m e52" onclick="toggleBox(event, 'Te')">
-                <h6>52</h6>
-                <h2>Te</h2>   
-                <h6>Tellurium</h6>           
-                <h6>127.60</h6>
-            </div>
-            <div class="dv nm e53" onclick="toggleBox(event, 'I')">
-                <h6>53</h6>
-                <h2>I</h2>   
-                <h6>Iodine</h6>           
-                <h6>126.90</h6>
-            </div>
-            <div class="dv ng e54" onclick="toggleBox(event, 'Xe')">
-                <h6>54</h6>
-                <h2>Xe</h2>   
-                <h6>Xenon</h6>           
-                <h6>131.29</h6>
-            </div>
-            <div class="dv ptm e81" onclick="toggleBox(event, 'Tl')">
-                <h6>81</h6>
-                <h2>Tl</h2>   
-                <h6>Thallium</h6>           
-                <h6>204.38</h6>
-            </div>
-            <div class="dv ptm e82" onclick="toggleBox(event, 'Pb')">
-                <h6>82</h6>
-                <h2>Pb</h2>   
-                <h6>Lead</h6>           
-                <h6>207.2</h6>
-            </div>
-            <div class="dv ptm e83" onclick="toggleBox(event, 'Bi')">
-                <h6>83</h6>
-                <h2>Bi</h2>   
-                <h6>Bismuth</h6>           
-                <h6>208.98</h6>
-            </div>
-            <div class="dv ptm e84" onclick="toggleBox(event, 'Po')">
-                <h6>84</h6>
-                <h2>Po</h2>   
-                <h6>Polonium</h6>           
-                <h6>209</h6>
-            </div>
-            <div class="dv m e85" onclick="toggleBox(event, 'At')">
-                <h6>85</h6>
-                <h2>At</h2>   
-                <h6>Astatine</h6>           
-                <h6>210</h6>
-            </div>
-            <div class="dv ng e86" onclick="toggleBox(event, 'Rn')">
-                <h6>86</h6>
-                <h2>Rn</h2>   
-                <h6>Radon</h6>           
-                <h6>222</h6>
-            </div>
-            <div class="dv u e113" onclick="toggleBox(event, 'Nh')">
-                <h6>113</h6>
-                <h2>Nh</h2>   
-                <h6>Nihonium</h6>           
-                <h6>286</h6>
-            </div>
-            <div class="dv u e114" onclick="toggleBox(event, 'Fl')">
-                <h6>114</h6>
-                <h2>Fl</h2>   
-                <h6>Flerovium</h6>           
-                <h6>289</h6>
-            </div>
-            <div class="dv u e115" onclick="toggleBox(event, 'Mc')">
-                <h6>115</h6>
-                <h2>Mc</h2>   
-                <h6>Moscovium</h6>           
-                <h6>290</h6>
-            </div>
-            <div class="dv u e116" onclick="toggleBox(event, 'Lv')">
-                <h6>116</h6>
-                <h2>Lv</h2>   
-                <h6>Livermorium</h6>           
-                <h6>293</h6>
-            </div>
-            <div class="dv u e117" onclick="toggleBox(event, 'Ts')">
-                <h6>117</h6>
-                <h2>Ts</h2>   
-                <h6>Tennessine</h6>           
-                <h6>294</h6>
-            </div>
-            <div class="dv u e118" onclick="toggleBox(event, 'Og')">
-                <h6>118</h6>
-                <h2>Og</h2>   
-                <h6>Oganesson</h6>           
-                <h6>294</h6>
-            </div>
-            
-         </div>
-         <div class="dv ng e2" id="he" onclick="toggleBox(event, 'He')">
-                <h6>2</h6>
-                <h2>He</h2>   
-                <h6>Helium</h6>           
-                <h6>4.0026</h6>
-         </div>
-         <div class="div3 sd">
-            <div class="dv l e57" onclick="toggleBox(event, 'La')">
-                <h6>57</h6>
-                <h2>La</h2>   
-                <h6>Lanthanum</h6>           
-                <h6>138.91</h6>
-            </div>
-            <div class="dv l e58" onclick="toggleBox(event, 'Ce')">
-                <h6>58</h6>
-                <h2>Ce</h2>   
-                <h6>Cerium</h6>           
-                <h6>140.12</h6>
-            </div>
-            <div class="dv l e59" onclick="toggleBox(event, 'Pr')">
-                <h6>59</h6>
-                <h2>Pr</h2>   
-                <h6>Praseodymium</h6>           
-                <h6>140.91</h6>
-            </div>
-            <div class="dv l e60" onclick="toggleBox(event, 'Nd')">
-                <h6>60</h6>
-                <h2>Nd</h2>   
-                <h6>Neodymium</h6>           
-                <h6>144.24</h6>
-            </div>
-            <div class="dv l e61" onclick="toggleBox(event, 'Pm')">
-                <h6>61</h6>
-                <h2>Pm</h2>   
-                <h6>Promethium</h6>           
-                <h6>145</h6>
-            </div>
-            <div class="dv l e62" onclick="toggleBox(event, 'Sm')">
-                <h6>62</h6>
-                <h2>Sm</h2>   
-                <h6>Samarium</h6>           
-                <h6>150.36</h6>
-            </div>
-            <div class="dv l e63" onclick="toggleBox(event, 'Eu')">
-                <h6>63</h6>
-                <h2>Eu</h2>   
-                <h6>Europium</h6>           
-                <h6>151.96</h6>
-            </div>
-            <div class="dv l e64" onclick="toggleBox(event, 'Gd')">
-                <h6>64</h6>
-                <h2>Gd</h2>   
-                <h6>Gadolinium</h6>           
-                <h6>157.25</h6>
-            </div>
-            <div class="dv l e65" onclick="toggleBox(event, 'Tb')">
-                <h6>65</h6>
-                <h2>Tb</h2>   
-                <h6>Terbium</h6>           
-                <h6>158.93</h6>
-            </div>
-            <div class="dv l e66" onclick="toggleBox(event, 'Dy')">
-                <h6>66</h6>
-                <h2>Dy</h2>   
-                <h6>Dysprosium</h6>           
-                <h6>162.50</h6>
-            </div>
-            <div class="dv l e67" onclick="toggleBox(event, 'Ho')">
-                <h6>67</h6>
-                <h2>Ho</h2>   
-                <h6>Holmium</h6>           
-                <h6>164.93</h6>
-            </div>
-            <div class="dv l e68" onclick="toggleBox(event, 'Er')">
-                <h6>68</h6>
-                <h2>Er</h2>   
-                <h6>Erbium</h6>           
-                <h6>167.26</h6>
-            </div>
-            <div class="dv l e69" onclick="toggleBox(event, 'Tm')">
-                <h6>69</h6>
-                <h2>Tm</h2>   
-                <h6>Thulium</h6>           
-                <h6>168.93</h6>
-            </div>
-            <div class="dv l e70" onclick="toggleBox(event, 'Yb')">
-                <h6>70</h6>
-                <h2>Yb</h2>   
-                <h6>Ytterbium</h6>           
-                <h6>173.05</h6>
-            </div>
-            <div class="dv l e71" onclick="toggleBox(event, 'Lu')">
-                <h6>71</h6>
-                <h2>Lu</h2>   
-                <h6>Lutetium</h6>           
-                <h6>174.97</h6>
-            </div>
-           
-            <div class="dv a e89" onclick="toggleBox(event, 'Ac')">
-                <h6>89</h6>
-                <h2>Ac</h2>   
-                <h6>Actinium</h6>           
-                <h6>227</h6>
-            </div>
-            <div class="dv a e90" onclick="toggleBox(event, 'Th')">
-                <h6>90</h6>
-                <h2>Th</h2>   
-                <h6>Thorium</h6>           
-                <h6>232.04</h6>
-            </div>
-            <div class="dv a e91" onclick="toggleBox(event, 'Pa')"> 
-                <h6>91</h6>
-                <h2>Pa</h2>   
-                <h6>Protactinium</h6>           
-                <h6>231.04</h6>
-            </div>
-            <div class="dv a e92" onclick="toggleBox(event, 'U')">
-                <h6>92</h6>
-                <h2>U</h2>   
-                <h6>Uranium</h6>           
-                <h6>238.03</h6>
-            </div>
-            <div class="dv a e93" onclick="toggleBox(event, 'Np')">
-                <h6>93</h6>
-                <h2>Np</h2>   
-                <h6>Neptunium</h6>           
-                <h6>237</h6>
-            </div>
-            <div class="dv a e94" onclick="toggleBox(event, 'Pu')">
-                <h6>94</h6>
-                <h2>Pu</h2>   
-                <h6>Plutonium</h6>           
-                <h6>244</h6>
-            </div>
-            <div class="dv a e95" onclick="toggleBox(event, 'Am')">
-                <h6>95</h6>
-                <h2>Am</h2>   
-                <h6>Americium</h6>           
-                <h6>243</h6>
-            </div>
-            <div class="dv a e96" onclick="toggleBox(event, 'Cm')">
-                <h6>96</h6>
-                <h2>Cm</h2>   
-                <h6>Curium</h6>           
-                <h6>247</h6>
-            </div>
-            <div class="dv a e97" onclick="toggleBox(event, 'Bk')">
-                <h6>97</h6>
-                <h2>Bk</h2>   
-                <h6>Berkelium</h6>           
-                <h6>247</h6>
-            </div>
-            <div class="dv a e98" onclick="toggleBox(event, 'Cf')">
-                <h6>98</h6>
-                <h2>Cf</h2>   
-                <h6>Californium</h6>           
-                <h6>251</h6>
-            </div>
-            <div class="dv a e99" onclick="toggleBox(event, 'Es')">
-                <h6>99</h6>
-                <h2>Es</h2>   
-                <h6>Einsteinium</h6>           
-                <h6>252</h6>
-            </div>
-            <div class="dv a e100" onclick="toggleBox(event, 'Fm')">
-                <h6>100</h6>
-                <h2>Fm</h2>   
-                <h6>Fermium</h6>           
-                <h6>257</h6>
-            </div>
-            <div class="dv a e101" onclick="toggleBox(event, 'Md')">
-                <h6>101</h6>
-                <h2>Md</h2>   
-                <h6>Mendelevium</h6>           
-                <h6>258</h6>
-            </div>
-            <div class="dv a e102" onclick="toggleBox(event, 'No')">
-                <h6>102</h6>
-                <h2>No</h2>   
-                <h6>Nobelium</h6>           
-                <h6>259</h6>
-            </div>
-            <div class="dv a e103" onclick="toggleBox(event, 'Lr')">
-                <h6>103</h6>
-                <h2>Lr</h2>   
-                <h6>Lawrencium</h6>           
-                <h6>266</h6>
-            </div>   
-            
-            <!-- done -->
+        <div id="H" class="toggle-box">
+            <p>Hydrogen is a chemical element; it has the symbol H and atomic number 1. It is the lightest and most abundant chemical element in the universe, constituting about 75% of all normal matter. <br> <br>
 
-            <div id="H" class="toggle-box">
-                <p>Hydrogen is a chemical element; it has the symbol H and atomic number 1. It is the lightest and most abundant chemical element in the universe, constituting about 75% of all normal matter. <br> <br>
-
-                    Atomic mass:1.0078 u <br>
-                    Melting point:-259.14°C (14.01 K) <br>
-                    Boiling point:-252.87°C (20.28 K) <br>
-                    Discovery date:1766 <br>
-                    Discovered by:Henry Cavendish</p>
-              </div>
-              <div id="Li" class="toggle-box">
-                <p>
-                    Lithium is a chemical element; it has symbol Li and atomic number 3. It is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element.
-                    <br><br>
-                    Atomic mass:6.9410 u <br>
-                    Melting point:180.54°C (453.69 K) <br>
-                    Boiling point:1342°C (1615.15 K) <br>
-                    Discovery date:1817 <br>
-                    Discovered by:Johan August Arfwedson
-                </p>
-              </div>
-              
-            <div id="Na" class="toggle-box">
-                <p>
-                    Sodium is a chemical element; it has the symbol Na and atomic number 11. It is a soft, silvery-white, highly reactive metal and is a member of the alkali metals.
-                    <br><br>
-                    Atomic mass: 22.989 u <br>
-                    Melting point: 97.79°C (370.94 K) <br>
-                    Boiling point: 883°C (1156.15 K) <br>
-                    Discovery date: 1807 <br>
-                    Discovered by: Humphry Davy
-                </p>
-            </div>
-            <div id="K" class="toggle-box">
-                <p>
-                    Potassium is a chemical element; it has the symbol K and atomic number 19. It is a silvery-white metal that is soft enough to be cut with a knife.
-                    <br><br>
-                    Atomic mass: 39.098 u <br>
-                    Melting point: 63.38°C (336.53 K) <br>
-                    Boiling point: 759°C (1032.15 K) <br>
-                    Discovery date: 1807 <br>
-                    Discovered by: Humphry Davy
-                </p>
-            </div>
-            <div id="Rb" class="toggle-box">
-                <p>
-                    Rubidium is a chemical element; it has the symbol Rb and atomic number 37. It is a soft, silvery-white metallic element of the alkali metal group.
-                    <br><br>
-                    Atomic mass: 85.468 u <br>
-                    Melting point: 39.31°C (312.46 K) <br>
-                    Boiling point: 688°C (961.15 K) <br>
-                    Discovery date: 1861 <br>
-                    Discovered by: Robert Bunsen and Gustav Kirchhoff
-                </p>
-            </div>
-            <div id="Cs" class="toggle-box">
-                <p>
-                    Caesium is a chemical element; it has the symbol Cs and atomic number 55. It is a soft, gold-colored alkali metal.
-                    <br><br>
-                    Atomic mass: 132.91 u <br>
-                    Melting point: 28.44°C (301.59 K) <br>
-                    Boiling point: 671°C (944.15 K) <br>
-                    Discovery date: 1860 <br>
-                    Discovered by: Robert Bunsen and Gustav Kirchhoff
-                </p>
-            </div>
-            <div id="Fr" class="toggle-box">
-                <p>
-                    Francium is a chemical element; it has the symbol Fr and atomic number 87. It is an extremely rare and highly radioactive metal.
-                    <br><br>
-                    Atomic mass: 223 u <br>
-                    Melting point: 27°C (300 K) (estimated) <br>
-                    Boiling point: 677°C (950 K) (estimated) <br>
-                    Discovery date: 1939 <br>
-                    Discovered by: Marguerite Perey
-                </p>
-            </div>
-            <div id="Be" class="toggle-box">
-                <p>
-                    Beryllium is a chemical element; it has the symbol Be and atomic number 4. It is a relatively rare element in the universe and is a hard, grayish metal naturally found in mineral rocks.
-                    <br><br>
-                    Atomic mass: 9.0122 u <br>
-                    Melting point: 1287°C (1560 K) <br>
-                    Boiling point: 2469°C (2742 K) <br>
-                    Discovery date: 1798 <br>
-                    Discovered by: Louis Nicolas Vauquelin
-                </p>
-            </div>
-            <div id="Mg" class="toggle-box">
-                <p>
-                    Magnesium is a chemical element; it has the symbol Mg and atomic number 12. It is a shiny gray solid and is the eighth most abundant element in the Earth's crust.
-                    <br><br>
-                    Atomic mass: 24.305 u <br>
-                    Melting point: 650°C (923 K) <br>
-                    Boiling point: 1090°C (1363 K) <br>
-                    Discovery date: 1755 <br>
-                    Discovered by: Joseph Black
-                </p>
-            </div>
-            
-            <div id="Ca" class="toggle-box">
-                <p>
-                    Calcium is a chemical element; it has the symbol Ca and atomic number 20. It is a soft gray alkaline earth metal and is the fifth most abundant element in the Earth's crust.
-                    <br><br>
-                    Atomic mass: 40.078 u <br>
-                    Melting point: 842°C (1115 K) <br>
-                    Boiling point: 1484°C (1757 K) <br>
-                    Discovery date: 1808 <br>
-                    Discovered by: Humphry Davy
-                </p>
-            </div>
-            <div id="Sr" class="toggle-box">
-                <p>
-                    Strontium is a chemical element; it has the symbol Sr and atomic number 38. It is a soft silver-white or yellowish metallic element that is highly reactive chemically.
-                    <br><br>
-                    Atomic mass: 87.62 u <br>
-                    Melting point: 777°C (1050 K) <br>
-                    Boiling point: 1382°C (1655 K) <br>
-                    Discovery date: 1790 <br>
-                    Discovered by: Adair Crawford
-                </p>
-            </div>
-            <div id="Ba" class="toggle-box">
-                <p>
-                    Barium is a chemical element; it has the symbol Ba and atomic number 56. It is a soft, silvery alkaline earth metal.
-                    <br><br>
-                    Atomic mass: 137.33 u <br>
-                    Melting point: 727°C (1000 K) <br>
-                    Boiling point: 1845°C (2118 K) <br>
-                    Discovery date: 1808 <br>
-                    Discovered by: Humphry Davy
-                </p>
-            </div>
-            <div id="Ra" class="toggle-box">
-                <p>
-                    Radium is a chemical element; it has the symbol Ra and atomic number 88. It is an intensely radioactive metal that glows in the dark.
-                    <br><br>
-                    Atomic mass: 226 u <br>
-                    Melting point: 700°C (973 K) (estimated) <br>
-                    Boiling point: 1737°C (2010 K) (estimated) <br>
-                    Discovery date: 1898 <br>
-                    Discovered by: Marie Curie and Pierre Curie
-                </p>
-            </div>
+                Atomic mass:1.0078 u <br>
+                Melting point:-259.14°C (14.01 K) <br>
+                Boiling point:-252.87°C (20.28 K) <br>
+                Discovery date:1766 <br>
+                Discovered by:Henry Cavendish <br><br>
+                <a href="https://en.wikipedia.org/wiki/Hydrogen" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Li" class="toggle-box">
+            <p>
+                Lithium is a chemical element; it has symbol Li and atomic number 3. It is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element.
+                <br><br>
+                Atomic mass:6.9410 u <br>
+                Melting point:180.54°C (453.69 K) <br>
+                Boiling point:1342°C (1615.15 K) <br>
+                Discovery date:1817 <br>
+                Discovered by:Johan August Arfwedson <br><br>
+                <a href="https://en.wikipedia.org/wiki/Lithium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Na" class="toggle-box">
+            <p>
+                Sodium is a chemical element; it has the symbol Na and atomic number 11. It is a soft, silvery-white, highly reactive metal and is a member of the alkali metals.
+                <br><br>
+                Atomic mass: 22.989 u <br>
+                Melting point: 97.79°C (370.94 K) <br>
+                Boiling point: 883°C (1156.15 K) <br>
+                Discovery date: 1807 <br>
+                Discovered by: Humphry Davy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Sodium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="K" class="toggle-box">
+            <p>
+                Potassium is a chemical element; it has the symbol K and atomic number 19. It is a silvery-white metal that is soft enough to be cut with a knife.
+                <br><br>
+                Atomic mass: 39.098 u <br>
+                Melting point: 63.38°C (336.53 K) <br>
+                Boiling point: 759°C (1032.15 K) <br>
+                Discovery date: 1807 <br>
+                Discovered by: Humphry Davy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Potassium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Rb" class="toggle-box">
+            <p>
+                Rubidium is a chemical element; it has the symbol Rb and atomic number 37. It is a soft, silvery-white metallic element of the alkali metal group.
+                <br><br>
+                Atomic mass: 85.468 u <br>
+                Melting point: 39.31°C (312.46 K) <br>
+                Boiling point: 688°C (961.15 K) <br>
+                Discovery date: 1861 <br>
+                Discovered by: Robert Bunsen and Gustav Kirchhoff <br><br>
+                <a href="https://en.wikipedia.org/wiki/Rubidium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Cs" class="toggle-box">
+            <p>
+                Caesium is a chemical element; it has the symbol Cs and atomic number 55. It is a soft, gold-colored alkali metal.
+                <br><br>
+                Atomic mass: 132.91 u <br>
+                Melting point: 28.44°C (301.59 K) <br>
+                Boiling point: 671°C (944.15 K) <br>
+                Discovery date: 1860 <br>
+                Discovered by: Robert Bunsen and Gustav Kirchhoff <br><br>
+                <a href="https://en.wikipedia.org/wiki/Caesium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Fr" class="toggle-box">
+            <p>
+                Francium is a chemical element; it has the symbol Fr and atomic number 87. It is an extremely rare and highly radioactive metal.
+                <br><br>
+                Atomic mass: 223 u <br>
+                Melting point: 27°C (300 K) (estimated) <br>
+                Boiling point: 677°C (950 K) (estimated) <br>
+                Discovery date: 1939 <br>
+                Discovered by: Marguerite Perey <br><br>
+                <a href="https://en.wikipedia.org/wiki/Francium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Be" class="toggle-box">
+            <p>
+                Beryllium is a chemical element; it has the symbol Be and atomic number 4. It is a relatively rare element in the universe and is a hard, grayish metal naturally found in mineral rocks.
+                <br><br>
+                Atomic mass: 9.0122 u <br>
+                Melting point: 1287°C (1560 K) <br>
+                Boiling point: 2469°C (2742 K) <br>
+                Discovery date: 1798 <br>
+                Discovered by: Louis Nicolas Vauquelin <br><br>
+                <a href="https://en.wikipedia.org/wiki/Beryllium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Mg" class="toggle-box">
+            <p>
+                Magnesium is a chemical element; it has the symbol Mg and atomic number 12. It is a shiny gray solid and is the eighth most abundant element in the Earth's crust.
+                <br><br>
+                Atomic mass: 24.305 u <br>
+                Melting point: 650°C (923 K) <br>
+                Boiling point: 1090°C (1363 K) <br>
+                Discovery date: 1755 <br>
+                Discovered by: Joseph Black <br><br>
+                <a href="https://en.wikipedia.org/wiki/Magnesium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Ca" class="toggle-box">
+            <p>
+                Calcium is a chemical element; it has the symbol Ca and atomic number 20. It is a soft gray alkaline earth metal and is the fifth most abundant element in the Earth's crust.
+                <br><br>
+                Atomic mass: 40.078 u <br>
+                Melting point: 842°C (1115 K) <br>
+                Boiling point: 1484°C (1757 K) <br>
+                Discovery date: 1808 <br>
+                Discovered by: Humphry Davy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Calcium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Sr" class="toggle-box">
+            <p>
+                Strontium is a chemical element; it has the symbol Sr and atomic number 38. It is a soft silver-white or yellowish metallic element that is highly reactive chemically.
+                <br><br>
+                Atomic mass: 87.62 u <br>
+                Melting point: 777°C (1050 K) <br>
+                Boiling point: 1382°C (1655 K) <br>
+                Discovery date: 1790 <br>
+                Discovered by: Adair Crawford <br><br>
+                <a href="https://en.wikipedia.org/wiki/Strontium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Ba" class="toggle-box">
+            <p>
+                Barium is a chemical element; it has the symbol Ba and atomic number 56. It is a soft, silvery alkaline earth metal.
+                <br><br>
+                Atomic mass: 137.33 u <br>
+                Melting point: 727°C (1000 K) <br>
+                Boiling point: 1845°C (2118 K) <br>
+                Discovery date: 1808 <br>
+                Discovered by: Humphry Davy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Barium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
+        <div id="Ra" class="toggle-box">
+            <p>
+                Radium is a chemical element; it has the symbol Ra and atomic number 88. It is an intensely radioactive metal that glows in the dark.
+                <br><br>
+                Atomic mass: 226 u <br>
+                Melting point: 700°C (973 K) (estimated) <br>
+                Boiling point: 1737°C (2010 K) (estimated) <br>
+                Discovery date: 1898 <br>
+                Discovered by: Marie Curie and Pierre Curie <br><br>
+                <a href="https://en.wikipedia.org/wiki/Radium" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </p>
+        </div>
         <div id="Sc" class="toggle-box">
             <p>
                 Scandium is a chemical element; it has the symbol Sc and atomic number 21. It is a silvery-white metallic element and is classified as a transition metal.
@@ -899,7 +949,8 @@
                 Melting point: 1541°C (1814 K) <br>
                 Boiling point: 2836°C (3109 K) <br>
                 Discovery date: 1879 <br>
-                Discovered by: Lars Fredrik Nilson
+                Discovered by: Lars Fredrik Nilson <br><br>
+                <a href="https://en.wikipedia.org/wiki/Scandium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ti" class="toggle-box">
@@ -910,7 +961,8 @@
                 Melting point: 1668°C (1941 K) <br>
                 Boiling point: 3287°C (3560 K) <br>
                 Discovery date: 1791 <br>
-                Discovered by: William Gregor
+                Discovered by: William Gregor <br><br>
+                <a href="https://en.wikipedia.org/wiki/Titanium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="V" class="toggle-box">
@@ -921,7 +973,8 @@
                 Melting point: 1910°C (2183 K) <br>
                 Boiling point: 3407°C (3680 K) <br>
                 Discovery date: 1801 <br>
-                Discovered by: Andrés Manuel del Río
+                Discovered by: Andrés Manuel del Río <br><br>
+                <a href="https://en.wikipedia.org/wiki/Vanadium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cr" class="toggle-box">
@@ -932,7 +985,8 @@
                 Melting point: 1907°C (2180 K) <br>
                 Boiling point: 2671°C (2944 K) <br>
                 Discovery date: 1797 <br>
-                Discovered by: Louis Nicolas Vauquelin
+                Discovered by: Louis Nicolas Vauquelin <br><br>
+                <a href="https://en.wikipedia.org/wiki/Chromium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Mn" class="toggle-box">
@@ -943,7 +997,8 @@
                 Melting point: 1246°C (1519 K) <br>
                 Boiling point: 2061°C (2334 K) <br>
                 Discovery date: 1774 <br>
-                Discovered by: Johann Gottlieb Gahn
+                Discovered by: Johann Gottlieb Gahn <br><br>
+                <a href="https://en.wikipedia.org/wiki/Manganese" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Fe" class="toggle-box">
@@ -953,7 +1008,8 @@
                 Atomic mass: 55.845 u <br>
                 Melting point: 1538°C (1811 K) <br>
                 Boiling point: 2862°C (3135 K) <br>
-                Discovery date: Prehistoric
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Iron" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Co" class="toggle-box">
@@ -964,7 +1020,8 @@
                 Melting point: 1495°C (1768 K) <br>
                 Boiling point: 2927°C (3200 K) <br>
                 Discovery date: 1735 <br>
-                Discovered by: Georg Brandt
+                Discovered by: Georg Brandt <br><br>
+                <a href="https://en.wikipedia.org/wiki/Cobalt" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ni" class="toggle-box">
@@ -975,7 +1032,8 @@
                 Melting point: 1455°C (1728 K) <br>
                 Boiling point: 2730°C (3003 K) <br>
                 Discovery date: 1751 <br>
-                Discovered by: Axel Fredrik Cronstedt
+                Discovered by: Axel Fredrik Cronstedt <br><br>
+                <a href="https://en.wikipedia.org/wiki/Nickel" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cu" class="toggle-box">
@@ -985,7 +1043,8 @@
                 Atomic mass: 63.546 u <br>
                 Melting point: 1084.62°C (1357.77 K) <br>
                 Boiling point: 2562°C (2835 K) <br>
-                Discovery date: Prehistoric
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Copper" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Zn" class="toggle-box">
@@ -996,7 +1055,8 @@
                 Melting point: 419.53°C (692.68 K) <br>
                 Boiling point: 907°C (1180 K) <br>
                 Discovery date: 1746 <br>
-                Discovered by: Andreas Marggraf
+                Discovered by: Andreas Marggraf <br><br>
+                <a href="https://en.wikipedia.org/wiki/Zinc" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Y" class="toggle-box">
@@ -1007,7 +1067,8 @@
                 Melting point: 1526°C (1799 K) <br>
                 Boiling point: 3338°C (3611 K) <br>
                 Discovery date: 1794 <br>
-                Discovered by: Johan Gadolin
+                Discovered by: Johan Gadolin <br><br>
+                <a href="https://en.wikipedia.org/wiki/Yttrium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Zr" class="toggle-box">
@@ -1018,7 +1079,8 @@
                 Melting point: 1855°C (2128 K) <br>
                 Boiling point: 4409°C (4682 K) <br>
                 Discovery date: 1789 <br>
-                Discovered by: Martin Heinrich Klaproth
+                Discovered by: Martin Heinrich Klaproth <br><br>
+                <a href="https://en.wikipedia.org/wiki/Zirconium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Nb" class="toggle-box">
@@ -1029,7 +1091,8 @@
                 Melting point: 2477°C (2750 K) <br>
                 Boiling point: 4744°C (5017 K) <br>
                 Discovery date: 1801 <br>
-                Discovered by: Charles Hatchett
+                Discovered by: Charles Hatchett <br><br>
+                <a href="https://en.wikipedia.org/wiki/Niobium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Mo" class="toggle-box">
@@ -1040,7 +1103,8 @@
                 Melting point: 2623°C (2896 K) <br>
                 Boiling point: 4639°C (4912 K) <br>
                 Discovery date: 1778 <br>
-                Discovered by: Carl Wilhelm Scheele
+                Discovered by: Carl Wilhelm Scheele <br><br>
+                <a href="https://en.wikipedia.org/wiki/Molybdenum" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Tc" class="toggle-box">
@@ -1051,7 +1115,8 @@
                 Melting point: 2157°C (2430 K) <br>
                 Boiling point: 4265°C (4538 K) <br>
                 Discovery date: 1937 <br>
-                Discovered by: Carlo Perrier and Emilio Segrè
+                Discovered by: Carlo Perrier and Emilio Segrè <br><br>
+                <a href="https://en.wikipedia.org/wiki/Technetium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ru" class="toggle-box">
@@ -1062,7 +1127,8 @@
                 Melting point: 2334°C (2607 K) <br>
                 Boiling point: 4150°C (4423 K) <br>
                 Discovery date: 1844 <br>
-                Discovered by: Karl Ernst Claus
+                Discovered by: Karl Ernst Claus <br><br>
+                <a href="https://en.wikipedia.org/wiki/Ruthenium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Rh" class="toggle-box">
@@ -1073,7 +1139,8 @@
                 Melting point: 1964°C (2237 K) <br>
                 Boiling point: 3695°C (3968 K) <br>
                 Discovery date: 1803 <br>
-                Discovered by: William Hyde Wollaston
+                Discovered by: William Hyde Wollaston <br><br>
+                <a href="https://en.wikipedia.org/wiki/Rhodium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pd" class="toggle-box">
@@ -1084,7 +1151,8 @@
                 Melting point: 1554.9°C (1828.05 K) <br>
                 Boiling point: 2963°C (3236 K) <br>
                 Discovery date: 1803 <br>
-                Discovered by: William Hyde Wollaston
+                Discovered by: William Hyde Wollaston <br><br>
+                <a href="https://en.wikipedia.org/wiki/Palladium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ag" class="toggle-box">
@@ -1094,7 +1162,8 @@
                 Atomic mass: 107.87 u <br>
                 Melting point: 961.78°C (1234.93 K) <br>
                 Boiling point: 2162°C (2435 K) <br>
-                Discovery date: Prehistoric
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Silver" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cd" class="toggle-box">
@@ -1105,19 +1174,20 @@
                 Melting point: 321.07°C (594.22 K) <br>
                 Boiling point: 767°C (1040 K) <br>
                 Discovery date: 1817 <br>
-                Discovered by: Friedrich Stromeyer
+                Discovered by: Friedrich Stromeyer <br><br>
+                <a href="https://en.wikipedia.org/wiki/Cadmium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
-        
         <div id="Og" class="toggle-box">
             <p>
-            Oganesson is a chemical element; it has the symbol Og and atomic number 118. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 294 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2002 <br>
-            Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
+                Oganesson is a chemical element; it has the symbol Og and atomic number 118. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 294 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 2002 <br>
+                Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory <br><br>
+                <a href="https://en.wikipedia.org/wiki/Oganesson" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Fl" class="toggle-box">
@@ -1128,7 +1198,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1998 <br>
-                Discovered by: Joint Institute for Nuclear Research
+                Discovered by: Joint Institute for Nuclear Research <br><br>
+                <a href="https://en.wikipedia.org/wiki/Flerovium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Lv" class="toggle-box">
@@ -1139,7 +1210,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 2000 <br>
-                Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
+                Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory <br><br>
+                <a href="https://en.wikipedia.org/wiki/Livermorium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ts" class="toggle-box">
@@ -1150,7 +1222,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 2010 <br>
-                Discovered by: Joint Institute for Nuclear Research, Oak Ridge National Laboratory, and Lawrence Livermore National Laboratory
+                Discovered by: Joint Institute for Nuclear Research, Oak Ridge National Laboratory, and Lawrence Livermore National Laboratory <br><br>
+                <a href="https://en.wikipedia.org/wiki/Tennessine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Nh" class="toggle-box">
@@ -1161,7 +1234,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 2004 <br>
-                Discovered by: RIKEN
+                Discovered by: RIKEN <br><br>
+                <a href="https://en.wikipedia.org/wiki/Nihonium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Mc" class="toggle-box">
@@ -1172,7 +1246,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 2003 <br>
-                Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
+                Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory <br><br>
+                <a href="https://en.wikipedia.org/wiki/Moscovium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cn" class="toggle-box">
@@ -1183,7 +1258,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1996 <br>
-                Discovered by: Gesellschaft für Schwerionenforschung
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Copernicium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Mt" class="toggle-box">
@@ -1194,7 +1270,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1982 <br>
-                Discovered by: Gesellschaft für Schwerionenforschung
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Meitnerium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ds" class="toggle-box">
@@ -1205,7 +1282,8 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1994 <br>
-                Discovered by: Gesellschaft für Schwerionenforschung
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Darmstadtium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Rg" class="toggle-box">
@@ -1216,139 +1294,68 @@
                 Melting point: Unknown <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1994 <br>
-                Discovered by: Gesellschaft für Schwerionenforschung
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Roentgenium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Rf" class="toggle-box">
             <p>
-            Rutherfordium is a chemical element; it has the symbol Rf and atomic number 104. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 267 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1964 <br>
-            Discovered by: Joint Institute for Nuclear Research
+                Rutherfordium is a chemical element; it has the symbol Rf and atomic number 104. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 267 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 1964 <br>
+                Discovered by: Joint Institute for Nuclear Research <br><br>
+                <a href="https://en.wikipedia.org/wiki/Rutherfordium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Db" class="toggle-box">
             <p>
-            Dubnium is a chemical element; it has the symbol Db and atomic number 105. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 268 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1967 <br>
-            Discovered by: Joint Institute for Nuclear Research
+                Dubnium is a chemical element; it has the symbol Db and atomic number 105. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 268 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 1967 <br>
+                Discovered by: Joint Institute for Nuclear Research <br><br>
+                <a href="https://en.wikipedia.org/wiki/Dubnium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Sg" class="toggle-box">
             <p>
-            Seaborgium is a chemical element; it has the symbol Sg and atomic number 106. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 269 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1974 <br>
-            Discovered by: Lawrence Berkeley National Laboratory
+                Seaborgium is a chemical element; it has the symbol Sg and atomic number 106. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 269 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 1974 <br>
+                Discovered by: Lawrence Berkeley National Laboratory <br><br>
+                <a href="https://en.wikipedia.org/wiki/Seaborgium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Bh" class="toggle-box">
             <p>
-            Bohrium is a chemical element; it has the symbol Bh and atomic number 107. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 270 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1981 <br>
-            Discovered by: Gesellschaft für Schwerionenforschung
+                Bohrium is a chemical element; it has the symbol Bh and atomic number 107. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 270 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 1981 <br>
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Bohrium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Hs" class="toggle-box">
             <p>
-            Hassium is a chemical element; it has the symbol Hs and atomic number 108. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 277 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1984 <br>
-            Discovered by: Gesellschaft für Schwerionenforschung
-            </p>
-        </div>
-        <div id="Cn" class="toggle-box">
-            <p>
-            Copernicium is a chemical element; it has the symbol Cn and atomic number 112. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 285 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1996 <br>
-            Discovered by: Gesellschaft für Schwerionenforschung
-            </p>
-        </div>
-        <div id="Nh" class="toggle-box">
-            <p>
-            Nihonium is a chemical element; it has the symbol Nh and atomic number 113. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 286 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2004 <br>
-            Discovered by: RIKEN
-            </p>
-        </div>
-        <div id="Fl" class="toggle-box">
-            <p>
-            Flerovium is a chemical element; it has the symbol Fl and atomic number 114. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 289 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 1998 <br>
-            Discovered by: Joint Institute for Nuclear Research
-            </p>
-        </div>
-        <div id="Mc" class="toggle-box">
-            <p>
-            Moscovium is a chemical element; it has the symbol Mc and atomic number 115. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 290 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2003 <br>
-            Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
-            </p>
-        </div>
-        <div id="Lv" class="toggle-box">
-            <p>
-            Livermorium is a chemical element; it has the symbol Lv and atomic number 116. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 293 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2000 <br>
-            Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
-            </p>
-        </div>
-        <div id="Ts" class="toggle-box">
-            <p>
-            Tennessine is a chemical element; it has the symbol Ts and atomic number 117. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 294 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2010 <br>
-            Discovered by: Joint Institute for Nuclear Research, Oak Ridge National Laboratory, and Lawrence Livermore National Laboratory
-            </p>
-        </div>
-        <div id="Og" class="toggle-box">
-            <p>
-            Oganesson is a chemical element; it has the symbol Og and atomic number 118. It is a synthetic element and is extremely radioactive.
-            <br><br>
-            Atomic mass: 294 u (estimated) <br>
-            Melting point: Unknown <br>
-            Boiling point: Unknown <br>
-            Discovery date: 2002 <br>
-            Discovered by: Joint Institute for Nuclear Research and Lawrence Livermore National Laboratory
+                Hassium is a chemical element; it has the symbol Hs and atomic number 108. It is a synthetic element and is extremely radioactive.
+                <br><br>
+                Atomic mass: 277 u (estimated) <br>
+                Melting point: Unknown <br>
+                Boiling point: Unknown <br>
+                Discovery date: 1984 <br>
+                Discovered by: Gesellschaft für Schwerionenforschung <br><br>
+                <a href="https://en.wikipedia.org/wiki/Hassium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="B" class="toggle-box">
@@ -1359,7 +1366,8 @@
                 Melting point: 2076°C (2349 K) <br>
                 Boiling point: 3927°C (4200 K) <br>
                 Discovery date: 1808 <br>
-                Discovered by: Joseph Louis Gay-Lussac and Louis Jacques Thénard
+                Discovered by: Joseph Louis Gay-Lussac and Louis Jacques Thénard <br><br>
+                <a href="https://en.wikipedia.org/wiki/Boron" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="C" class="toggle-box">
@@ -1369,7 +1377,8 @@
                 Atomic mass: 12.011 u <br>
                 Melting point: 3550°C (3823 K) (sublimes) <br>
                 Boiling point: 4027°C (4300 K) (sublimes) <br>
-                Discovery date: Prehistoric
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Carbon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="N" class="toggle-box">
@@ -1380,7 +1389,8 @@
                 Melting point: -210.00°C (63.15 K) <br>
                 Boiling point: -195.79°C (77.36 K) <br>
                 Discovery date: 1772 <br>
-                Discovered by: Daniel Rutherford
+                Discovered by: Daniel Rutherford <br><br>
+                <a href="https://en.wikipedia.org/wiki/Nitrogen" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="O" class="toggle-box">
@@ -1391,7 +1401,8 @@
                 Melting point: -218.79°C (54.36 K) <br>
                 Boiling point: -182.96°C (90.19 K) <br>
                 Discovery date: 1774 <br>
-                Discovered by: Joseph Priestley and Carl Wilhelm Scheele
+                Discovered by: Joseph Priestley and Carl Wilhelm Scheele <br><br>
+                <a href="https://en.wikipedia.org/wiki/Oxygen" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="F" class="toggle-box">
@@ -1402,7 +1413,8 @@
                 Melting point: -219.67°C (53.48 K) <br>
                 Boiling point: -188.11°C (85.04 K) <br>
                 Discovery date: 1886 <br>
-                Discovered by: Henri Moissan
+                Discovered by: Henri Moissan <br><br>
+                <a href="https://en.wikipedia.org/wiki/Fluorine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ne" class="toggle-box">
@@ -1413,7 +1425,8 @@
                 Melting point: -248.59°C (24.56 K) <br>
                 Boiling point: -246.08°C (27.07 K) <br>
                 Discovery date: 1898 <br>
-                Discovered by: William Ramsay and Morris Travers
+                Discovered by: William Ramsay and Morris Travers <br><br>
+                <a href="https://en.wikipedia.org/wiki/Neon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Al" class="toggle-box">
@@ -1424,7 +1437,8 @@
                 Melting point: 660.32°C (933.47 K) <br>
                 Boiling point: 2470°C (2743 K) <br>
                 Discovery date: 1825 <br>
-                Discovered by: Hans Christian Ørsted
+                Discovered by: Hans Christian Ørsted <br><br>
+                <a href="https://en.wikipedia.org/wiki/Aluminium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Si" class="toggle-box">
@@ -1435,7 +1449,8 @@
                 Melting point: 1414°C (1687 K) <br>
                 Boiling point: 3265°C (3538 K) <br>
                 Discovery date: 1824 <br>
-                Discovered by: Jöns Jacob Berzelius
+                Discovered by: Jöns Jacob Berzelius <br><br>
+                <a href="https://en.wikipedia.org/wiki/Silicon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="P" class="toggle-box">
@@ -1446,7 +1461,8 @@
                 Melting point: 44.15°C (317.3 K) (white phosphorus) <br>
                 Boiling point: 280.5°C (553.7 K) (white phosphorus) <br>
                 Discovery date: 1669 <br>
-                Discovered by: Hennig Brand
+                Discovered by: Hennig Brand <br><br>
+                <a href="https://en.wikipedia.org/wiki/Phosphorus" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="S" class="toggle-box">
@@ -1456,7 +1472,8 @@
                 Atomic mass: 32.06 u <br>
                 Melting point: 115.21°C (388.36 K) <br>
                 Boiling point: 444.6°C (717.8 K) <br>
-                Discovery date: Prehistoric
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Sulfur" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cl" class="toggle-box">
@@ -1467,7 +1484,8 @@
                 Melting point: -101.5°C (171.65 K) <br>
                 Boiling point: -34.04°C (239.11 K) <br>
                 Discovery date: 1774 <br>
-                Discovered by: Carl Wilhelm Scheele
+                Discovered by: Carl Wilhelm Scheele <br><br>
+                <a href="https://en.wikipedia.org/wiki/Chlorine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ar" class="toggle-box">
@@ -1478,7 +1496,8 @@
                 Melting point: -189.34°C (83.81 K) <br>
                 Boiling point: -185.85°C (87.3 K) <br>
                 Discovery date: 1894 <br>
-                Discovered by: Lord Rayleigh and William Ramsay
+                Discovered by: Lord Rayleigh and William Ramsay <br><br>
+                <a href="https://en.wikipedia.org/wiki/Argon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ga" class="toggle-box">
@@ -1489,7 +1508,8 @@
                 Melting point: 29.76°C (302.91 K) <br>
                 Boiling point: 2204°C (2477 K) <br>
                 Discovery date: 1875 <br>
-                Discovered by: Paul-Émile Lecoq de Boisbaudran
+                Discovered by: Paul-Émile Lecoq de Boisbaudran <br><br>
+                <a href="https://en.wikipedia.org/wiki/Gallium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ge" class="toggle-box">
@@ -1500,7 +1520,8 @@
                 Melting point: 938.25°C (1211.4 K) <br>
                 Boiling point: 2833°C (3106 K) <br>
                 Discovery date: 1886 <br>
-                Discovered by: Clemens Winkler
+                Discovered by: Clemens Winkler <br><br>
+                <a href="https://en.wikipedia.org/wiki/Germanium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="As" class="toggle-box">
@@ -1511,7 +1532,8 @@
                 Melting point: 817°C (1090 K) (sublimes) <br>
                 Boiling point: 614°C (887 K) (sublimes) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Arsenic" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Se" class="toggle-box">
@@ -1522,7 +1544,8 @@
                 Melting point: 221°C (494 K) <br>
                 Boiling point: 685°C (958 K) <br>
                 Discovery date: 1817 <br>
-                Discovered by: Jöns Jacob Berzelius
+                Discovered by: Jöns Jacob Berzelius <br><br>
+                <a href="https://en.wikipedia.org/wiki/Selenium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Br" class="toggle-box">
@@ -1533,7 +1556,8 @@
                 Melting point: -7.2°C (265.95 K) <br>
                 Boiling point: 58.8°C (332 K) <br>
                 Discovery date: 1826 <br>
-                Discovered by: Antoine Jérôme Balard
+                Discovered by: Antoine Jérôme Balard <br><br>
+                <a href="https://en.wikipedia.org/wiki/Bromine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Kr" class="toggle-box">
@@ -1544,7 +1568,8 @@
                 Melting point: -157.37°C (115.78 K) <br>
                 Boiling point: -153.22°C (119.93 K) <br>
                 Discovery date: 1898 <br>
-                Discovered by: William Ramsay and Morris Travers
+                Discovered by: William Ramsay and Morris Travers <br><br>
+                <a href="https://en.wikipedia.org/wiki/Krypton" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="In" class="toggle-box">
@@ -1555,7 +1580,8 @@
                 Melting point: 156.6°C (429.75 K) <br>
                 Boiling point: 2072°C (2345 K) <br>
                 Discovery date: 1863 <br>
-                Discovered by: Ferdinand Reich and Hieronymous Theodor Richter
+                Discovered by: Ferdinand Reich and Hieronymous Theodor Richter <br><br>
+                <a href="https://en.wikipedia.org/wiki/Indium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Sn" class="toggle-box">
@@ -1566,7 +1592,8 @@
                 Melting point: 231.93°C (505.08 K) <br>
                 Boiling point: 2602°C (2875 K) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Tin" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Sb" class="toggle-box">
@@ -1577,7 +1604,8 @@
                 Melting point: 630.63°C (903.78 K) <br>
                 Boiling point: 1587°C (1860 K) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Antimony" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Te" class="toggle-box">
@@ -1588,7 +1616,8 @@
                 Melting point: 449.51°C (722.66 K) <br>
                 Boiling point: 988°C (1261 K) <br>
                 Discovery date: 1782 <br>
-                Discovered by: Franz-Joseph Müller von Reichenstein
+                Discovered by: Franz-Joseph Müller von Reichenstein <br><br>
+                <a href="https://en.wikipedia.org/wiki/Tellurium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="I" class="toggle-box">
@@ -1599,7 +1628,8 @@
                 Melting point: 113.7°C (386.85 K) <br>
                 Boiling point: 184.3°C (457.45 K) <br>
                 Discovery date: 1811 <br>
-                Discovered by: Bernard Courtois
+                Discovered by: Bernard Courtois <br><br>
+                <a href="https://en.wikipedia.org/wiki/Iodine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Xe" class="toggle-box">
@@ -1610,7 +1640,8 @@
                 Melting point: -111.8°C (161.35 K) <br>
                 Boiling point: -108.1°C (165.05 K) <br>
                 Discovery date: 1898 <br>
-                Discovered by: William Ramsay and Morris Travers
+                Discovered by: William Ramsay and Morris Travers <br><br>
+                <a href="https://en.wikipedia.org/wiki/Xenon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Tl" class="toggle-box">
@@ -1621,7 +1652,8 @@
                 Melting point: 304°C (577 K) <br>
                 Boiling point: 1473°C (1746 K) <br>
                 Discovery date: 1861 <br>
-                Discovered by: William Crookes
+                Discovered by: William Crookes <br><br>
+                <a href="https://en.wikipedia.org/wiki/Thallium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pb" class="toggle-box">
@@ -1632,7 +1664,8 @@
                 Melting point: 327.46°C (600.61 K) <br>
                 Boiling point: 1749°C (2022 K) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Lead_(element)" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Bi" class="toggle-box">
@@ -1643,7 +1676,8 @@
                 Melting point: 271.4°C (544.5 K) <br>
                 Boiling point: 1564°C (1837 K) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Bismuth" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Po" class="toggle-box">
@@ -1654,7 +1688,8 @@
                 Melting point: 254°C (527 K) <br>
                 Boiling point: 962°C (1235 K) <br>
                 Discovery date: 1898 <br>
-                Discovered by: Marie Curie and Pierre Curie
+                Discovered by: Marie Curie and Pierre Curie <br><br>
+                <a href="https://en.wikipedia.org/wiki/Polonium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="At" class="toggle-box">
@@ -1665,7 +1700,8 @@
                 Melting point: 302°C (575 K) (estimated) <br>
                 Boiling point: 337°C (610 K) (estimated) <br>
                 Discovery date: 1940 <br>
-                Discovered by: Dale R. Corson, Kenneth Ross MacKenzie, and Emilio Segrè
+                Discovered by: Dale R. Corson, Kenneth Ross MacKenzie, and Emilio Segrè <br><br>
+                <a href="https://en.wikipedia.org/wiki/Astatine" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Rn" class="toggle-box">
@@ -1676,7 +1712,8 @@
                 Melting point: -71°C (202 K) <br>
                 Boiling point: -61.7°C (211.4 K) <br>
                 Discovery date: 1900 <br>
-                Discovered by: Friedrich Ernst Dorn
+                Discovered by: Friedrich Ernst Dorn <br><br>
+                <a href="https://en.wikipedia.org/wiki/Radon" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Hf" class="toggle-box">
@@ -1687,7 +1724,8 @@
                 Melting point: 2233°C (2506 K) <br>
                 Boiling point: 4603°C (4876 K) <br>
                 Discovery date: 1923 <br>
-                Discovered by: Dirk Coster and George de Hevesy
+                Discovered by: Dirk Coster and George de Hevesy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Hafnium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ta" class="toggle-box">
@@ -1698,7 +1736,8 @@
                 Melting point: 3017°C (3290 K) <br>
                 Boiling point: 5458°C (5731 K) <br>
                 Discovery date: 1802 <br>
-                Discovered by: Anders Ekeberg
+                Discovered by: Anders Ekeberg <br><br>
+                <a href="https://en.wikipedia.org/wiki/Tantalum" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="W" class="toggle-box">
@@ -1709,7 +1748,8 @@
                 Melting point: 3422°C (3695 K) <br>
                 Boiling point: 5555°C (5828 K) <br>
                 Discovery date: 1783 <br>
-                Discovered by: Juan José and Fausto Elhuyar
+                Discovered by: Juan José and Fausto Elhuyar <br><br>
+                <a href="https://en.wikipedia.org/wiki/Tungsten" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Re" class="toggle-box">
@@ -1720,7 +1760,8 @@
                 Melting point: 3186°C (3459 K) <br>
                 Boiling point: 5596°C (5869 K) <br>
                 Discovery date: 1925 <br>
-                Discovered by: Ida Noddack, Walter Noddack, and Otto Berg
+                Discovered by: Ida Noddack, Walter Noddack, and Otto Berg <br><br>
+                <a href="https://en.wikipedia.org/wiki/Rhenium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Os" class="toggle-box">
@@ -1731,7 +1772,8 @@
                 Melting point: 3033°C (3306 K) <br>
                 Boiling point: 5012°C (5285 K) <br>
                 Discovery date: 1803 <br>
-                Discovered by: Smithson Tennant
+                Discovered by: Smithson Tennant <br><br>
+                <a href="https://en.wikipedia.org/wiki/Osmium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ir" class="toggle-box">
@@ -1742,7 +1784,8 @@
                 Melting point: 2446°C (2719 K) <br>
                 Boiling point: 4428°C (4701 K) <br>
                 Discovery date: 1803 <br>
-                Discovered by: Smithson Tennant
+                Discovered by: Smithson Tennant <br><br>
+                <a href="https://en.wikipedia.org/wiki/Iridium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pt" class="toggle-box">
@@ -1752,8 +1795,8 @@
                 Atomic mass: 195.08 u <br>
                 Melting point: 1768.3°C (2041.5 K) <br>
                 Boiling point: 3825°C (4098 K) <br>
-                Discovery date: Prehistoric <br>
-                Discovered by: Known since antiquity
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Platinum" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Au" class="toggle-box">
@@ -1763,8 +1806,8 @@
                 Atomic mass: 196.97 u <br>
                 Melting point: 1064.18°C (1337.33 K) <br>
                 Boiling point: 2856°C (3129 K) <br>
-                Discovery date: Prehistoric <br>
-                Discovered by: Known since antiquity
+                Discovery date: Prehistoric <br><br>
+                <a href="https://en.wikipedia.org/wiki/Gold" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Hg" class="toggle-box">
@@ -1775,7 +1818,8 @@
                 Melting point: -38.83°C (234.32 K) <br>
                 Boiling point: 356.73°C (629.88 K) <br>
                 Discovery date: Ancient <br>
-                Discovered by: Known since antiquity
+                Discovered by: Known since antiquity <br><br>
+                <a href="https://en.wikipedia.org/wiki/Mercury_(element)" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="He" class="toggle-box">
@@ -1786,7 +1830,8 @@
                 Melting point: -272.2°C (0.95 K) (at high pressure) <br>
                 Boiling point: -268.93°C (4.22 K) <br>
                 Discovery date: 1868 <br>
-                Discovered by: Pierre Janssen and Norman Lockyer
+                Discovered by: Pierre Janssen and Norman Lockyer <br><br>
+                <a href="https://en.wikipedia.org/wiki/Helium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="La" class="toggle-box">
@@ -1797,7 +1842,8 @@
                 Melting point: 920°C (1193 K) <br>
                 Boiling point: 3464°C (3737 K) <br>
                 Discovery date: 1839 <br>
-                Discovered by: Carl Gustaf Mosander
+                Discovered by: Carl Gustaf Mosander <br><br>
+                <a href="https://en.wikipedia.org/wiki/Lanthanum" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ce" class="toggle-box">
@@ -1808,7 +1854,8 @@
                 Melting point: 798°C (1071 K) <br>
                 Boiling point: 3424°C (3697 K) <br>
                 Discovery date: 1803 <br>
-                Discovered by: Martin Heinrich Klaproth, Jöns Jacob Berzelius, and Wilhelm Hisinger
+                Discovered by: Martin Heinrich Klaproth, Jöns Jacob Berzelius, and Wilhelm Hisinger <br><br>
+                <a href="https://en.wikipedia.org/wiki/Cerium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pr" class="toggle-box">
@@ -1819,7 +1866,8 @@
                 Melting point: 931°C (1204 K) <br>
                 Boiling point: 3520°C (3793 K) <br>
                 Discovery date: 1885 <br>
-                Discovered by: Carl Auer von Welsbach
+                Discovered by: Carl Auer von Welsbach <br><br>
+                <a href="https://en.wikipedia.org/wiki/Praseodymium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Nd" class="toggle-box">
@@ -1830,7 +1878,8 @@
                 Melting point: 1024°C (1297 K) <br>
                 Boiling point: 3074°C (3347 K) <br>
                 Discovery date: 1885 <br>
-                Discovered by: Carl Auer von Welsbach
+                Discovered by: Carl Auer von Welsbach <br><br>
+                <a href="https://en.wikipedia.org/wiki/Neodymium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pm" class="toggle-box">
@@ -1841,7 +1890,8 @@
                 Melting point: 1042°C (1315 K) <br>
                 Boiling point: 3000°C (3273 K) <br>
                 Discovery date: 1945 <br>
-                Discovered by: Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell
+                Discovered by: Jacob A. Marinsky, Lawrence E. Glendenin, and Charles D. Coryell <br><br>
+                <a href="https://en.wikipedia.org/wiki/Promethium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Sm" class="toggle-box">
@@ -1852,7 +1902,8 @@
                 Melting point: 1072°C (1345 K) <br>
                 Boiling point: 1794°C (2067 K) <br>
                 Discovery date: 1879 <br>
-                Discovered by: Paul-Émile Lecoq de Boisbaudran
+                Discovered by: Paul-Émile Lecoq de Boisbaudran <br><br>
+                <a href="https://en.wikipedia.org/wiki/Samarium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Eu" class="toggle-box">
@@ -1863,7 +1914,8 @@
                 Melting point: 822°C (1095 K) <br>
                 Boiling point: 1529°C (1802 K) <br>
                 Discovery date: 1901 <br>
-                Discovered by: Eugène-Anatole Demarçay
+                Discovered by: Eugène-Anatole Demarçay <br><br>
+                <a href="https://en.wikipedia.org/wiki/Europium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Gd" class="toggle-box">
@@ -1874,7 +1926,8 @@
                 Melting point: 1313°C (1586 K) <br>
                 Boiling point: 3273°C (3546 K) <br>
                 Discovery date: 1880 <br>
-                Discovered by: Jean Charles Galissard de Marignac
+                Discovered by: Jean Charles Galissard de Marignac <br><br>
+                <a href="https://en.wikipedia.org/wiki/Gadolinium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Tb" class="toggle-box">
@@ -1885,7 +1938,8 @@
                 Melting point: 1356°C (1629 K) <br>
                 Boiling point: 3230°C (3503 K) <br>
                 Discovery date: 1843 <br>
-                Discovered by: Carl Gustaf Mosander
+                Discovered by: Carl Gustaf Mosander <br><br>
+                <a href="https://en.wikipedia.org/wiki/Terbium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Dy" class="toggle-box">
@@ -1896,7 +1950,8 @@
                 Melting point: 1412°C (1685 K) <br>
                 Boiling point: 2562°C (2835 K) <br>
                 Discovery date: 1886 <br>
-                Discovered by: Paul-Émile Lecoq de Boisbaudran
+                Discovered by: Paul-Émile Lecoq de Boisbaudran <br><br>
+                <a href="https://en.wikipedia.org/wiki/Dysprosium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ho" class="toggle-box">
@@ -1907,7 +1962,8 @@
                 Melting point: 1474°C (1747 K) <br>
                 Boiling point: 2700°C (2973 K) <br>
                 Discovery date: 1878 <br>
-                Discovered by: Marc Delafontaine and Jacques-Louis Soret
+                Discovered by: Marc Delafontaine and Jacques-Louis Soret <br><br>
+                <a href="https://en.wikipedia.org/wiki/Holmium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Er" class="toggle-box">
@@ -1918,7 +1974,8 @@
                 Melting point: 1529°C (1802 K) <br>
                 Boiling point: 2868°C (3141 K) <br>
                 Discovery date: 1843 <br>
-                Discovered by: Carl Gustaf Mosander
+                Discovered by: Carl Gustaf Mosander <br><br>
+                <a href="https://en.wikipedia.org/wiki/Erbium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Tm" class="toggle-box">
@@ -1929,7 +1986,8 @@
                 Melting point: 1545°C (1818 K) <br>
                 Boiling point: 1950°C (2223 K) <br>
                 Discovery date: 1879 <br>
-                Discovered by: Per Teodor Cleve
+                Discovered by: Per Teodor Cleve <br><br>
+                <a href="https://en.wikipedia.org/wiki/Thulium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Yb" class="toggle-box">
@@ -1940,7 +1998,8 @@
                 Melting point: 824°C (1097 K) <br>
                 Boiling point: 1196°C (1469 K) <br>
                 Discovery date: 1878 <br>
-                Discovered by: Jean Charles Galissard de Marignac
+                Discovered by: Jean Charles Galissard de Marignac <br><br>
+                <a href="https://en.wikipedia.org/wiki/Ytterbium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Lu" class="toggle-box">
@@ -1951,7 +2010,8 @@
                 Melting point: 1652°C (1925 K) <br>
                 Boiling point: 3402°C (3675 K) <br>
                 Discovery date: 1907 <br>
-                Discovered by: Georges Urbain, Carl Auer von Welsbach, and Charles James
+                Discovered by: Georges Urbain, Carl Auer von Welsbach, and Charles James <br><br>
+                <a href="https://en.wikipedia.org/wiki/Lutetium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Ac" class="toggle-box">
@@ -1962,7 +2022,8 @@
                 Melting point: 1050°C (1323 K) (estimated) <br>
                 Boiling point: 3198°C (3471 K) (estimated) <br>
                 Discovery date: 1899 <br>
-                Discovered by: Friedrich Oskar Giesel
+                Discovered by: Friedrich Oskar Giesel <br><br>
+                <a href="https://en.wikipedia.org/wiki/Actinium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Th" class="toggle-box">
@@ -1973,7 +2034,8 @@
                 Melting point: 1750°C (2023 K) <br>
                 Boiling point: 4788°C (5061 K) <br>
                 Discovery date: 1828 <br>
-                Discovered by: Jöns Jacob Berzelius
+                Discovered by: Jöns Jacob Berzelius <br><br>
+                <a href="https://en.wikipedia.org/wiki/Thorium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pa" class="toggle-box">
@@ -1984,7 +2046,8 @@
                 Melting point: 1568°C (1841 K) <br>
                 Boiling point: 4027°C (4300 K) (estimated) <br>
                 Discovery date: 1913 <br>
-                Discovered by: Kasimir Fajans and Oswald Helmuth Göhring
+                Discovered by: Kasimir Fajans and Oswald Helmuth Göhring <br><br>
+                <a href="https://en.wikipedia.org/wiki/Protactinium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="U" class="toggle-box">
@@ -1995,7 +2058,8 @@
                 Melting point: 1132.2°C (1405.4 K) <br>
                 Boiling point: 4131°C (4404 K) <br>
                 Discovery date: 1789 <br>
-                Discovered by: Martin Heinrich Klaproth
+                Discovered by: Martin Heinrich Klaproth <br><br>
+                <a href="https://en.wikipedia.org/wiki/Uranium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Np" class="toggle-box">
@@ -2006,7 +2070,8 @@
                 Melting point: 644°C (917 K) <br>
                 Boiling point: 3902°C (4175 K) <br>
                 Discovery date: 1940 <br>
-                Discovered by: Edwin McMillan and Philip Abelson
+                Discovered by: Edwin McMillan and Philip Abelson <br><br>
+                <a href="https://en.wikipedia.org/wiki/Neptunium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Pu" class="toggle-box">
@@ -2017,7 +2082,8 @@
                 Melting point: 639.4°C (912.5 K) <br>
                 Boiling point: 3228°C (3501 K) <br>
                 Discovery date: 1940 <br>
-                Discovered by: Glenn T. Seaborg, Arthur Wahl, and Joseph W. Kennedy
+                Discovered by: Glenn T. Seaborg, Arthur Wahl, and Joseph W. Kennedy <br><br>
+                <a href="https://en.wikipedia.org/wiki/Plutonium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Am" class="toggle-box">
@@ -2028,7 +2094,8 @@
                 Melting point: 1176°C (1449 K) <br>
                 Boiling point: 2607°C (2880 K) <br>
                 Discovery date: 1944 <br>
-                Discovered by: Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso
+                Discovered by: Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso <br><br>
+                <a href="https://en.wikipedia.org/wiki/Americium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cm" class="toggle-box">
@@ -2039,7 +2106,8 @@
                 Melting point: 1340°C (1613 K) <br>
                 Boiling point: 3110°C (3383 K) <br>
                 Discovery date: 1944 <br>
-                Discovered by: Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso
+                Discovered by: Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso <br><br>
+                <a href="https://en.wikipedia.org/wiki/Curium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Bk" class="toggle-box">
@@ -2050,7 +2118,8 @@
                 Melting point: 986°C (1259 K) <br>
                 Boiling point: 2627°C (2900 K) (estimated) <br>
                 Discovery date: 1949 <br>
-                Discovered by: Glenn T. Seaborg, Stanley G. Thompson, and Albert Ghiorso
+                Discovered by: Glenn T. Seaborg, Stanley G. Thompson, and Albert Ghiorso <br><br>
+                <a href="https://en.wikipedia.org/wiki/Berkelium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Cf" class="toggle-box">
@@ -2061,7 +2130,8 @@
                 Melting point: 900°C (1173 K) <br>
                 Boiling point: 1470°C (1743 K) (estimated) <br>
                 Discovery date: 1950 <br>
-                Discovered by: Glenn T. Seaborg, Stanley G. Thompson, Kenneth Street Jr., and Albert Ghiorso
+                Discovered by: Glenn T. Seaborg, Stanley G. Thompson, Kenneth Street Jr., and Albert Ghiorso <br><br>
+                <a href="https://en.wikipedia.org/wiki/Californium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Es" class="toggle-box">
@@ -2072,7 +2142,8 @@
                 Melting point: 860°C (1133 K) <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1952 <br>
-                Discovered by: Albert Ghiorso and co-workers
+                Discovered by: Albert Ghiorso and co-workers <br><br>
+                <a href="https://en.wikipedia.org/wiki/Einsteinium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Fm" class="toggle-box">
@@ -2083,7 +2154,8 @@
                 Melting point: 1527°C (1800 K) (estimated) <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1952 <br>
-                Discovered by: Albert Ghiorso and co-workers
+                Discovered by: Albert Ghiorso and co-workers <br><br>
+                <a href="https://en.wikipedia.org/wiki/Fermium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Md" class="toggle-box">
@@ -2094,7 +2166,8 @@
                 Melting point: 827°C (1100 K) (estimated) <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1955 <br>
-                Discovered by: Glenn T. Seaborg, Albert Ghiorso, and Bernard Harvey
+                Discovered by: Glenn T. Seaborg, Albert Ghiorso, and Bernard Harvey <br><br>
+                <a href="https://en.wikipedia.org/wiki/Mendelevium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="No" class="toggle-box">
@@ -2105,20 +2178,24 @@
                 Melting point: 827°C (1100 K) (estimated) <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1958 <br>
-                Discovered by: Joint Institute for Nuclear Research
+                Discovered by: Joint Institute for Nuclear Research <br><br>
+                <a href="https://en.wikipedia.org/wiki/Nobelium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
         <div id="Lr" class="toggle-box">
             <p>
                 Lawrencium is a chemical element; it has the symbol Lr and atomic number 103. It is a synthetic, radioactive metal named after Ernest Lawrence.
-                <br><br>               
+                <br><br>
                 Atomic mass: 266 u (estimated) <br>
                 Melting point: 1627°C (1900 K) (estimated) <br>
                 Boiling point: Unknown <br>
                 Discovery date: 1961 <br>
-                Discovered by: Albert Ghiorso, Torbjørn Sikkeland, Almon Larsh, and Robert M. Latimer
+                Discovered by: Albert Ghiorso, Torbjørn Sikkeland, Almon Larsh, and Robert M. Latimer <br><br>
+                <a href="https://en.wikipedia.org/wiki/Lawrencium" target="_blank" rel="noopener noreferrer">Learn More</a>
             </p>
         </div>
+    </div>
+</div>
     </div>
     <script src="project.js"></script>
 </body>

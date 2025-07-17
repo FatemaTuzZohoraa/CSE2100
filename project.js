@@ -33,4 +33,5 @@ function toggleBox(event, id) {
     box.style.left = `${left}px`;
     box.style.display = 'block';
   }
+  
 }
