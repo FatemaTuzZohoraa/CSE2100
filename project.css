@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-}
 a{
     color: white;
+}
+html{
+    height: 100%;
+}
+body {
+    background-image: url(img/bg8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
 }
 .title{
     color: white;
@@ -28,13 +35,7 @@ a{
     padding-right: 0.5rem; 
     margin-left: -6.5rem;
 }
-.bg{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: url(img/bg8.jpg);
-    background-size:cover;
-}
+
 .block{
     list-style-type: square;
     font-size: 1.125rem;   
