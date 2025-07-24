@@ -9,38 +9,53 @@ html, body {
 a{
     color: white;
 }
+.title{
+    color: white;
+    position: absolute;
+    left: 39.375rem;
+    font-size: 2.8125rem;
+}
+.temp{
+    color: white;
+    font-size: 0.9375rem; 
+    font-family: arial;
+    background-color: plum;
+    height: 2rem; 
+    border-radius: 0.3125rem; 
+    display: flex; 
+    align-items: center;
+    padding-left: 0.2rem;
+    padding-right: 0.5rem; 
+    margin-left: -6.5rem;
+}
 .bg{
     height: 100%;
     width: 100%;
+    position: absolute;
     background-image: url(img/bg8.jpg);
-    background-size: cover;
-     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    
-}
-.elementType{
-    list-style-type: square;
-    font-size: 17px;
-    position: absolute;    
-    color: white;
-    cursor: pointer;
-    margin-top: 100px;
-    margin-left: 300px;
+    background-size:cover;
 }
 .block{
     list-style-type: square;
-    font-size:18px;   
+    font-size: 1.125rem;   
     position: absolute;
     color: white;
     cursor: pointer;
-    margin-top: 80px;
-    margin-left: 50px;
+    left: 18.75rem;
+    top: 5rem;
+}
+.elementType{
+    list-style-type: square;
+    font-size: 1.0625rem;
+    position: absolute;     
+    color: white;
+    cursor: pointer;
+    top: 6.25rem;
+    left: 25rem;
 }
 .content{
     position: absolute;
-    margin-top: 2%;   
+    margin-top: 1%;   
 }
 .dv{
     color: white;
@@ -50,7 +65,6 @@ a{
     cursor: pointer;
 }
 .dv:hover{
-    background-color: rgba(156, 161, 156, 0.989);
     border-radius: 0.625rem; 
     border: 0.25rem solid white; 
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3); 
@@ -73,20 +87,20 @@ a{
     z-index: 999;
     text-wrap: wrap;
 }
-
 .col{
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    left: 6.25rem;
 }
 .c1{
     height: 31.25rem; 
 }
 .c2{
     height: 26.75rem; 
-    margin-left:4.5rem ; 
-    margin-top:4.5rem ; 
+    margin-left: 4.5rem ; 
+    margin-top: 4.5rem ; 
 }
 .sd{
     position: absolute;
@@ -96,25 +110,26 @@ a{
     justify-content: space-between;
 }
 .div1{
-    height: 18rem; /* 288px / 16px */
-    width: 46.25rem; /* 740px / 16px */
-    margin-left:9.375rem; /* 150px / 16px */
-    margin-top: 13.4375rem; /* 215px / 16px */
+    height: 18rem;
+    width: 46.25rem;
+    left: 15.9375rem;
+    top: 13.4375rem;
 }
 .div2{
-    height: 27rem; /* 432px / 16px */
-    width: 27rem; /* 432px / 16px */
-    margin-left:56.0625rem; /* 897px / 16px */
-    margin-top: 4.5rem; /* 72px / 16px */
+    height: 27rem;
+    width: 27rem;
+    left: 63.125rem;
+    top: 4.4375rem;
 }
-#he{
-    margin-left:78.6875rem ; /* 1259px / 16px */
+.helium{
+    position: relative;
+    left: 85.75rem;
 }
 .div3{
-    height: 9.0625rem; /* 145px / 16px */
-    width: 68.75rem; /* 1100px / 16px */
-    margin-left:9.375rem; /* 150px / 16px */
-    margin-top: 27.8125rem; /* 445px / 16px */
+    height: 9.0625rem;
+    width: 68.75rem;
+    left: 15.9375rem;
+    top: 32.8125rem;
 }
 .dv h6{
     text-align: center;
@@ -125,7 +140,6 @@ a{
 .dv h5{
     text-align: center;
 }
-
 .tm{
     background-color: rgba(102, 51, 153, 0.765);
 }
@@ -151,18 +165,10 @@ a{
     background-color: #4c3163a1;
 }
 .l{
-    background-color: rgba(139, 0, 139, 0.447);}
+    background-color: rgba(139, 0, 139, 0.447);
+}
 .a{
     background-color:rgba(71, 61, 139, 0.397);
-}
-.characterisitcs{
-    margin-left: 31.25rem; 
-    color: white;
-    font-size: 1rem; 
-}
-.characterisitcs ul{
-    display: flex;
-    align-items: center;
 }
 .mch{
     height: 0.9375rem; 
@@ -170,447 +176,128 @@ a{
     background-color: rgba(0, 0, 255, 0.518);
     border: 0.125rem solid white; 
 }
-.l:hover{
-    background-image: url();
-    background-size: cover;
+.la:hover{
+    color: white;
+    background-image: none;
+}
+.ac:hover{
+    color: white;
+    background-image: none;
+}
+.e1:hover{ background-image: url(img/i1.jpg); background-size: cover; }
+.e2:hover{ background-image: url(img/i2.jpg); background-size: cover; }
+.e3:hover{ background-image: url(img/i3.jpg); background-size: cover; }
+.e4:hover{ background-image: url(img/i4.jpg); background-size: cover; }
+.e5:hover{ background-image: url(img/i5.jpg); background-size: cover; }
+.e6:hover{ background-image: url(img/i6.jpg); background-size: cover; }
+.e7:hover{ background-image: url(img/i7.jpg); background-size: cover; }
+.e8:hover{ background-image: url(img/i8.jpg); background-size: cover; }
+.e9:hover{ background-image: url(img/i9.jpg); background-size: cover; }
+.e10:hover{ background-image: url(img/i10.jpg); background-size: cover; }
+.e11:hover{ background-image: url(img/i11.jpg); background-size: cover; }
+.e12:hover{ background-image: url(img/i12.jpg); background-size: cover; }
+.e13:hover{ background-image: url(img/i13.jpg); background-size: cover; }
+.e14:hover{ background-image: url(img/i14.jpg); background-size: cover; }
+.e15:hover{ background-image: url(img/i15.jpg); background-size: cover; }
+.e16:hover{ background-image: url(img/i16.jpg); background-size: cover; }
+.e17:hover{ background-image: url(img/i17.jpg); background-size: cover; }
+.e18:hover{ background-image: url(img/i18.jpg); background-size: cover; }
+.e19:hover{ background-image: url(img/i19.jpg); background-size: cover; }
+.e20:hover{ background-image: url(img/i20.jpg); background-size: cover; }
+.e21:hover{ background-image: url(img/i21.jpg); background-size: cover; }
+.e22:hover{ background-image: url(img/i22.jpg); background-size: cover; }
+.e23:hover{ background-image: url(img/i23.jpg); background-size: cover; }
+.e24:hover{ background-image: url(img/i24.jpg); background-size: cover; }
+.e25:hover{ background-image: url(img/i25.jpg); background-size: cover; }
+.e26:hover{ background-image: url(img/i26.jpg); background-size: cover; }
+.e27:hover{ background-image: url(img/i27.jpg); background-size: cover; }
+.e28:hover{ background-image: url(img/i28.jpg); background-size: cover; }
+.e29:hover{ background-image: url(img/i29.jpg); background-size: cover; }
+.e30:hover { background-image: url(img/i30.jpg); background-size: cover; }
+.e31:hover { background-image: url(img/i31.jpg); background-size: cover; }
+.e32:hover { background-image: url(img/i32.jpg); background-size: cover; }
+.e33:hover { background-image: url(img/i33.jpg); background-size: cover; }
+.e34:hover { background-image: url(img/i34.jpg); background-size: cover; }
+.e35:hover { background-image: url(img/i35.jpg); background-size: cover; }
+.e36:hover { background-image: url(img/i36.jpg); background-size: cover; }
+.e37:hover { background-image: url(img/i37.jpg); background-size: cover; }
+.e38:hover { background-image: url(img/i38.jpg); background-size: cover; }
+.e39:hover { background-image: url(img/i39.jpg); background-size: cover; }
+.e40:hover { background-image: url(img/i40.jpg); background-size: cover; }
+.e41:hover { background-image: url(img/i41.jpg); background-size: cover; }
+.e42:hover { background-image: url(img/i42.jpg); background-size: cover; }
+.e43:hover { background-image: url(img/i43.jpg); background-size: cover; }
+.e44:hover { background-image: url(img/i44.jpg); background-size: cover; }
+.e45:hover { background-image: url(img/i45.jpg); background-size: cover; }
+.e46:hover { background-image: url(img/i46.jpg); background-size: cover; }
+.e47:hover { background-image: url(img/i47.jpg); background-size: cover; }
+.e48:hover { background-image: url(img/i48.jpg); background-size: cover; }
+.e49:hover { background-image: url(img/i49.jpg); background-size: cover; }
+.e50:hover { background-image: url(img/i50.jpg); background-size: cover; }
+.e51:hover { background-image: url(img/i51.jpg); background-size: cover; }
+.e52:hover { background-image: url(img/i52.jpg); background-size: cover; }
+.e53:hover { background-image: url(img/i53.jpg); background-size: cover; }
+.e54:hover { background-image: url(img/i54.jpg); background-size: cover; }
+.e55:hover { background-image: url(img/i55.jpg); background-size: cover; }
+.e56:hover { background-image: url(img/i56.jpg); background-size: cover; }
+.e57:hover { background-image: url(img/i57.jpg); background-size: cover; }
+.e58:hover { background-image: url(img/i58.jpg); background-size: cover; }
+.e59:hover { background-image: url(img/i59.jpg); background-size: cover; }
+.e60:hover { background-image: url(img/i60.jpg); background-size: cover; }
+.e61:hover { background-image: url(img/i61.jpg); background-size: cover; }
+.e62:hover { background-image: url(img/i62.jpg); background-size: cover; }
+.e63:hover { background-image: url(img/i63.jpg); background-size: cover; }
+.e64:hover { background-image: url(img/i64.jpg); background-size: cover; }
+.e65:hover { background-image: url(img/i65.jpg); background-size: cover; }
+.e66:hover { background-image: url(img/i66.jpg); background-size: cover; }
+.e67:hover { background-image: url(img/i67.jpg); background-size: cover; }
+.e68:hover { background-image: url(img/i68.jpg); background-size: cover; }
+.e69:hover { background-image: url(img/i69.jpg); background-size: cover; }
+.e70:hover { background-image: url(img/i70.jpg); background-size: cover; }
+.e71:hover { background-image: url(img/i71.jpg); background-size: cover; }
+.e72:hover { background-image: url(img/i72.jpg); background-size: cover; }
+.e73:hover { background-image: url(img/i73.jpg); background-size: cover; }
+.e74:hover { background-image: url(img/i74.jpg); background-size: cover; }
+.e75:hover { background-image: url(img/i75.jpg); background-size: cover; }
+.e76:hover { background-image: url(img/i76.jpg); background-size: cover; }
+.e77:hover { background-image: url(img/i77.jpg); background-size: cover; }
+.e78:hover { background-image: url(img/i78.jpg); background-size: cover; }
+.e79:hover { background-image: url(img/i79.jpg); background-size: cover; }
+.e80:hover { background-image: url(img/i80.jpg); background-size: cover; }
+.e81:hover { background-image: url(img/i81.jpg); background-size: cover; }
+.e82:hover { background-image: url(img/i82.jpg); background-size: cover; }
+.e83:hover { background-image: url(img/i83.jpg); background-size: cover; }
+.e84:hover { background-image: url(img/i84.jpg); background-size: cover; }
+.e85:hover { background-image: url(img/i85.jpg); background-size: cover; }
+.e86:hover { background-image: url(img/i86.jpg); background-size: cover; }
+.e87:hover { background-image: url(img/i87.jpg); background-size: cover; }
+.e88:hover { background-image: url(img/i88.jpg); background-size: cover; }
+.e89:hover { background-image: url(img/i89.jpg); background-size: cover; }
+.e90:hover { background-image: url(img/i90.jpg); background-size: cover; }
+.e91:hover { background-image: url(img/i91.jpg); background-size: cover; }
+.e92:hover { background-image: url(img/i92.jpg); background-size: cover; }
+.e93:hover { background-image: url(img/i93.jpg); background-size: cover; }
+.e94:hover { background-image: url(img/i94.jpg); background-size: cover; }
+.e95:hover { background-image: url(img/i95.jpg); background-size: cover; }
+.e96:hover { background-image: url(img/i96.jpg); background-size: cover; }
+.e97:hover { background-image: url(img/i97.jpg); background-size: cover; }
+.e98:hover { background-image: url(img/i98.jpg); background-size: cover; }
+.e99:hover { background-image: url(img/i99.jpg); background-size: cover; }
+.e100:hover { background-image: url(img/i100.jpg); background-size: cover; }
+.e101:hover { background-image: url(img/i101.jpg); background-size: cover; }
+.e102:hover { background-image: url(img/i102.jpg); background-size: cover; }
+.e103:hover { background-image: url(img/i103.jpg); background-size: cover; }
+.e104:hover { background-image: url(img/i104.jpg); background-size: cover; }
+.e105:hover { background-image: url(img/i105.jpg); background-size: cover; }
+.e106:hover { background-image: url(img/i106.jpg); background-size: cover; }
+.e107:hover { background-image: url(img/i107.jpg); background-size: cover; }
+.e108:hover { background-image: url(img/i108.jpg); background-size: cover; }
+.Lanthanides{
+    background-color: rgb(158, 103, 164);
+}
+.Actinides{
+    background-color: rgb(174, 52, 250);
 }
-.a:hover{
-    background-image: url();
-    background-size: cover;
-}
-.e1:hover{
-    background-image: url(img/i1.jpg);
-    background-size: cover;
-}
-.e2:hover{
-    background-image: url(img/i2.jpg);
-    background-size: cover;
-}
-.e3:hover{
-    background-image: url(img/i3.jpg);
-    background-size: cover;
-}
-.e4:hover{
-    background-image: url(img/i4.jpg);
-    background-size: cover;
-}
-.e5:hover{
-    background-image: url(img/i5.jpg);
-    background-size: cover;
-}
-.e6:hover{
-    background-image: url(img/i6.jpg);
-    background-size: cover;
-}
-.e7:hover{
-    background-image: url(img/i7.jpg);
-    background-size: cover;
-}
-.e8:hover{
-    background-image: url(img/i8.jpg);
-    background-size: cover;
-}
-.e9:hover{
-    background-image: url(img/i9.jpg);
-    background-size: cover;
-}
-.e10:hover{
-    background-image: url(img/i10.jpg);
-    background-size: cover;
-}
-.e11:hover{
-    background-image: url(img/i11.jpg);
-    background-size: cover;
-}
-.e12:hover{
-    background-image: url(img/i12.jpg);
-    background-size: cover;
-}
-.e13:hover{
-    background-image: url(img/i13.jpg);
-    background-size: cover;
-}
-.e14:hover{
-    background-image: url(img/i14.jpg);
-    background-size: cover;
-}
-.e15:hover{
-    background-image: url(img/i15.jpg);
-    background-size: cover;
-}
-.e16:hover{
-    background-image: url(img/i16.jpg);
-    background-size: cover;
-}
-.e17:hover{
-    background-image: url(img/i17.jpg);
-    background-size: cover;
-}
-.e18:hover{
-    background-image: url(img/i18.jpg);
-    background-size: cover;
-}
-.e19:hover{
-    background-image: url(img/i19.jpg);
-    background-size: cover;
-}
-.e20:hover{
-    background-image: url(img/i20.jpg);
-    background-size: cover;
-}
-.e21:hover{
-    background-image: url(img/i21.jpg);
-    background-size: cover;
-}
-.e22:hover{
-    background-image: url(img/i22.jpg);
-    background-size: cover;
-}
-.e23:hover{
-    background-image: url(img/i23.jpg);
-    background-size: cover;
-}
-.e24:hover{
-    background-image: url(img/i24.jpg);
-    background-size: cover;
-}
-.e25:hover{
-    background-image: url(img/i25.jpg);
-    background-size: cover;
-}
-.e26:hover{
-    background-image: url(img/i26.jpg);
-    background-size: cover;
-}
-.e27:hover{
-    background-image: url(img/i27.jpg);
-    background-size: cover;
-}
-.e28:hover{
-    background-image: url(img/i28.jpg);
-    background-size: cover;
-}
-.e29:hover{
-    background-image: url(img/i29.jpg);
-    background-size: cover;
-}
-.e30:hover {
-    background-image: url(img/i30.jpg);
-    background-size: cover;
-}
-.e31:hover {
-    background-image: url(img/i31.jpg);
-    background-size: cover;
-}
-.e32:hover {
-    background-image: url(img/i32.jpg);
-    background-size: cover;
-}
-.e33:hover {
-    background-image: url(img/i33.jpg);
-    background-size: cover;
-}
-.e34:hover {
-    background-image: url(img/i34.jpg);
-    background-size: cover;
-}
-.e35:hover {
-    background-image: url(img/i35.jpg);
-    background-size: cover;
-}
-.e36:hover {
-    background-image: url(img/i36.jpg);
-    background-size: cover;
-}
-.e37:hover {
-    background-image: url(img/i37.jpg);
-    background-size: cover;
-}
-.e38:hover {
-    background-image: url(img/i38.jpg);
-    background-size: cover;
-}
-.e39:hover {
-    background-image: url(img/i39.jpg);
-    background-size: cover;
-}
-.e40:hover {
-    background-image: url(img/i40.jpg);
-    background-size: cover;
-}
-.e41:hover {
-    background-image: url(img/i41.jpg);
-    background-size: cover;
-}
-.e42:hover {
-    background-image: url(img/i42.jpg);
-    background-size: cover;
-}
-.e43:hover {
-    background-image: url(img/i43.jpg);
-    background-size: cover;
-}
-.e44:hover {
-    background-image: url(img/i44.jpg);
-    background-size: cover;
-}
-.e45:hover {
-    background-image: url(img/i45.jpg);
-    background-size: cover;
-}
-.e46:hover {
-    background-image: url(img/i46.jpg);
-    background-size: cover;
-}
-.e47:hover {
-    background-image: url(img/i47.jpg);
-    background-size: cover;
-}
-.e48:hover {
-    background-image: url(img/i48.jpg);
-    background-size: cover;
-}
-.e49:hover {
-    background-image: url(img/i49.jpg);
-    background-size: cover;
-}
-.e50:hover {
-    background-image: url(img/i50.jpg);
-    background-size: cover;
-}
-.e51:hover {
-    background-image: url(img/i51.jpg);
-    background-size: cover;
-}
-.e52:hover {
-    background-image: url(img/i52.jpg);
-    background-size: cover;
-}
-.e53:hover {
-    background-image: url(img/i53.jpg);
-    background-size: cover;
-}
-.e54:hover {
-    background-image: url(img/i54.jpg);
-    background-size: cover;
-}
-.e55:hover {
-    background-image: url(img/i55.jpg);
-    background-size: cover;
-}
-.e56:hover {
-    background-image: url(img/i56.jpg);
-    background-size: cover;
-}
-.e57:hover {
-    background-image: url(img/i57.jpg);
-    background-size: cover;
-}
-.e58:hover {
-    background-image: url(img/i58.jpg);
-    background-size: cover;
-}
-.e59:hover {
-    background-image: url(img/i59.jpg);
-    background-size: cover;
-}
-.e60:hover {
-    background-image: url(img/i60.jpg);
-    background-size: cover;
-}
-.e61:hover {
-    background-image: url(img/i61.jpg);
-    background-size: cover;
-}
-.e62:hover {
-    background-image: url(img/i62.jpg);
-    background-size: cover;
-}
-.e63:hover {
-    background-image: url(img/i63.jpg);
-    background-size: cover;
-}
-.e64:hover {
-    background-image: url(img/i64.jpg);
-    background-size: cover;
-}
-.e65:hover {
-    background-image: url(img/i65.jpg);
-    background-size: cover;
-}
-.e66:hover {
-    background-image: url(img/i66.jpg);
-    background-size: cover;
-}
-.e67:hover {
-    background-image: url(img/i67.jpg);
-    background-size: cover;
-}
-.e68:hover {
-    background-image: url(img/i68.jpg);
-    background-size: cover;
-}
-.e69:hover {
-    background-image: url(img/i69.jpg);
-    background-size: cover;
-}
-.e70:hover {
-    background-image: url(img/i70.jpg);
-    background-size: cover;
-}
-.e71:hover {
-    background-image: url(img/i71.jpg);
-    background-size: cover;
-}
-.e72:hover {
-    background-image: url(img/i72.jpg);
-    background-size: cover;
-}
-.e73:hover {
-    background-image: url(img/i73.jpg);
-    background-size: cover;
-}
-.e74:hover {
-    background-image: url(img/i74.jpg);
-    background-size: cover;
-}
-.e75:hover {
-    background-image: url(img/i75.jpg);
-    background-size: cover;
-}
-.e76:hover {
-    background-image: url(img/i76.jpg);
-    background-size: cover;
-}
-.e77:hover {
-    background-image: url(img/i77.jpg);
-    background-size: cover;
-}
-.e78:hover {
-    background-image: url(img/i78.jpg);
-    background-size: cover;
-}
-.e79:hover {
-    background-image: url(img/i79.jpg);
-    background-size: cover;
-}
-.e80:hover {
-    background-image: url(img/i80.jpg);
-    background-size: cover;
-}
-.e81:hover {
-    background-image: url(img/i81.jpg);
-    background-size: cover;
-}
-.e82:hover {
-    background-image: url(img/i82.jpg);
-    background-size: cover;
-}
-.e83:hover {
-    background-image: url(img/i83.jpg);
-    background-size: cover;
-}
-.e84:hover {
-    background-image: url(img/i84.jpg);
-    background-size: cover;
-}
-.e85:hover {
-    background-image: url(img/i85.jpg);
-    background-size: cover;
-}
-.e86:hover {
-    background-image: url(img/i86.jpg);
-    background-size: cover;
-}
-.e87:hover {
-    background-image: url(img/i87.jpg);
-    background-size: cover;
-}
-.e88:hover {
-    background-image: url(img/i88.jpg);
-    background-size: cover;
-}
-.e89:hover {
-    background-image: url(img/i89.jpg);
-    background-size: cover;
-}
-.e90:hover {
-    background-image: url(img/i90.jpg);
-    background-size: cover;
-}
-.e91:hover {
-    background-image: url(img/i91.jpg);
-    background-size: cover;
-}
-.e92:hover {
-    background-image: url(img/i92.jpg);
-    background-size: cover;
-}
-.e93:hover {
-    background-image: url(img/i93.jpg);
-    background-size: cover;
-}
-.e94:hover {
-    background-image: url(img/i94.jpg);
-    background-size: cover;
-}
-.e95:hover {
-    background-image: url(img/i95.jpg);
-    background-size: cover;
-}
-.e96:hover {
-    background-image: url(img/i96.jpg);
-    background-size: cover;
-}
-.e97:hover {
-    background-image: url(img/i97.jpg);
-    background-size: cover;
-}
-.e98:hover {
-    background-image: url(img/i98.jpg);
-    background-size: cover;
-}
-.e99:hover {
-    background-image: url(img/i99.jpg);
-    background-size: cover;
-}
-.e100:hover {
-    background-image: url(img/i100.jpg);
-    background-size: cover;
-}
-.e101:hover {
-    background-image: url(img/i101.jpg);
-    background-size: cover;
-}
-.e102:hover {
-    background-image: url(img/i102.jpg);
-    background-size: cover;
-}
-.e103:hover {
-    background-image: url(img/i103.jpg);
-    background-size: cover;
-}
-.e104:hover {
-    background-image: url(img/i104.jpg);
-    background-size: cover;
-}
-.e105:hover {
-    background-image: url(img/i105.jpg);
-    background-size: cover;
-}
-.e106:hover {
-    background-image: url(img/i106.jpg);
-    background-size: cover;
-}
-.e107:hover {
-    background-image: url(img/i107.jpg);
-    background-size: cover;
-}
-.e108:hover {
-    background-image: url(img/i108.jpg);
-    background-size: cover;
-}
-
 .blockS{
     background-color: rgb(193, 117, 114);
 }
@@ -624,14 +311,75 @@ a{
     background-color: rgb(61, 59, 58);
 }
 .metalClicked{   
-    background-color: rgb(178, 116, 199);  
+    background-color: rgb(178, 116, 199);   
 }
 .NonMetalClicked{
-    background-color: rgb(109, 2, 123);
+    background-color: rgb(218, 5, 238);
 }
 .metalloid{
     background-color: rgb(67, 148, 154);
 }
 .unknown{
     background-color: rgb(183, 182, 182);
+}
+.state-solid { 
+    background-color: #0284c7; 
+}
+.state-liquid { 
+    background-color: #91f4ff; 
+}
+.state-gas { 
+    background-color: #04fa4a; 
+}
+.state-unknown { 
+    background-color: #4b5563; 
+}
+.cont{ 
+    position: absolute;     
+    top: 6.875rem;
+    left: 35rem; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;     
+    width: 25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 1.25rem 0 whitesmoke ;
+    padding: 1.2rem; 
+    height: 2rem; 
+    padding-left: 7rem; 
+    padding-right: 0.5rem; 
+}
+.slider{         
+    width: 100%;
+    height: 1rem;
+    cursor: pointer;     
+}
+.value{
+    height: 2rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: plum;
+    border-radius: 0.3125rem 0 0 0.3125rem;
+    margin-left: 1rem;
+}
+.accent{
+    accent-color: plum;       
+}
+.sdiv{
+    height: 2rem;
+    width: 2rem;
+    border: 0.125rem solid white;
+}
+.states{
+    width: 20rem;
+    height: 2rem;     
+    position: absolute;
+    top: 11.25rem;
+    left: 40.625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
 }

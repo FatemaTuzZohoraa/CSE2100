@@ -8,33 +8,28 @@
 </head>
 <body>
      <div class="bg">
-        <ul class="elementType">
-            <li onclick="
-            this.style.color = (this.style.color === 'rgb(178, 116, 199)' ? 'white' : 'rgb(178, 116, 199)');
-            const elements1 = document.querySelectorAll('.tm, .am, .l, .a, .ptm, .e109, .e110, .e111, .e112, .metal');
-             elements1.forEach(el1 => el1.classList.toggle('metalClicked'));    
-             heading.style.color='blue'   ;    
-            " >Metal</li>
-
-            <li onclick="
-            this.style.color = (this.style.color === 'rgb(109, 2, 123)' ? 'white' : 'rgb(109, 2, 123)');
-            const elements2 = document.querySelectorAll('.nm, .ng');
-             elements2.forEach(el2 => el2.classList.toggle('NonMetalClicked'));
-            ">Non-Metal</li>
-
-            <li onclick="
-            this.style.color = (this.style.color === 'rgb(67, 148, 154)' ? 'white' : 'rgb(67, 148, 154)');
-            const elements3 = document.querySelectorAll('.m');
-            elements3.forEach(el3 => el3.classList.toggle('metalloid'));
-            " >Metalloid</li>
-
-            <li onclick="
-            this.style.color = (this.style.color === 'rgb(183, 182, 182)' ? 'white' : 'rgb(183, 182, 182)');
-            const elements4 = document.querySelectorAll('.e113, .e114, .e115, .e116, .e117, .e118');
-            elements4.forEach(el4 => el4.classList.toggle('unknown'));
-            " >Unknown</li>
-        </ul>
+        <p class="title">Periodic Table</p>
         
+            <div class="cont">
+                <div class="temp">Temperature</div>
+               <div style="color: white; margin-right: 0.5rem;display: flex;align-items: center;
+               flex-direction: row;"><p style="margin:0.2rem;">0</p> <p>k</p></div> 
+            <input type="range" min="0" max="6000" value="0" id="range" class="slider accent" /> 
+            <div class="value">6000</div>
+            <div style="background-color: plum;height: 2rem; border-radius: 0px 5px 5px 0px; display: flex; align-items: center; padding-left: 0.2rem;padding-right: 0.5rem;">k</div> 
+            </div> 
+
+            <div class="states">
+                    <div class="sdiv state-solid "></div>
+                    <p style="color:#0284c7; margin-top: 10px;">Solid</p>
+                    <div class="sdiv state-liquid"></div>
+                    <p style="color:#91f4ff ; margin-top: 10px;">Liquid</p>
+                    <div class="sdiv state-gas"></div>
+                    <p style="color:#04fa4a;margin-top: 10px;">Gas</p>
+                    <div class="sdiv state-unknown"></div>
+                    <p style="color:#4b5563 ; margin-top: 10px;">Unknown</p>
+            </div>
+
         <ul class="block">
             <p>Blocks</p>
             <li onclick="
@@ -57,47 +52,77 @@
             const elementsF = document.querySelectorAll('.l, .a');
             elementsF.forEach(elF => elF.classList.toggle('blockF'));
             " >f</li>
+        </ul>    
+            
+        <ul class="elementType">
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(178, 116, 199)' ? 'white' : 'rgb(178, 116, 199)');
+            const elements1 = document.querySelectorAll('.tm, .am, .l, .a, .ptm, .e109, .e110, .e111, .e112, .metal');
+             elements1.forEach(el1 => el1.classList.toggle('metalClicked'));    
+                 
+            " >Metal</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(218, 5, 238)' ? 'white' : 'rgb(218, 5, 238)');
+            const elements2 = document.querySelectorAll('.nm, .ng');
+             elements2.forEach(el2 => el2.classList.toggle('NonMetalClicked'));
+            ">Non-Metal</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(67, 148, 154)' ? 'white' : 'rgb(67, 148, 154)');
+            const elements3 = document.querySelectorAll('.m');
+            elements3.forEach(el3 => el3.classList.toggle('metalloid'));
+            " >Metalloid</li>
+
+            <li onclick="
+            this.style.color = (this.style.color === 'rgb(183, 182, 182)' ? 'white' : 'rgb(183, 182, 182)');
+            const elements4 = document.querySelectorAll('.e113, .e114, .e115, .e116, .e117, .e118');
+            elements4.forEach(el4 => el4.classList.toggle('unknown'));
+            " >Unknown</li>
         </ul>
+        
+        
+
 
         <div class="content">
     <div class="col c1">
-        <div class="dv nm e1" onclick="toggleBox(event, 'H')">
+        <div class="dv nm e1" data-mp="14.01" data-bp="20.28" onclick="toggleBox(event, 'H')">
             <h6>1</h6>
             <h2>H</h2>
             <h6>Hydrogen</h6>
             <h6>1.0079</h6>
         </div>
-        <div class="dv am e3" onclick="toggleBox(event, 'Li')">
+        <div class="dv am e3" data-mp="453.65" data-bp="1615" onclick="toggleBox(event, 'Li')">
             <h6>3</h6>
             <h2>Li</h2>
             <h6>Lithium</h6>
             <h6>6.941</h6>
         </div>
-        <div class="dv am e11" onclick="toggleBox(event, 'Na')">
+        <div class="dv am e11" data-mp="370.87" data-bp="1156" onclick="toggleBox(event, 'Na')">
             <h6>11</h6>
             <h2>Na</h2>
             <h6>Sodium</h6>
             <h6>22.990</h6>
         </div>
-        <div class="dv am e19" onclick="toggleBox(event, 'K')">
+        <div class="dv am e19" data-mp="336.53" data-bp="1032" onclick="toggleBox(event, 'K')">
             <h6>19</h6>
             <h2>K</h2>
             <h6>Potassium</h6>
             <h6>39.098</h6>
         </div>
-        <div class="dv am e37" onclick="toggleBox(event, 'Rb')">
+        <div class="dv am e37" data-mp="312.46" data-bp="961" onclick="toggleBox(event, 'Rb')">
             <h6>37</h6>
             <h2>Rb</h2>
             <h6>Rubidium</h6>
             <h6>85.468</h6>
         </div>
-        <div class="dv am e55" onclick="toggleBox(event, 'Cs')">
+        <div class="dv am e55" data-mp="301.59" data-bp="944" onclick="toggleBox(event, 'Cs')">
             <h6>55</h6>
             <h2>Cs</h2>
             <h6>Caesium</h6>
             <h6>132.91</h6>
         </div>
-        <div class="dv am e87" onclick="toggleBox(event, 'Fr')">
+        <div class="dv am e87" data-mp="300" data-bp="950" onclick="toggleBox(event, 'Fr')">
             <h6>87</h6>
             <h2>Fr</h2>
             <h6>Francium</h6>
@@ -105,37 +130,37 @@
         </div>
     </div>
     <div class="col c2">
-        <div class="dv am e4" onclick="toggleBox(event, 'Be')">
+        <div class="dv am e4" data-mp="1560" data-bp="2742" onclick="toggleBox(event, 'Be')">
             <h6>4</h6>
             <h2>Be</h2>
             <h6>Beryllium</h6>
             <h6>9.0122</h6>
         </div>
-        <div class="dv am e12" onclick="toggleBox(event, 'Mg')">
+        <div class="dv am e12" data-mp="923" data-bp="1363" onclick="toggleBox(event, 'Mg')">
             <h6>12</h6>
             <h2>Mg</h2>
             <h6>Magnesium</h6>
             <h6>24.305</h6>
         </div>
-        <div class="dv am e20" onclick="toggleBox(event, 'Ca')">
+        <div class="dv am e20" data-mp="1115" data-bp="1757" onclick="toggleBox(event, 'Ca')">
             <h6>20</h6>
             <h2>Ca</h2>
             <h6>Calcium</h6>
             <h6>40.078</h6>
         </div>
-        <div class="dv am e38" onclick="toggleBox(event, 'Sr')">
+        <div class="dv am e38" data-mp="1050" data-bp="1655" onclick="toggleBox(event, 'Sr')">
             <h6>38</h6>
             <h2>Sr</h2>
             <h6>Strontium</h6>
             <h6>87.62</h6>
         </div>
-        <div class="dv am e56" onclick="toggleBox(event, 'Ba')">
+        <div class="dv am e56" data-mp="1000" data-bp="2170" onclick="toggleBox(event, 'Ba')">
             <h6>56</h6>
             <h2>Ba</h2>
             <h6>Barium</h6>
             <h6>137.33</h6>
         </div>
-        <div class="dv am e88" onclick="toggleBox(event, 'Ra')">
+        <div class="dv am e88" data-mp="973" data-bp="2010" onclick="toggleBox(event, 'Ra')">
             <h6>88</h6>
             <h2>Ra</h2>
             <h6>Radium</h6>
@@ -143,237 +168,243 @@
         </div>
     </div>
     <div class="div1 sd">
-        <div class="dv tm e21" onclick="toggleBox(event, 'Sc')">
+        <div class="dv tm e21" data-mp="1814" data-bp="3109" onclick="toggleBox(event, 'Sc')">
             <h6>21</h6>
             <h2>Sc</h2>
             <h6>Scandium</h6>
             <h6>44.956</h6>
         </div>
-        <div class="dv tm e22" onclick="toggleBox(event, 'Ti')">
+        <div class="dv tm e22" data-mp="1941" data-bp="3560" onclick="toggleBox(event, 'Ti')">
             <h6>22</h6>
             <h2>Ti</h2>
             <h6>Titanium</h6>
             <h6>47.867</h6>
         </div>
-        <div class="dv tm e23" onclick="toggleBox(event, 'V')">
+        <div class="dv tm e23" data-mp="2183" data-bp="3680" onclick="toggleBox(event, 'V')">
             <h6>23</h6>
             <h2>V</h2>
             <h6>Vanadium</h6>
             <h6>50.942</h6>
         </div>
-        <div class="dv tm e24" onclick="toggleBox(event, 'Cr')">
+        <div class="dv tm e24" data-mp="2180" data-bp="2944" onclick="toggleBox(event, 'Cr')">
             <h6>24</h6>
             <h2>Cr</h2>
             <h6>Chromium</h6>
             <h6>51.996</h6>
         </div>
-        <div class="dv tm e25" onclick="toggleBox(event, 'Mn')">
+        <div class="dv tm e25" data-mp="1519" data-bp="2334" onclick="toggleBox(event, 'Mn')">
             <h6>25</h6>
             <h2>Mn</h2>
             <h6>Manganese</h6>
             <h6>54.938</h6>
         </div>
-        <div class="dv tm e26" onclick="toggleBox(event, 'Fe')">
+        <div class="dv tm e26" data-mp="1811" data-bp="3134" onclick="toggleBox(event, 'Fe')">
             <h6>26</h6>
             <h2>Fe</h2>
             <h6>Iron</h6>
             <h6>55.845</h6>
         </div>
-        <div class="dv tm e27" onclick="toggleBox(event, 'Co')">
+        <div class="dv tm e27" data-mp="1768" data-bp="3200" onclick="toggleBox(event, 'Co')">
             <h6>27</h6>
             <h2>Co</h2>
             <h6>Cobalt</h6>
             <h6>58.933</h6>
         </div>
-        <div class="dv tm e28" onclick="toggleBox(event, 'Ni')">
+        <div class="dv tm e28" data-mp="1728" data-bp="3186" onclick="toggleBox(event, 'Ni')">
             <h6>28</h6>
             <h2>Ni</h2>
             <h6>Nickel</h6>
             <h6>58.693</h6>
         </div>
-        <div class="dv tm e29" onclick="toggleBox(event, 'Cu')">
+        <div class="dv tm e29" data-mp="1357.77" data-bp="2835" onclick="toggleBox(event, 'Cu')">
             <h6>29</h6>
             <h2>Cu</h2>
             <h6>Copper</h6>
             <h6>63.546</h6>
         </div>
-        <div class="dv tm e30" onclick="toggleBox(event, 'Zn')">
+        <div class="dv tm e30" data-mp="692.68" data-bp="1180" onclick="toggleBox(event, 'Zn')">
             <h6>30</h6>
             <h2>Zn</h2>
             <h6>Zinc</h6>
             <h6>65.38</h6>
         </div>
-        <div class="dv tm e39" onclick="toggleBox(event, 'Y')">
+        <div class="dv tm e39" data-mp="1799" data-bp="3609" onclick="toggleBox(event, 'Y')">
             <h6>39</h6>
             <h2>Y</h2>
             <h6>Yttrium</h6>
             <h6>88.906</h6>
         </div>
-        <div class="dv tm e40" onclick="toggleBox(event, 'Zr')">
+        <div class="dv tm e40" data-mp="2128" data-bp="4682" onclick="toggleBox(event, 'Zr')">
             <h6>40</h6>
             <h2>Zr</h2>
             <h6>Zirconium</h6>
             <h6>91.224</h6>
         </div>
-        <div class="dv tm e41" onclick="toggleBox(event, 'Nb')">
+        <div class="dv tm e41" data-mp="2750" data-bp="5017" onclick="toggleBox(event, 'Nb')">
             <h6>41</h6>
             <h2>Nb</h2>
             <h6>Niobium</h6>
             <h6>92.906</h6>
         </div>
-        <div class="dv tm e42" onclick="toggleBox(event, 'Mo')">
+        <div class="dv tm e42" data-mp="2896" data-bp="4912" onclick="toggleBox(event, 'Mo')">
             <h6>42</h6>
             <h2>Mo</h2>
             <h6>Molybdenum</h6>
             <h6>95.95</h6>
         </div>
-        <div class="dv tm e43" onclick="toggleBox(event, 'Tc')">
+        <div class="dv tm e43" data-mp="2430" data-bp="4538" onclick="toggleBox(event, 'Tc')">
             <h6>43</h6>
             <h2>Tc</h2>
             <h6>Technetium</h6>
             <h6>98</h6>
         </div>
-        <div class="dv tm e44" onclick="toggleBox(event, 'Ru')">
+        <div class="dv tm e44" data-mp="2607" data-bp="4423" onclick="toggleBox(event, 'Ru')">
             <h6>44</h6>
             <h2>Ru</h2>
             <h6>Ruthenium</h6>
             <h6>101.07</h6>
         </div>
-        <div class="dv tm e45" onclick="toggleBox(event, 'Rh')">
+        <div class="dv tm e45" data-mp="2237" data-bp="3968" onclick="toggleBox(event, 'Rh')">
             <h6>45</h6>
             <h2>Rh</h2>
             <h6>Rhodium</h6>
             <h6>102.91</h6>
         </div>
-        <div class="dv tm e46" onclick="toggleBox(event, 'Pd')">
+        <div class="dv tm e46" data-mp="1828.05" data-bp="3236" onclick="toggleBox(event, 'Pd')">
             <h6>46</h6>
             <h2>Pd</h2>
             <h6>Palladium</h6>
             <h6>106.42</h6>
         </div>
-        <div class="dv tm e47" onclick="toggleBox(event, 'Ag')">
+        <div class="dv tm e47" data-mp="1234.93" data-bp="2435" onclick="toggleBox(event, 'Ag')">
             <h6>47</h6>
             <h2>Ag</h2>
             <h6>Silver</h6>
             <h6>107.87</h6>
         </div>
-        <div class="dv tm e48" onclick="toggleBox(event, 'Cd')">
+        <div class="dv tm e48" data-mp="594.22" data-bp="1040" onclick="toggleBox(event, 'Cd')">
             <h6>48</h6>
             <h2>Cd</h2>
             <h6>Cadmium</h6>
             <h6>112.41</h6>
         </div>
-        <div class="dv l">
+        <div class="dv l la" onclick="            
+            const elementLa = document.querySelectorAll('.l');
+             elementLa.forEach(elLa => elLa.classList.toggle('Lanthanides'));                     
+            " >
             <h5>57-71</h5>
             <h6>Lanthanides</h6>
         </div>
-        <div class="dv tm e72" onclick="toggleBox(event, 'Hf')">
+        <div class="dv tm e72" data-mp="2506" data-bp="4876" onclick="toggleBox(event, 'Hf')">
             <h6>72</h6>
             <h2>Hf</h2>
             <h6>Hafnium</h6>
             <h6>178.49</h6>
         </div>
-        <div class="dv tm e73" onclick="toggleBox(event, 'Ta')">
+        <div class="dv tm e73" data-mp="3290" data-bp="5731" onclick="toggleBox(event, 'Ta')">
             <h6>73</h6>
             <h2>Ta</h2>
             <h6>Tantalum</h6>
             <h6>180.84</h6>
         </div>
-        <div class="dv tm e74" onclick="toggleBox(event, 'W')">
+        <div class="dv tm e74" data-mp="3695" data-bp="5828" onclick="toggleBox(event, 'W')">
             <h6>74</h6>
             <h2>W</h2>
             <h6>Tungsten</h6>
             <h6>183.84</h6>
         </div>
-        <div class="dv tm e75" onclick="toggleBox(event, 'Re')">
+        <div class="dv tm e75" data-mp="3459" data-bp="5869" onclick="toggleBox(event, 'Re')">
             <h6>75</h6>
             <h2>Re</h2>
             <h6>Rhenium</h6>
             <h6>186.21</h6>
         </div>
-        <div class="dv tm e76" onclick="toggleBox(event, 'Os')">
+        <div class="dv tm e76" data-mp="3306" data-bp="5285" onclick="toggleBox(event, 'Os')">
             <h6>76</h6>
             <h2>Os</h2>
             <h6>Osmium</h6>
             <h6>190.23</h6>
         </div>
-        <div class="dv tm e77" onclick="toggleBox(event, 'Ir')">
+        <div class="dv tm e77" data-mp="2719" data-bp="4701" onclick="toggleBox(event, 'Ir')">
             <h6>77</h6>
             <h2>Ir</h2>
             <h6>Iridium</h6>
             <h6>192.22</h6>
         </div>
-        <div class="dv tm e78" onclick="toggleBox(event, 'Pt')">
+        <div class="dv tm e78" data-mp="2041.4" data-bp="4098" onclick="toggleBox(event, 'Pt')">
             <h6>78</h6>
             <h2>Pt</h2>
             <h6>Platinum</h6>
             <h6>195.08</h6>
         </div>
-        <div class="dv tm e79" onclick="toggleBox(event, 'Au')">
+        <div class="dv tm e79" data-mp="1337.33" data-bp="3129" onclick="toggleBox(event, 'Au')">
             <h6>79</h6>
             <h2>Au</h2>
             <h6>Gold</h6>
             <h6>196.97</h6>
         </div>
-        <div class="dv tm e80" onclick="toggleBox(event, 'Hg')">
+        <div class="dv tm e80" data-mp="234.32" data-bp="629.88" onclick="toggleBox(event, 'Hg')">
             <h6>80</h6>
             <h2>Hg</h2>
             <h6>Mercury</h6>
             <h6>200.59</h6>
         </div>
-        <div class="dv a">
-            <h5>57-71</h5>
+        <div class="dv a ac" onclick="            
+            const elementAc = document.querySelectorAll('.a');
+             elementAc.forEach(elAc => elAc.classList.toggle('Actinides'));                     
+            " >
+            <h5>89-103</h5>
             <h6>Actinides</h6>
         </div>
-        <div class="dv tm e104" onclick="toggleBox(event, 'Rf')">
+        <div class="dv tm e104" data-mp="2400" data-bp="5800" onclick="toggleBox(event, 'Rf')">
             <h6>104</h6>
             <h2>Rf</h2>
             <h6>Rutherfordium</h6>
             <h6>267</h6>
         </div>
-        <div class="dv tm e105" onclick="toggleBox(event, 'Db')">
+        <div class="dv tm e105" data-mp="" data-bp="" onclick="toggleBox(event, 'Db')">
             <h6>105</h6>
             <h2>Db</h2>
             <h6>Dubnium</h6>
             <h6>268</h6>
         </div>
-        <div class="dv tm e106" onclick="toggleBox(event, 'Sg')">
+        <div class="dv tm e106" data-mp="" data-bp="" onclick="toggleBox(event, 'Sg')">
             <h6>106</h6>
             <h2>Sg</h2>
             <h6>Seaborgium</h6>
             <h6>269</h6>
         </div>
-        <div class="dv tm e107" onclick="toggleBox(event, 'Bh')">
+        <div class="dv tm e107" data-mp="" data-bp="" onclick="toggleBox(event, 'Bh')">
             <h6>107</h6>
             <h2>Bh</h2>
             <h6>Bohrium</h6>
             <h6>270</h6>
         </div>
-        <div class="dv tm e108" onclick="toggleBox(event, 'Hs')">
+        <div class="dv tm e108" data-mp="" data-bp="" onclick="toggleBox(event, 'Hs')">
             <h6>108</h6>
             <h2>Hs</h2>
             <h6>Hassium</h6>
             <h6>277</h6>
         </div>
-        <div class="dv u e109" onclick="toggleBox(event, 'Mt')">
+        <div class="dv u e109" data-mp="" data-bp="" onclick="toggleBox(event, 'Mt')">
             <h6>109</h6>
             <h2>Mt</h2>
             <h6>Meitnerium</h6>
             <h6>278</h6>
         </div>
-        <div class="dv u e110" onclick="toggleBox(event, 'Ds')">
+        <div class="dv u e110" data-mp="" data-bp="" onclick="toggleBox(event, 'Ds')">
             <h6>110</h6>
             <h2>Ds</h2>
             <h6>Darmstadium</h6>
             <h6>281</h6>
         </div>
-        <div class="dv u e111" onclick="toggleBox(event, 'Rg')">
+        <div class="dv u e111" data-mp="" data-bp="" onclick="toggleBox(event, 'Rg')">
             <h6>111</h6>
             <h2>Rg</h2>
             <h6>Roentgenium</h6>
             <h6>282</h6>
         </div>
-        <div class="dv u e112" onclick="toggleBox(event, 'Cn')">
+        <div class="dv u e112" data-mp="" data-bp="" onclick="toggleBox(event, 'Cn')">
             <h6>112</h6>
             <h2>Cn</h2>
             <h6>Copernicium</h6>
@@ -381,410 +412,412 @@
         </div>
     </div>
     <div class="div2 sd">
-        <div class="dv m e5" onclick="toggleBox(event, 'B')">
+        <div class="dv m e5" data-mp="2349" data-bp="4200" onclick="toggleBox(event, 'B')">
             <h6>5</h6>
             <h2>B</h2>
             <h6>Boron</h6>
             <h6>10.81</h6>
         </div>
-        <div class="dv nm e6" onclick="toggleBox(event, 'C')">
+        <div class="dv nm e6" data-mp="3800" data-bp="5100" onclick="toggleBox(event, 'C')">
             <h6>6</h6>
             <h2>C</h2>
             <h6>Carbon</h6>
             <h6>12.011</h6>
         </div>
-        <div class="dv nm e7" onclick="toggleBox(event, 'N')">
+        <div class="dv nm e7" data-mp="63.15" data-bp="77.36" onclick="toggleBox(event, 'N')">
             <h6>7</h6>
             <h2>N</h2>
             <h6>Nitrogen</h6>
             <h6>14.007</h6>
         </div>
-        <div class="dv nm e8" onclick="toggleBox(event, 'O')">
+        <div class="dv nm e8" data-mp="54.36" data-bp="90.20" onclick="toggleBox(event, 'O')">
             <h6>8</h6>
             <h2>O</h2>
             <h6>Oxygen</h6>
             <h6>15.999</h6>
         </div>
-        <div class="dv nm e9" onclick="toggleBox(event, 'F')">
+        <div class="dv nm e9" data-mp="53.53" data-bp="85.03" onclick="toggleBox(event, 'F')">
             <h6>9</h6>
             <h2>F</h2>
             <h6>Fluorine</h6>
             <h6>18.998</h6>
         </div>
-        <div class="dv ng e10" onclick="toggleBox(event, 'Ne')">
+        <div class="dv ng e10" data-mp="24.56" data-bp="27.07" onclick="toggleBox(event, 'Ne')">
             <h6>10</h6>
             <h2>Ne</h2>
             <h6>Neon</h6>
             <h6>20.180</h6>
         </div>
-        <div class="dv ptm e13" onclick="toggleBox(event, 'Al')">
+        <div class="dv ptm e13" data-mp="933.47" data-bp="2792" onclick="toggleBox(event, 'Al')">
             <h6>13</h6>
             <h2>Al</h2>
             <h6>Aluminium</h6>
             <h6>26.982</h6>
         </div>
-        <div class="dv m e14" onclick="toggleBox(event, 'Si')">
+        <div class="dv m e14" data-mp="1687" data-bp="3538" onclick="toggleBox(event, 'Si')">
             <h6>14</h6>
             <h2>Si</h2>
             <h6>Silicon</h6>
             <h6>28.085</h6>
         </div>
-        <div class="dv nm e15" onclick="toggleBox(event, 'P')">
+        <div class="dv nm e15" data-mp="317.3" data-bp="553.7" onclick="toggleBox(event, 'P')">
             <h6>15</h6>
             <h2>P</h2>
             <h6>Phosphorus</h6>
             <h6>30.974</h6>
         </div>
-        <div class="dv nm e16" onclick="toggleBox(event, 'S')">
+        <div class="dv nm e16" data-mp="388.36" data-bp="717.8" onclick="toggleBox(event, 'S')">
             <h6>16</h6>
             <h2>S</h2>
             <h6>Sulfur</h6>
             <h6>32.06</h6>
         </div>
-        <div class="dv nm e17" onclick="toggleBox(event, 'Cl')">
+        <div class="dv nm e17" data-mp="171.6" data-bp="239.11" onclick="toggleBox(event, 'Cl')">
             <h6>17</h6>
             <h2>Cl</h2>
             <h6>Chlorine</h6>
             <h6>35.45</h6>
         </div>
-        <div class="dv ng e18" onclick="toggleBox(event, 'Ar')">
+        <div class="dv ng e18" data-mp="83.80" data-bp="87.30" onclick="toggleBox(event, 'Ar')">
             <h6>18</h6>
             <h2>Ar</h2>
             <h6>Argon</h6>
             <h6>39.948</h6>
         </div>
-        <div class="dv ptm e31" onclick="toggleBox(event, 'Ga')">
+        <div class="dv ptm e31" data-mp="302.91" data-bp="2673" onclick="toggleBox(event, 'Ga')">
             <h6>31</h6>
             <h2>Ga</h2>
             <h6>Gallium</h6>
             <h6>69.723</h6>
         </div>
-        <div class="dv m e32" onclick="toggleBox(event, 'Ge')">
+        <div class="dv m e32" data-mp="1211.40" data-bp="3106" onclick="toggleBox(event, 'Ge')">
             <h6>32</h6>
             <h2>Ge</h2>
             <h6>Germanium</h6>
             <h6>72.630</h6>
         </div>
-        <div class="dv m e33" onclick="toggleBox(event, 'As')">
+        <div class="dv m e33" data-mp="1090" data-bp="887" onclick="toggleBox(event, 'As')">
             <h6>33</h6>
             <h2>As</h2>
             <h6>Arsenic</h6>
             <h6>74.922</h6>
         </div>
-        <div class="dv nm e34" onclick="toggleBox(event, 'Se')">
+        <div class="dv nm e34" data-mp="494" data-bp="958" onclick="toggleBox(event, 'Se')">
             <h6>34</h6>
             <h2>Se</h2>
             <h6>Selenium</h6>
             <h6>78.971</h6>
         </div>
-        <div class="dv nm e35" onclick="toggleBox(event, 'Br')">
+        <div class="dv nm e35" data-mp="265.8" data-bp="332.0" onclick="toggleBox(event, 'Br')">
             <h6>35</h6>
             <h2>Br</h2>
             <h6>Bromine</h6>
             <h6>79.904</h6>
         </div>
-        <div class="dv ng e36" onclick="toggleBox(event, 'Kr')">
+        <div class="dv ng e36" data-mp="115.79" data-bp="119.93" onclick="toggleBox(event, 'Kr')">
             <h6>36</h6>
             <h2>Kr</h2>
             <h6>Krypton</h6>
             <h6>83.798</h6>
         </div>
-        <div class="dv ptm e49" onclick="toggleBox(event, 'In')">
+        <div class="dv ptm e49" data-mp="429.75" data-bp="2345" onclick="toggleBox(event, 'In')">
             <h6>49</h6>
             <h2>In</h2>
             <h6>Indium</h6>
             <h6>114.82</h6>
         </div>
-        <div class="dv ptm e50" onclick="toggleBox(event, 'Sn')">
+        <div class="dv ptm e50" data-mp="505.08" data-bp="2875" onclick="toggleBox(event, 'Sn')">
             <h6>50</h6>
             <h2>Sn</h2>
             <h6>Tin</h6>
             <h6>118.71</h6>
         </div>
-        <div class="dv m e51" onclick="toggleBox(event, 'Sb')">
+        <div class="dv m e51" data-mp="903.78" data-bp="1860" onclick="toggleBox(event, 'Sb')">
             <h6>51</h6>
             <h2>Sb</h2>
             <h6>Antimony</h6>
             <h6>121.76</h6>
         </div>
-        <div class="dv m e52" onclick="toggleBox(event, 'Te')">
+        <div class="dv m e52" data-mp="722.66" data-bp="1261" onclick="toggleBox(event, 'Te')">
             <h6>52</h6>
             <h2>Te</h2>
             <h6>Tellurium</h6>
             <h6>127.60</h6>
         </div>
-        <div class="dv nm e53" onclick="toggleBox(event, 'I')">
+        <div class="dv nm e53" data-mp="386.85" data-bp="457.4" onclick="toggleBox(event, 'I')">
             <h6>53</h6>
             <h2>I</h2>
             <h6>Iodine</h6>
             <h6>126.90</h6>
         </div>
-        <div class="dv ng e54" onclick="toggleBox(event, 'Xe')">
+        <div class="dv ng e54" data-mp="161.4" data-bp="165.03" onclick="toggleBox(event, 'Xe')">
             <h6>54</h6>
             <h2>Xe</h2>
             <h6>Xenon</h6>
             <h6>131.29</h6>
         </div>
-        <div class="dv ptm e81" onclick="toggleBox(event, 'Tl')">
+        <div class="dv ptm e81" data-mp="577" data-bp="1746" onclick="toggleBox(event, 'Tl')">
             <h6>81</h6>
             <h2>Tl</h2>
             <h6>Thallium</h6>
             <h6>204.38</h6>
         </div>
-        <div class="dv ptm e82" onclick="toggleBox(event, 'Pb')">
+        <div class="dv ptm e82" data-mp="600.61" data-bp="2022" onclick="toggleBox(event, 'Pb')">
             <h6>82</h6>
             <h2>Pb</h2>
             <h6>Lead</h6>
             <h6>207.2</h6>
         </div>
-        <div class="dv ptm e83" onclick="toggleBox(event, 'Bi')">
+        <div class="dv ptm e83" data-mp="544.7" data-bp="1837" onclick="toggleBox(event, 'Bi')">
             <h6>83</h6>
             <h2>Bi</h2>
             <h6>Bismuth</h6>
             <h6>208.98</h6>
         </div>
-        <div class="dv ptm e84" onclick="toggleBox(event, 'Po')">
+        <div class="dv ptm e84" data-mp="527" data-bp="1235" onclick="toggleBox(event, 'Po')">
             <h6>84</h6>
             <h2>Po</h2>
             <h6>Polonium</h6>
             <h6>209</h6>
         </div>
-        <div class="dv m e85" onclick="toggleBox(event, 'At')">
+        <div class="dv m e85" data-mp="575" data-bp="610" onclick="toggleBox(event, 'At')">
             <h6>85</h6>
             <h2>At</h2>
             <h6>Astatine</h6>
             <h6>210</h6>
         </div>
-        <div class="dv ng e86" onclick="toggleBox(event, 'Rn')">
+        <div class="dv ng e86" data-mp="202" data-bp="211.3" onclick="toggleBox(event, 'Rn')">
             <h6>86</h6>
             <h2>Rn</h2>
             <h6>Radon</h6>
             <h6>222</h6>
         </div>
-        <div class="dv u e113" onclick="toggleBox(event, 'Nh')">
+        <div class="dv u e113" data-mp="" data-bp="" onclick="toggleBox(event, 'Nh')">
             <h6>113</h6>
             <h2>Nh</h2>
             <h6>Nihonium</h6>
             <h6>286</h6>
         </div>
-        <div class="dv u e114" onclick="toggleBox(event, 'Fl')">
+        <div class="dv u e114" data-mp="" data-bp="" onclick="toggleBox(event, 'Fl')">
             <h6>114</h6>
             <h2>Fl</h2>
             <h6>Flerovium</h6>
             <h6>289</h6>
         </div>
-        <div class="dv u e115" onclick="toggleBox(event, 'Mc')">
+        <div class="dv u e115" data-mp="" data-bp="" onclick="toggleBox(event, 'Mc')">
             <h6>115</h6>
             <h2>Mc</h2>
             <h6>Moscovium</h6>
             <h6>290</h6>
         </div>
-        <div class="dv u e116" onclick="toggleBox(event, 'Lv')">
+        <div class="dv u e116" data-mp="" data-bp="" onclick="toggleBox(event, 'Lv')">
             <h6>116</h6>
             <h2>Lv</h2>
             <h6>Livermorium</h6>
             <h6>293</h6>
         </div>
-        <div class="dv u e117" onclick="toggleBox(event, 'Ts')">
+        <div class="dv u e117" data-mp="" data-bp="" onclick="toggleBox(event, 'Ts')">
             <h6>117</h6>
             <h2>Ts</h2>
             <h6>Tennessine</h6>
             <h6>294</h6>
         </div>
-        <div class="dv u e118" onclick="toggleBox(event, 'Og')">
+        <div class="dv u e118" data-mp="" data-bp="" onclick="toggleBox(event, 'Og')">
             <h6>118</h6>
             <h2>Og</h2>
             <h6>Oganesson</h6>
             <h6>294</h6>
         </div>
     </div>
-    <div class="dv ng e2" id="he" onclick="toggleBox(event, 'He')">
+    <div class="dv ng e2 helium"  data-mp="" data-bp="4.22" onclick="toggleBox(event, 'He')">
         <h6>2</h6>
         <h2>He</h2>
         <h6>Helium</h6>
         <h6>4.0026</h6>
     </div>
     <div class="div3 sd">
-        <div class="dv l e57" onclick="toggleBox(event, 'La')">
+        <div class="dv l e57" data-mp="1193" data-bp="3737" onclick="toggleBox(event, 'La')">
             <h6>57</h6>
             <h2>La</h2>
             <h6>Lanthanum</h6>
             <h6>138.91</h6>
         </div>
-        <div class="dv l e58" onclick="toggleBox(event, 'Ce')">
+        <div class="dv l e58" data-mp="1068" data-bp="3716" onclick="toggleBox(event, 'Ce')">
             <h6>58</h6>
             <h2>Ce</h2>
             <h6>Cerium</h6>
             <h6>140.12</h6>
         </div>
-        <div class="dv l e59" onclick="toggleBox(event, 'Pr')">
+        <div class="dv l e59" data-mp="1208" data-bp="3793" onclick="toggleBox(event, 'Pr')">
             <h6>59</h6>
             <h2>Pr</h2>
             <h6>Praseodymium</h6>
             <h6>140.91</h6>
         </div>
-        <div class="dv l e60" onclick="toggleBox(event, 'Nd')">
+        <div class="dv l e60" data-mp="1297" data-bp="3347" onclick="toggleBox(event, 'Nd')">
             <h6>60</h6>
             <h2>Nd</h2>
             <h6>Neodymium</h6>
             <h6>144.24</h6>
         </div>
-        <div class="dv l e61" onclick="toggleBox(event, 'Pm')">
+        <div class="dv l e61" data-mp="1315" data-bp="3273" onclick="toggleBox(event, 'Pm')">
             <h6>61</h6>
             <h2>Pm</h2>
             <h6>Promethium</h6>
             <h6>145</h6>
         </div>
-        <div class="dv l e62" onclick="toggleBox(event, 'Sm')">
+        <div class="dv l e62" data-mp="1345" data-bp="2067" onclick="toggleBox(event, 'Sm')">
             <h6>62</h6>
             <h2>Sm</h2>
             <h6>Samarium</h6>
             <h6>150.36</h6>
         </div>
-        <div class="dv l e63" onclick="toggleBox(event, 'Eu')">
+        <div class="dv l e63" data-mp="1099" data-bp="1802" onclick="toggleBox(event, 'Eu')">
             <h6>63</h6>
             <h2>Eu</h2>
             <h6>Europium</h6>
             <h6>151.96</h6>
         </div>
-        <div class="dv l e64" onclick="toggleBox(event, 'Gd')">
+        <div class="dv l e64" data-mp="1585" data-bp="3546" onclick="toggleBox(event, 'Gd')">
             <h6>64</h6>
             <h2>Gd</h2>
             <h6>Gadolinium</h6>
             <h6>157.25</h6>
         </div>
-        <div class="dv l e65" onclick="toggleBox(event, 'Tb')">
+        <div class="dv l e65" data-mp="1629" data-bp="3503" onclick="toggleBox(event, 'Tb')">
             <h6>65</h6>
             <h2>Tb</h2>
             <h6>Terbium</h6>
             <h6>158.93</h6>
         </div>
-        <div class="dv l e66" onclick="toggleBox(event, 'Dy')">
+        <div class="dv l e66" data-mp="1680" data-bp="2840" onclick="toggleBox(event, 'Dy')">
             <h6>66</h6>
             <h2>Dy</h2>
             <h6>Dysprosium</h6>
             <h6>162.50</h6>
         </div>
-        <div class="dv l e67" onclick="toggleBox(event, 'Ho')">
+        <div class="dv l e67" data-mp="1734" data-bp="2973" onclick="toggleBox(event, 'Ho')">
             <h6>67</h6>
             <h2>Ho</h2>
             <h6>Holmium</h6>
             <h6>164.93</h6>
         </div>
-        <div class="dv l e68" onclick="toggleBox(event, 'Er')">
+        <div class="dv l e68" data-mp="1802" data-bp="3141" onclick="toggleBox(event, 'Er')">
             <h6>68</h6>
             <h2>Er</h2>
             <h6>Erbium</h6>
             <h6>167.26</h6>
         </div>
-        <div class="dv l e69" onclick="toggleBox(event, 'Tm')">
+        <div class="dv l e69" data-mp="1818" data-bp="2223" onclick="toggleBox(event, 'Tm')">
             <h6>69</h6>
             <h2>Tm</h2>
             <h6>Thulium</h6>
             <h6>168.93</h6>
         </div>
-        <div class="dv l e70" onclick="toggleBox(event, 'Yb')">
+        <div class="dv l e70" data-mp="1097" data-bp="1469" onclick="toggleBox(event, 'Yb')">
             <h6>70</h6>
             <h2>Yb</h2>
             <h6>Ytterbium</h6>
             <h6>173.05</h6>
         </div>
-        <div class="dv l e71" onclick="toggleBox(event, 'Lu')">
+        <div class="dv l e71" data-mp="1936" data-bp="3675" onclick="toggleBox(event, 'Lu')">
             <h6>71</h6>
             <h2>Lu</h2>
             <h6>Lutetium</h6>
             <h6>174.97</h6>
         </div>
-        <div class="dv a e89" onclick="toggleBox(event, 'Ac')">
+        <div class="dv a e89" data-mp="1323" data-bp="3471" onclick="toggleBox(event, 'Ac')">
             <h6>89</h6>
             <h2>Ac</h2>
             <h6>Actinium</h6>
             <h6>227</h6>
         </div>
-        <div class="dv a e90" onclick="toggleBox(event, 'Th')">
+        <div class="dv a e90" data-mp="2023" data-bp="5061" onclick="toggleBox(event, 'Th')">
             <h6>90</h6>
             <h2>Th</h2>
             <h6>Thorium</h6>
             <h6>232.04</h6>
         </div>
-        <div class="dv a e91" onclick="toggleBox(event, 'Pa')">
+        <div class="dv a e91" data-mp="1841" data-bp="4300" onclick="toggleBox(event, 'Pa')">
             <h6>91</h6>
             <h2>Pa</h2>
             <h6>Protactinium</h6>
             <h6>231.04</h6>
         </div>
-        <div class="dv a e92" onclick="toggleBox(event, 'U')">
+        <div class="dv a e92" data-mp="1405.3" data-bp="4404" onclick="toggleBox(event, 'U')">
             <h6>92</h6>
             <h2>U</h2>
             <h6>Uranium</h6>
             <h6>238.03</h6>
         </div>
-        <div class="dv a e93" onclick="toggleBox(event, 'Np')">
+        <div class="dv a e93" data-mp="917" data-bp="4174" onclick="toggleBox(event, 'Np')">
             <h6>93</h6>
             <h2>Np</h2>
             <h6>Neptunium</h6>
             <h6>237</h6>
         </div>
-        <div class="dv a e94" onclick="toggleBox(event, 'Pu')">
+        <div class="dv a e94" data-mp="912.5" data-bp="3505" onclick="toggleBox(event, 'Pu')">
             <h6>94</h6>
             <h2>Pu</h2>
             <h6>Plutonium</h6>
             <h6>244</h6>
         </div>
-        <div class="dv a e95" onclick="toggleBox(event, 'Am')">
+        <div class="dv a e95" data-mp="1449" data-bp="2880" onclick="toggleBox(event, 'Am')">
             <h6>95</h6>
             <h2>Am</h2>
             <h6>Americium</h6>
             <h6>243</h6>
         </div>
-        <div class="dv a e96" onclick="toggleBox(event, 'Cm')">
+        <div class="dv a e96" data-mp="1613" data-bp="3383" onclick="toggleBox(event, 'Cm')">
             <h6>96</h6>
             <h2>Cm</h2>
             <h6>Curium</h6>
             <h6>247</h6>
         </div>
-        <div class="dv a e97" onclick="toggleBox(event, 'Bk')">
+        <div class="dv a e97" data-mp="1259" data-bp="2900" onclick="toggleBox(event, 'Bk')">
             <h6>97</h6>
             <h2>Bk</h2>
             <h6>Berkelium</h6>
             <h6>247</h6>
         </div>
-        <div class="dv a e98" onclick="toggleBox(event, 'Cf')">
+        <div class="dv a e98" data-mp="1173" data-bp="1743" onclick="toggleBox(event, 'Cf')">
             <h6>98</h6>
             <h2>Cf</h2>
             <h6>Californium</h6>
             <h6>251</h6>
         </div>
-        <div class="dv a e99" onclick="toggleBox(event, 'Es')">
+        <div class="dv a e99" data-mp="1133" data-bp="" onclick="toggleBox(event, 'Es')">
             <h6>99</h6>
             <h2>Es</h2>
             <h6>Einsteinium</h6>
             <h6>252</h6>
         </div>
-        <div class="dv a e100" onclick="toggleBox(event, 'Fm')">
+        <div class="dv a e100" data-mp="1100" data-bp="" onclick="toggleBox(event, 'Fm')">
             <h6>100</h6>
             <h2>Fm</h2>
             <h6>Fermium</h6>
             <h6>257</h6>
         </div>
-        <div class="dv a e101" onclick="toggleBox(event, 'Md')">
+        <div class="dv a e101" data-mp="1100" data-bp="" onclick="toggleBox(event, 'Md')">
             <h6>101</h6>
             <h2>Md</h2>
             <h6>Mendelevium</h6>
             <h6>258</h6>
         </div>
-        <div class="dv a e102" onclick="toggleBox(event, 'No')">
+        <div class="dv a e102" data-mp="1100" data-bp="" onclick="toggleBox(event, 'No')">
             <h6>102</h6>
             <h2>No</h2>
             <h6>Nobelium</h6>
             <h6>259</h6>
         </div>
-        <div class="dv a e103" onclick="toggleBox(event, 'Lr')">
+        <div class="dv a e103" data-mp="1900" data-bp="" onclick="toggleBox(event, 'Lr')">
             <h6>103</h6>
             <h2>Lr</h2>
             <h6>Lawrencium</h6>
             <h6>266</h6>
         </div>
+    </div>
+</div>
 
         <div id="H" class="toggle-box">
             <p>Hydrogen is a chemical element; it has the symbol H and atomic number 1. It is the lightest and most abundant chemical element in the universe, constituting about 75% of all normal matter. <br> <br>
