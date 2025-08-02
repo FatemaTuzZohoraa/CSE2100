@@ -1,44 +1,51 @@
 //Temperature slider
 let sliderActivated = false;
+
 document.addEventListener('DOMContentLoaded', () => {
-    const slider = document.getElementById('range');
-    const valueDisplay = document.querySelector('.value');
-    const allElements = document.querySelectorAll('.dv');
+  const slider = document.getElementById('range');
+  const valueDisplay = document.querySelector('.value');
+  const allElements = document.querySelectorAll('.dv');
+  const exclude = ['La', 'Ac']; 
 
-    //color update
+
   function updateElementStates() {
-    if (!sliderActivated) return; 
-      const temp = parseFloat(slider.value);
-      valueDisplay.textContent = temp.toFixed(0);
+    if (!sliderActivated) return;
 
-      allElements.forEach(el => {
-          const mp = el.dataset.mp ? parseFloat(el.dataset.mp) : null;
-          const bp = el.dataset.bp ? parseFloat(el.dataset.bp) : null;
+    const temp = parseFloat(slider.value);
+    valueDisplay.textContent = temp.toFixed(0);
 
-          
-          el.classList.remove('state-solid', 'state-liquid', 'state-gas', 'state-unknown');
-          
-          
-          if (mp === null || bp === null) {
-              el.classList.add('state-unknown');
-          } else if (temp < mp) {
-              el.classList.add('state-solid');
-          } else if (temp >= mp && temp < bp) {
-              el.classList.add('state-liquid');
-          } else {
-              el.classList.add('state-gas');
-          }
-      });
-  }
+    allElements.forEach(el => {
       
-    slider.addEventListener('mousedown', () => {
-    sliderActivated = true;
-    updateElementStates(); 
-    }, { once: true });
-    slider.addEventListener('input', updateElementStates);
+      if (exclude.includes(el.id)) return;
 
-    
+      const mp = el.dataset.mp ? parseFloat(el.dataset.mp) : null;
+      const bp = el.dataset.bp ? parseFloat(el.dataset.bp) : null;
+
+      el.classList.remove('state-solid', 'state-liquid', 'state-gas', 'state-unknown');
+
+      if (mp === null || bp === null) {
+        el.classList.add('state-unknown');
+      } else if (temp < mp) {
+        el.classList.add('state-solid');
+      } else if (temp >= mp && temp < bp) {
+        el.classList.add('state-liquid');
+      } else {
+        el.classList.add('state-gas');
+      }
+    });
+  }
+
+  
+  slider.addEventListener('mousedown', () => {
+    sliderActivated = true;
     updateElementStates();
+  }, { once: true });
+
+  
+  slider.addEventListener('input', updateElementStates);
+
+  
+  updateElementStates();
 });
 
 //toggle box

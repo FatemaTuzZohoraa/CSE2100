@@ -23,7 +23,7 @@ body {
     font-size: 2.8125rem;
 }
 .temp{
-    color: white;
+    color: black;
     font-size: 0.9375rem; 
     font-family: arial;
     background-color: plum;
@@ -327,10 +327,10 @@ body {
     background-color: #0284c7; 
 }
 .state-liquid { 
-    background-color: #91f4ff; 
+    background-color: #3ec1cf; 
 }
 .state-gas { 
-    background-color: #04fa4a; 
+    background-color: #44915a; 
 }
 .state-unknown { 
     background-color: #4b5563; 
@@ -373,7 +373,7 @@ body {
     width: 2rem;
     border: 0.125rem solid white;
 }
-.states{
+.states{   
     width: 20rem;
     height: 2rem;     
     position: absolute;
